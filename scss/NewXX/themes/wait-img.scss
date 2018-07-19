@@ -1,0 +1,388 @@
+/*wait image*/
+.loading-content {
+	background: $url_2 no-repeat scroll 0 0 $color-24;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 450px;
+	background-position-x: center;
+}
+
+.loading-image {
+	display: none;
+}
+
+div {
+	&#bread-crumb {
+		@extend %extend_12;
+	}
+	&.sectionTitle {
+		margin-top: 2em;
+	}
+	&.catalogDisplay-dialog-service-price {
+		color: $color-25;
+		font-weight: 900;
+	}
+	&.decks div.deck {
+		margin-top: 0;
+	}
+}
+
+.fdcs-title-outboundcity {
+	color: $color-26;
+}
+
+.fdcs-title-outboundairport {
+	color: $color-27;
+}
+
+.calendarmatrix-location-container {
+	h3 {
+		font-size: 1em;
+	}
+	i {
+		&.icon-plane {
+			color: $color-28;
+		}
+		&.icon-plane-return {
+			color: $color-28;
+		}
+	}
+}
+
+.calendarmatrix-horizontal-dates {
+	.calendarmatrix-date-tooltip-arrow {
+		color: $color-29;
+	}
+	> .active {
+		color: $color-30;
+	}
+}
+
+.calendarmatrix-outbound-dates {
+	.calendarmatrix-date-tooltip-arrow {
+		color: $color-29;
+	}
+	> .active {
+		color: $color-30;
+	}
+}
+
+.calendarmatrix-matrix {
+	time {
+		background-color: $color-31;
+		padding: 1.4em 0 0 0;
+		margin: 0;
+		text-align: center;
+	}
+	> header {
+		.calendarmatrix-inbound-dates div.active time {
+			background-color: $color-32;
+			border-top: 7px solid $color-33;
+		}
+		.calendarmatrix-outbound-dates div.active time {
+			background-color: $color-32;
+			border-left: 7px solid $color-33;
+		}
+	}
+	.control > i {
+		color: $color-34;
+	}
+	.calendarmatrix-fare input {
+		&:active + label {
+			background-color: $color-35;
+		}
+		&.calendarmatrix-radio-button-checked + label {
+			background-color: $color-35;
+		}
+	}
+}
+
+.calendarmatrix-fare {
+	input {
+		&:active + label {
+			border-color: $color-35;
+		}
+		&.calendarmatrix-radio-button-checked + label {
+			border-color: $color-35;
+		}
+	}
+	&.lowest label:after {
+		color: $color-36;
+	}
+	label:not(.calendarmatrix-disabled):hover {
+		border-color: $color-37;
+	}
+}
+
+.icon-lowest {
+	color: $color-38 !important;
+}
+
+.bound-table-cell-reco {
+}
+
+.calendarmatrix-carousel-control {
+	background-color: $color-39;
+	&:hover {
+		background-color: $color-41;
+		border: 1px solid $color-42;
+		color: $color-40;
+	}
+}
+
+.calendarmatrix-tooltip-lowestfare {
+	background-color: $colro-43 !important;
+	> .arrow:after {
+		border-top-color: $color-43 !important;
+	}
+}
+
+.farereview-title {
+	background-color: $color_christalle_approx;
+	color: $color_alto_approx;
+}
+
+.purchase-conditions-popup {
+	h2 {
+		background-color: $color-44;
+		color: $color-45;
+	}
+	.btn-category-selected {
+		background-color: $color-46;
+		border-left: 3px solid $color-47;
+	}
+}
+
+.farereview-traveller-icon {
+	background-color: $color-48;
+	color: $color-49;
+}
+
+.availability-page-title {
+	color: $color-50;
+	> span {
+		color: $color-51;
+	}
+}
+
+.shortcut-container {
+	color: $color-52;
+}
+
+.icon-caret-down {
+	color: $color-53;
+}
+
+.icon-remove {
+	color: $color-53;
+}
+
+.panel-heading-filter {
+	.icon-caret-down {
+		color: $color-54;
+	}
+	.icon-remove {
+		color: $color-54;
+	}
+	&:focus {
+		outline-color: $color-54 !important;
+	}
+}
+
+button {
+	&:focus {
+		outline-color: $color-55 !important;
+	}
+	&.catalogDisplay-service-remove-button {
+		background-color: $color-56;
+		color: $color-55;
+	}
+}
+
+.panel-heading-filter[aria-expanded=false] {
+	background: $color-56;
+}
+
+.panel-heading-filter[aria-expanded=true] {
+	background: $color-56;
+}
+
+.cell-reco-unavailable {
+	background: $color-57;
+}
+
+.btn-tertiary {
+	&:hover {
+		background-color: $color-58;
+	}
+	&:focus {
+		background-color: $color-58;
+	}
+	&:active {
+		background-color: $color-58;
+	}
+	&.active {
+		background-color: $color-58;
+	}
+}
+
+.DPURCView {
+	.heading-text {
+		font-weight: 800;
+		font-size: 1.5em;
+		top: 0;
+	}
+	.panel .main-icon {
+		color: $color-59;
+	}
+}
+
+.icon-question-sign {
+	color: $color-60;
+}
+
+input[type="checkbox"] {
+	colot: $color-61 !important;
+}
+
+.slider-handle {
+	border: 2px solid $color-61;
+}
+
+.slider-selection {
+	background-image: linear-gradient(to bottom, $color-62 0, $color-63 100%);
+}
+
+.filter-indicator {
+	color: $color-64;
+	.icon-trash {
+		color: $color-64;
+	}
+}
+
+.traveller-contact-information-title-icon {
+	display: none;
+}
+
+h2 {
+	&.dialog-title {
+		color: $color-65;
+	}
+	&.traveller-page-title .traveller-page-title-icon.icon-main.icon-adult {
+		display: none;
+	}
+}
+
+.dialog-tabs {
+	li.active > a {
+		border-top: 5px solid $color-66;
+		> span {
+			font-weight: 900;
+			padding-bottom: 0.2em;
+		}
+	}
+	&.nav-tabs > li.active > a {
+		&:hover {
+			border-top: 5px solid $color-66;
+		}
+		&:focus {
+			border-top: 5px solid $color-66;
+		}
+	}
+}
+
+.steps-container > ol li {
+	color: $color-67;
+}
+
+.btn.btn-tertiary {
+	&.tripsummary-btn-title:hover {
+		color: $white;
+		background-color: $color-68;
+		border-color: $color-69;
+	}
+	&.tripsummary-btn-price:hover {
+		text-align: center;
+		color: $white;
+		background-color: $color-68;
+		border-color: $color-70;
+		font-size: 130%;
+		float: right;
+		padding: 6px 12px;
+	}
+}
+
+.calendarmatrix .tooltip.calendarmatrix-tooltip {
+	background-color: $color-71;
+}
+
+.alert .alert-icon {
+	color: $color-72;
+}
+
+.icon-service.catalogServices-title-icon {
+	color: $color-72;
+}
+
+.alert-icon.alert-icon-danger {
+	color: $color-73;
+}
+
+.calendarmatrix-inner-cell.selected {
+	background-color: $color-74;
+	i.icon-lowest {
+		color: $white !important;
+	}
+}
+
+article.panel.flight-notes-panel > .panel-heading {
+	background-color: $color-75;
+	color: $color-76;
+}
+
+a.availability-header-date-calendarLink {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 45px;
+	padding-right: 16px;
+}
+
+.has-feedback .form-control-feedback {
+	color: $color-77;
+}
+
+.open .dropdown-toggle.btn-tertiary {
+	background-color: $color-78;
+}
+
+.fop-options-wrapper > ul li {
+	list-style: none;
+}
+
+h3.catalogServices-teaser .catalogServices-teaser-title {
+	color: $color-79;
+}
+
+:not(#foo) .travellers input[type="radio"]:checked + .travellerBox {
+	border-color: $color-80;
+}
+
+li.active .flightNumber {
+	color: $color-81 !important;
+	margin-top: 0.3em;
+}
+
+.decks .deck input[name="decks"]:checked + label.deckBox {
+	background-color: $color-82;
+	color: $white;
+}
+
+#servicesbreakdown-container h3 {
+}
+
+.payment-wrapper .row div > span span {
+	color: $color-83;
+}

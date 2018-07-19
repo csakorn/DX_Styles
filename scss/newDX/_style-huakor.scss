@@ -1,0 +1,41 @@
+#bread-crumb {
+	box-shadow: 0 6px 6px -3px $color_05 inset;
+}
+
+.bread-crumb-container {
+	background: $color_05;
+}
+
+.current {
+	text-shadow: none !important;
+}
+
+.bread-crumb-component {
+	background-color: inherit;
+	ol li {
+		&.current {
+			border-bottom: 0.0em solid $color_04;
+			strong {
+				border-bottom: none;
+			}
+		}
+		&.done {
+			border-bottom: 0.0em solid $color_04;
+		}
+		&.current::before {
+			background: none repeat scroll 0 0 $color_04;
+			color: $color_01;
+		}
+		&.done::before {
+			background: none repeat scroll 0 0 $color_04;
+			color: $color_01;
+		}
+	}
+}
+
+.bread-crumb-title {
+}
+
+.steps-container > ol li {
+	color: $color_04;
+}

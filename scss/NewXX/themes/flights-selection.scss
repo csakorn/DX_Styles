@@ -1,0 +1,84 @@
+/**----------------------------Step 1 Flights selection--------------------------------------**/
+div {
+	&.availability-filters {
+		-webkit-box-shadow: 3px 3px 1px rgba(0,0,0,0.25)
+		box-shadow: 3px 3px 1px $color-97;
+		background-color: $color-98;
+	}
+	&.shortcut-container {
+		> span.filter-indicator-container {
+			float: right;
+			margin-right: 2em;
+		}
+		span.filter-indicator {
+			font-weight: normal;
+		}
+	}
+	&.price-taxes-details-row > span.price-taxes-qsurcharges-text {
+		display: none !important;
+	}
+}
+
+/*NT: FF name in center in FPOW page*/
+td.bound-table-header-col {
+	text-align: center;
+}
+
+/*NT: FF name in center in FDFF page*/
+th.ffcomp-col-xs-height1 {
+	text-align: center;
+}
+
+/*NT: FF compare table equal cell in FDFF page*/
+table#ffcomp-table-id.ff-comparison-table {
+	table-layout: fixed;
+}
+
+.panel-primary > .panel-heading {
+	@extend %extend_1;
+}
+
+/****************************************************************/
+/*********************** ALPI title *****************************/
+/****************************************************************/
+
+header {
+	&.servicesbreakdown-panel-heading {
+		@extend %extend_1;
+	}
+	&.panel-heading {
+		@extend %extend_1;
+	}
+}
+
+.heading-text.bold {
+	@extend %extend_1;
+	font-size: 1.3em;
+}
+
+.traveller-list-cont ainer .panel .panel-heading .travellerList-avatar {
+	background-color:  $color-99;
+	color: $color-101 ;
+	border: solid 1px $color-99;
+}
+
+
+/*.panel-primary > .panel-heading {
+    background: none repeat scroll 0 0 #785DA7;
+    border-color: #785DA7;
+    color: #ffffff;
+    }*/
+
+/* Lang = Fr  Show:090617/Pascale */
+/* html[lang='fr'] button#button-tripsummary-purchase-conditions{
+	display: none;
+	} */
+
+/*.panel-heading legend{
+	color: #555 !important;
+	}*/
+
+/*.panel-footer{
+	background-color: #E0E0E0;
+	border-top: 4px solid #BCBCBC;;
+	}*/

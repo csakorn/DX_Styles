@@ -1,0 +1,121 @@
+/**----------------------------Multi City flow--------------------------------------**/
+.availability-schedule-outbound-itin {
+	background-color: $color-109;
+}
+.availability-schedule-inbound-itin {
+	background-color: $color-109;
+}
+.availability-schedule-outbound-flights {
+	background-color: $color-110;
+	border: 1px solid $color-111;
+	transition-duration: 0.3s;
+	&:hover {
+		@extend %extend_3;
+	}
+}
+.availability-schedule-inbound-flights {
+	/*     border-color: #330066; */
+	background-color: $color-110;
+	border: 1px solid $color-111;
+	&:hover {
+		@extend %extend_3;
+	}
+}
+.availability-schedule-active {
+	.availability-schedule-outbound-itin {
+		background-color: $color-112;
+		background-color: $color-115;
+		color: $color-116;
+	}
+	.availability-schedule-inbound-itin {
+		background-color: $color-112;
+	}
+}
+.availability-schedule-select {
+	&.availability-schedule-outbound-flights {
+		@extend %extend_2;
+	}
+	&.availability-schedule-inbound-flights {
+		@extend %extend_2;
+	}
+}
+.availability-schedule-header-cities {
+	.fromcity {
+		color: $color-112;
+	}
+	.tocity {
+		color: $color-112;
+	}
+}
+.fromcity {
+	color: $color-112;
+	font-size: 1.2em;
+}
+.tocity {
+	/*     border-bottom: 1px solid #CCC !important;
+	padding-bottom: 0.1em !important; */
+	color: $color-112;
+	font-size: 1.2em;
+}
+.availability-schedule-date {
+	font-size: 1.2em;
+}
+.availability-schedule-pricing-option-header {
+	background-color: $color-112;
+	color: $color-116;
+}
+.complex-availability-schedule-badge {
+	border-radius: 10%;
+	background-color: $color-112 !important;
+}
+.segment-details-right {
+	background-color: $color-118;
+}
+.timeline-day-difference {
+	top: 14px;
+}
+.tripsummary-travellers {
+	text-transform: initial;
+}
+.availability-schedule-header .header-choose-flight {
+	font-size: 15px;
+}
+i.selected-flight-icon-class {
+	color: $color-117;
+}
+.availability-schedule-info-row > strong {
+	/*      border-bottom: 1px solid #555 !important;
+	padding-bottom: 0.1em !important; */
+	font-size: 1.1em;
+	letter-spacing: 0.02cm;
+}
+.travellerdetails .travellers {
+	text-transform: initial;
+}
+.pricedetails .price-taxes-total-traveller {
+	text-transform: initial;
+}
+
+/**-------------(MAPI)-----------**/
+body[data-template-name="MALPI"] div {
+	&.tripsummary-section-price {
+		display: none !important;
+	}
+	&.pricedetails {
+		display: none !important;
+	}
+}
+/**-------------(MDFSR)-----------**/
+body[data-template-name="MDFSR"] div {
+	&.tripsummary-section-price {
+		display: none !important;
+	}
+	&.pricedetails {
+		display: none !important;
+	}
+}
+
+/* .availability-schedule-active.availability-schedule-outbound-flights, .availability-schedule-active.availability-schedule-inbound-flights */
+
+
+/* PTR#10907106 - To display the first letter in capital letter */

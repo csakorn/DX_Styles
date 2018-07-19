@@ -1,0 +1,34 @@
+/***************************************************************/
+/*==================== ERROR Msg ====================*/
+div {
+	&#ErrPic {
+		display: block;
+		clear: both;
+		float: right;
+		margin-right: 2em;
+		box-sizing: border-box;
+		position: absolute;
+		right: 0;
+	}
+	&#startoverlink {
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 1em;
+	}
+}
+h4#alert-title-global-error-message {
+	width: 95%;
+	display: inline-block;
+}
+#global-error-message > div.content {
+	padding-bottom: 3em;
+}
+
+/*==================== END ERROR Msg ====================*/
+
+input[type-"text"] {
+	color: $color-23;
+}
+input[type-"checkbox"] {
+	color: $color-23;
+}

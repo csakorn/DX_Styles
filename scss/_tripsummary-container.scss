@@ -1,0 +1,18 @@
+.tripsummary{
+
+	&-price-amount{
+		span>abbr.tripsummary-price-amount-currency{
+			@extend %priceTotal-txt;	
+		}
+
+		&-text{
+			color:#330066;
+			@extend %priceTotal;
+			
+		}
+
+	}
+}
+
+
+

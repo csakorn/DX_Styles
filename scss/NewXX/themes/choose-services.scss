@@ -1,0 +1,117 @@
+/**----------------------------Step 2 Choose Services (DFSR)--------------------------------------**/
+/*NT: customize galley icon in seatmap*/
+.uicFacilityGalley {
+	background: $color-102 $url_3 no-repeat scroll 50% 50%;
+}
+
+/*NT: hide seat price*/
+.seatmapPriceBreakdown {
+	display: none;
+}
+
+/*NT: hide services price breakdown*/
+.servicesbreakdown-service-price {
+	display: none;
+}
+.servicesbreakdown-total-price {
+	display: none;
+}
+
+/*NT: hide meal price*/
+.catalogDisplay-dialog-total-price {
+	display: none;
+}
+.catalogDisplay-dialog-total {
+	box-shadow: none !important;
+	background: none;
+	> header.panel-heading {
+		display: none;
+	}
+	> section.panel-body {
+		display: none;
+	}
+}
+
+div {
+	&.catalogServices-btn-delete {
+		/* position:relative; *//* top: -33px; */
+	}
+	&.panel-body.catalogServices-subcategory-panel-body > div.catalogServices-subcategory-panel-desc {
+		display: none;
+	}
+	&.panel.panel-default.catalogServices-dialog-total-price {
+		display: none;
+	}
+	&.catalogDisplay-dialog-footer > button {
+		font-size: 1em;
+	}
+	&.panel-btn.filters-panel-btn > button {
+		font-size: 1em;
+	}
+}
+
+.catalogServices-subcategory-total-price-section {
+	display: none;
+}
+
+button {
+	&.catalogServices-dialog-btn-primary {
+		font-size: 1em;
+	}
+	&.btn-primary {
+		&.timeout-alert-btn-availability {
+			font-size: 1em;
+		}
+		&.timeout-alert-btn-start-over {
+			font-size: 1em;
+		}
+	}
+	&.timeout-warning-btn-reset-session-text {
+		font-size: 1em;
+	}
+	&.timeout-warning-btn-reset-session.pull-right {
+		font-size: 1em;
+	}
+}
+
+span {
+	&.catalogServices-category-price {
+		display: none;
+	}
+	&.teaserDescription {
+		/*padding-left:1.2em;*/
+		float: left;
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+th.catalogServices-subcategory-price-header.catalogServices-subcategory-table-cell {
+	display: none;
+}
+
+.catalogServices-subcategory-service-price.catalogServices-subcategory-table-cell {
+	display: none;
+}
+
+article.catalogServices-teaser.catalogServices-teaser-MEA > span {
+	/*display:none !important; */
+	/*position:relative;*/
+	/*top:-30px;*/
+}
+
+ul.servicesbreakdown-segment-category-list.servicesbreakdown-category-list {
+	margin: 0.5em 0 2em 0;
+}
+
+.catalogServices-teaser-column a {
+	text-decoration: none;
+}
+
+p.box_service {
+	float: left;
+	margin: 0.5em;
+	padding: 0.3em;
+}

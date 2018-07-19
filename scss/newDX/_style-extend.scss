@@ -1,0 +1,55 @@
+//@extend-elements
+//original selectors
+//header.servicesbreakdown-panel-heading, header.panel-heading, .panel-primary >.panel-heading, .heading-text.bold
+%extend_1 {
+	background: $color_05;
+	background-color: $color_05!important;
+	color: $color_04!important;
+	letter-spacing: 1px;
+}
+
+//original selectors
+//.availability-schedule-select.availability-schedule-outbound-flights, .availability-schedule-select.availability-schedule-inbound-flights
+%extend_2 {
+	overflow: hidden;
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: $color_06;
+}
+
+//original selectors
+//.box-travellers, .box-goodservice_india
+%extend_3 {
+	width: 100%;
+	margin: 0 0 2em 0;
+	background-color: $color_42;
+	border-top: 1px solid $color_43;
+}
+
+//original selectors
+//.box-travellers >header, .box-goodservice_india >header
+%extend_4 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-family: $font_0;
+}
+
+//original selectors
+//.box-travellers >header ol >li, .box-goodservice_india >header ol >li
+%extend_5 {
+	display: inline-block;
+	margin: 0 1em;
+	width: 40%;
+	padding: 0.5em 0;
+	text-transform: uppercase;
+}
+
+//original selectors
+//.terms-and-conditions :not(#foo) input[type=checkbox] +label:before, :not(#foo) input[type=radio] +label:before
+%extend_6 {
+	line-height: 15px !important;
+	vertical-align: middle !important;
+	color: $color_05;
+	left: 0 !important;
+	font-size: 16px !important;
+}

@@ -1,0 +1,45 @@
+/*===== Add Travellers Info ======*/
+.box-travellers {
+	@extend %extend_5;
+	> header {
+		@extend %extend_6;
+		i {
+			padding-right: 0.6em;
+		}
+		ol {
+			padding: 1em 0;
+			> li {
+				@extend %extend_7;
+			}
+		}
+	}
+	p {
+		text-indent: 1em;
+		padding: 0.5em;
+		span.box-txt_b {
+			font-weight: bold;
+		}
+	}
+}
+.box-goodservice_india {
+	@extend %extend_5;
+	> header {
+		@extend %extend_6;
+		i {
+			padding-right: 0.6em;
+		}
+		ol {
+			padding: 1em 0;
+			> li {
+				@extend %extend_7;
+			}
+		}
+	}
+	p {
+		text-indent: 1em;
+		padding: 0.5em;
+		span.box-txt_b {
+			font-weight: bold;
+		}
+	}
+}

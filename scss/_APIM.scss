@@ -1,0 +1,63 @@
+section#tpl4_travellerFormContent{
+    .apim-card-title-before-validation{
+        color: #FFF;
+    }
+    section.apimTraveller-panel.traveller-panel.panel.panel-primary.traveller{
+        p.box-mandatory{
+            padding: 1em 1em 0 1em;
+        }
+    }
+    header.traveller-panel-heading.panel-heading.user-logged-false{
+        a.apimTraveller-link {
+            padding: 0.5em;
+            .apim-card-title-before-validation h2{
+                margin-bottom: 0;
+            }
+            .traveller-panel-heading{
+                &-title{
+
+                }
+                &-title-legend{
+                    color:#FFF;
+                }
+            }
+            .close-apim-panel i.icon-chevron-up{
+            	color:#FFF;
+            }          
+        }
+    }
+    section.traveller-panel-body.panel-body{
+        h3.title-section{
+            margin-top: 0px;
+        }
+        label{
+        	font-weight: bold;
+        }
+
+    }
+    section.traveller-contact-information-panel-body{
+    	label{font-weight: bold;}
+    }
+}
+
+
+
+i.travellerList-avatar-icon{
+	// &.icon-ADT.icon-ADT.icon-block {		
+		@include borderStyle(white,48px,48px);
+		@include border-radius(70px);
+		font-size: 200% !important;
+	// }
+	// travellerList-avatar-icon icon-infant icon-block
+}
+
+.traveller-additional-options{
+	section{
+		#message-remember-checkbox{ 
+			background-color: #efefef;
+			> span{
+				display: none;
+			}
+		}
+	}
+}

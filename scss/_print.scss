@@ -1,0 +1,360 @@
+$fontsize_Reservation_default:1em;
+$fontsize_Reservation_Price:12pt;
+$fontsize_Reservation_Title:17pt;
+
+@page {
+    size: A4;
+    margin: 1em 1.5em;
+}
+
+@media print {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 7pt;
+    } 
+
+    #main-layout-header{
+        width:100%;
+        margin-bottom:2em !important;
+        >img{ width:100px;}
+    }
+
+
+
+    /* display None */
+    #pinkbanner,
+    #flights-timeline,
+    #skip-to,
+    .TGINSBanner,
+    #car-search,
+    #plnext-skip,
+    .box-roh,
+    .box_TGINSBanner--3box,
+    .box_TGINSBanner--1box,
+    .services-policy,
+    .box-subsrcibe, #rentalCar, .bound-fare.bound-ff-uri, #b_container, #takemetour-widget{
+        display: none !important;
+    }
+    
+    /* reservation-details */
+    #reservation-details{
+    	border:1px solid #000;
+    	padding:0.5em !important;
+    	margin:1em 0 !important;
+    	ul.reservation-table{
+    		// border: 1px solid #000;
+    		width:50%;
+    		margin-bottom:1em !important;
+    		li>span.locator.recloc{
+    			font-size: $fontsize_Reservation_default+0.5;
+    		}
+    	}
+    	div.additional-info{
+			// border: 1px solid #000;
+			.reservation-payment-info-standard{
+				margin-bottom:1em !important;
+			}
+    	}
+    }
+
+    #fare-review{
+        h2.horizontal-title{
+            margin-top: 2em !important;
+            margin-bottom: 1em !important;
+            .title,i{
+                font-size: $fontsize_Reservation_Title;
+            }
+        }
+        .price-left,.price-right{
+            h3{
+                margin-top: 1em !important;
+            }
+            div.price-text.price-taxes-text, div.price-amount{
+                font-size: ($fontsize_Reservation_Price - 2pt);
+            }
+        }  
+        .price-summary{
+            margin-top: 2em !important;
+            .price-traveller{
+                font-size: $fontsize_Reservation_Price;
+            }           
+        }
+        ul.price-mini-breakdown li{
+            margin: 0.5em 0 !important;
+            .price-mini-breakdown-text, .price-amount{
+                font-size: ($fontsize_Reservation_Price - 2pt);
+            }
+        }
+        #fare-review-bounds{
+            // page-break-before: always;
+            header{                
+                h2.horizontal-title,i{
+                    font-size: $fontsize_Reservation_Price;
+                }
+            }
+            section{
+                div.bounds-list{
+                    padding: 1em;
+                    h3.title{
+                        font-size: ($fontsize_Reservation_Price - 2pt);
+                    }
+                    .segment-details>div{
+                        // border: 1px solid #000;                        
+                        width: 50%;
+                        .segment-details-departure,.segment-details-arrival{
+                            // border: 1px solid #000;                            
+                            display: inline-block;
+                            .segment-details-location,.segment-details-time,.segment-details-city {
+                                font-size: $fontsize_Reservation_Price - 1pt;
+                            }
+                        }                        
+                    }
+                }
+            }
+            .segment-details.row.segment-details-left{
+               border-left: 0px solid #bcbcbc;
+            }
+            .timeline-segment-start-mark,.timeline-segment-end-mark{
+                display: none;
+            }
+        }  
+    }
+
+
+
+
+/*    .ticket-details {
+        display: inline-block;
+    }
+    .traveller-name {
+        font-size: 1.3em;
+    }
+    #main-layout-header {
+        padding: 0.7em 0 !important;
+        >img {
+            width: 12em;
+        }
+        a>img {
+            width: 150px;
+            height: 15px;
+        }
+    }
+    .confirm-banner {
+        font-size: 1em;
+        margin-top: 0 !important;
+    }
+    #reservation-details {
+        margin: 0.5em 0 !important;
+        padding: 0.2em !important;
+        border: 1px solid $color_01;
+        h3 {
+            font-size: 1em !important;
+        }
+        span {
+            font-size: 0.8em !important;
+            font-weight: 300 !important;
+        }
+        ul.reservation-table {
+            margin-left: 2em !important;
+        }
+        div.mod-info {
+            dt {
+                font-weight: normal;
+                font-size: 0.8em;
+            }
+            dd {
+                font-weight: normal;
+                font-size: 0.8em;
+            }
+        }
+    }
+    .additional-info {
+        margin-left: 2em !important;
+    }
+    .farereview-container-dialog-horizontal-row {
+        padding: 0 1.5em !important;
+        div.price-summary {
+            margin: 0.3em 0 !important;
+        }
+    }
+    .bounds-list {
+        padding-bottom: 1em !important;
+    }
+    .itinerary-details {
+        margin-top: -1.1em !important;
+        margin-left: 0.5em !important;
+        padding: 0 !important;
+        position: static !important;
+        float: right;
+        padding-left: 0.5em !important;
+    }
+    #fare-review-bounds {
+        margin: 0 !important;
+        border: 1px solid $color_01;
+        padding: 0.6em !important;
+        margin-top: 0.7em !important;
+        a.bound-timeline-link {
+            display: none;
+        }
+        h3.title {
+            margin: 0.8em 0 !important;
+        }
+    }
+    #fare-review-travellers {
+        border: 1px solid $color_01;
+        padding: 0.6em !important;
+        margin-top: 0.7em !important;
+        margin: 0 !important;
+        margin-top: 1.2em !important;
+    }
+    .segment-details-departure {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .segment-details-left {
+        margin: 0.2em 0 !important;
+        padding: 0 0 0 1em !important;
+    }
+    .segment-details-right {
+        margin-top: -1em !important;
+        padding-left: 0.5em !important;
+    }
+    .col-section-traveller {
+        margin: 0 !important;
+        border: none !important;
+    }
+    .traveller-list {
+        margin: 0 !important;
+    }
+    #services-breakdown {
+        margin: 0 !important;
+        margin-top: 1.2em !important;
+    }
+    #before-departure {
+        margin: 0 !important;
+        .area-content {
+            width: 100% !important;
+            font-size: 0.5em;
+            h3 {
+                font-size: 1em;
+            }
+        }
+        h3 {
+            font-size: 0.6em;
+            margin-top: 1em !important;
+            >i:before {
+                font-size: 0.7em !important;
+            }
+        }
+        h2 {
+            font-size: 1em !important;
+        }
+    }
+    .servicesbreakdown {
+        margin-top: 1.2em !important;
+        h3 {
+            font-size: 1em !important;
+        }
+        ul>li {
+            font-size: 0.7em !important;
+        }
+    }
+    #flight-notes {
+        clear: both;
+        margin: 0.8em 0 !important;
+        ul {
+            padding-left: 1.5em !important;
+        }
+    }
+    #additional_info_conf {
+        padding: 0 !important;
+        margin: 0 !important;
+        b {
+            font-weight: normal !important;
+            font-size: 0.8em;
+        }
+    }
+    .traveller-details-text {
+        &.traveller-type {
+            font-size: 0.7em !important;
+        }
+        &.traveller-name {
+            font-size: 1em !important;
+            font-weight: 600;
+        }
+    }
+    .traveller-list-row {
+        width: calc(100%/2);
+        float: left;
+        >div {
+            width: calc(100%/2);
+        }
+    }
+    .servicesbreakdown-panel-body {
+        >h3 {
+            width: calc(100%/2); //Instead of the line below you could use @include box-sizing($bs)
+            box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            position: absolute;
+            margin-top: 0.5em !important;
+        }
+        >ul {
+            width: calc(100%/2); //Instead of the line below you could use @include box-sizing($bs)
+            box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            margin-top: 2em !important;
+            >ul li {
+                border-bottom: 1px solid;
+                >div {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    a[href]:after {
+        content: "";
+    }
+    a.ticket-link {
+        font-size: 0.98em;
+        text-decoration: inherit !important;
+        font-family: $font_0;
+        >i {
+            display: none;
+        }
+    }
+    ul.reservation-table {
+        width: 25%;
+    }
+    .pricedetails .breakdown-list>li {
+        margin: 0.2em 0 !important;
+    }
+    .full-width-print>h2 {
+        font-size: 1em;
+        padding-bottom: 1em !important;
+    }
+    .price-panel-body div {
+        &.price-left {
+            font-size: 0.76em !important;
+        }
+        &.price-right {
+            font-size: 0.76em !important;
+        }
+    }
+    .traveller-icon.icon-adult {
+        font-size: 1.5em;
+    }
+    span.itinerary {
+        font-size: 0.8em !important;
+    }
+    time.date {
+        font-size: 0.8em !important;
+    }*/
+}

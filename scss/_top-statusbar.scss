@@ -1,0 +1,13 @@
+#page-template-header {
+    .bread-crumb-container {
+        background: #330066;
+        background: -moz-linear-gradient(#330066, #3F0677);
+        background: -o-linear-gradient(#330066, #3F0677);
+        background: -ms-linear-gradient(#330066, #3F0677);
+    }
+    div#bread-crumb {
+        box-shadow: 0 6px 6px -3px #330066 inset;
+        -moz-box-shadow: 0 6px 6px -3px #330066 inset;
+        -webkit-box-shadow: 0 6px 6px -3px #330066 inset;
+    }
+}

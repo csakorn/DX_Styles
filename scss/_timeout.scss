@@ -1,0 +1,30 @@
+
+%btn_primary-timeout{
+	white-space: normal;
+    word-break: normal;
+    vertical-align: middle;
+}
+
+.timeout{
+	&-warning,&-warning-content h2,&-alert,&-alert-content h2{
+		margin-top: 0;
+	}
+	&-warning button, &-alert button{
+		margin-top: 5px;
+	}
+}
+
+button.btn{
+	&.btn-primary{		
+		.timeout-warning-btn{
+			&-reset-session-text{
+				@extend %btn_primary-timeout;
+			}
+		}
+		.timeout-alert-btn{
+			&-availability-text,&-start-over-text{
+				@extend %btn_primary-timeout;				
+			}
+		}
+	}
+}

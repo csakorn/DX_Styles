@@ -1,0 +1,51 @@
+%button_btn{
+	max-width: 100%;
+	white-space: normal;
+	word-break: break-word;
+}
+%button_btn_btn{
+	float: none;
+	display: table-cell;
+	white-space: normal;
+	word-break: break-word;
+	vertical-align: middle;
+}
+button.btn{
+	&.btn{
+		&-primary,&-secondary,&-tertiary,&-default{
+			@extend %button_btn;
+			>*{
+				@extend %button_btn_btn;
+			}
+		}
+		&-primary i{
+			padding-right: 6px;
+		}
+		&-primary i+span+i{
+			padding: 0 0 0 6px;
+		}
+		&-default,&-secondary{
+			i,span,i+span+i,span+span+span{
+				padding-right: 6px;
+			}
+		}
+		&-tertiary.calendarmatrix-modifydates-btn>*{
+			display: inline-block;	
+		}
+	}	
+}
+
+.btn{
+	&-invisible:focus{
+		outline: none;
+		border: none;
+	}
+	&-invisible{
+		position: absolute;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		-moz-opacity: 0;
+		-khtml-opacity: 0;
+		opacity: 0;
+	}
+}

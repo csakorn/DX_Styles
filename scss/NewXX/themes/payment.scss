@@ -1,0 +1,65 @@
+/**----------------------------Step 3 PAYMENT (PURC)--------------------------------------**/
+#tpl3_fopTemplate_fopDisplayMainSection {
+	backgrund-color: $color-103;
+	color: $color-104;
+	height: auto;
+}
+
+/*NT: hide insurance header*/
+div {
+	&.fop-options-wrapper {
+		margin-top: 0.5em;
+	}
+	&.row.margin-left-zero {
+		margin: 0;
+		padding: 0;
+		margin-top: 0.5em;
+		div.fop-wrapper {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&.area.baggage-policy-section {
+		background-color: $color-105;
+		color: $color-106;
+	}
+	&.insurance div.heading h2.heading-banner {
+		display: none;
+	}
+}
+
+.ss {
+	font-size: 100;
+}
+
+#showCondition {
+	opacity: 1 !important;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	margin: 0 0.5em;
+}
+
+#FYIHtml {
+	height: 350px;
+	border: 1px solid $color-107;
+	padding: 1em;
+	overflow: auto;
+	overflow-y: scroll;
+	margin: 1em 0;
+	box-shadow: 2px 2px 8px $color-108;
+}
+
+#TAC {
+	padding: 1.5em;
+}
+
+/*NT: add padding top to the default FOP wrapper*/
+.payment .fop-wrapper {
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+span#tpl5_baggagePolicy > div.panel {
+	margin-top: 2em !important;
+}

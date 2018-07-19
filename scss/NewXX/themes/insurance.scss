@@ -1,0 +1,18 @@
+/*================== Insurance ==================*/
+.insurance {
+	div.insurance-select > section.panel.area {
+		float: left;
+	}
+	.insurance-banner img {
+		max-height: 6em;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.terms-and-conditions :not(#foo) input[type=checkbox] + label:before {
+	@extend %extend_8;
+}
+:not(#foo) input[type=radio] + label:before {
+	@extend %extend_8;
+}
+/*================== END Insurance ==================*/

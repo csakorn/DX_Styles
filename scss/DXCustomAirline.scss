@@ -1,0 +1,1769 @@
+
+@import 'colors';
+@import 'extend';
+
+/*Useful colours:
+#bc0061; dark pink
+#3e075b; dark purple
+#D8BFD8; light pink
+*/
+/*Background*/
+body {
+  /* background-color:#D8BFD8; */
+  /*light pink*/
+    background-color: #FFF;
+}
+
+header#main-layout-header {
+    // padding: 0.5em 0em 0em 1em;
+    padding: 0.5em 0;
+}
+
+/*'Your booking'*/
+.tripsummary-title-text {
+    color: #FFF;
+    background-color: #330066;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FFCC00', endColorstr='#000000');
+  /*For IE7-8-9*/
+    height: 1%;
+  /*For IE7*/
+}
+
+/****************************************************************/
+/*********************** Title step *****************************/
+/****************************************************************/
+.current {
+  /*color: #FFCC00 !important;*/
+    text-shadow: none !important;
+}
+
+.bread-crumb-title {
+  /*color: #FFCC00 !important;*/
+}
+
+/*Header purchase*/
+.bread-crumb-container {
+    background: #330066;
+    background: -moz-linear-gradient(#330066, #3F0677);
+    background: -o-linear-gradient(#330066, #3F0677);
+    background: -ms-linear-gradient(#330066, #3F0677);
+  /*For IE10*/
+}
+
+/*Manage-booking*/
+#page-template-header {
+  /* color: #3e075b; */
+}
+
+/* navigation bar, size + color*/
+/* .bread-crumb-component{
+    background-color:#330066 !important;
+} */
+.bread-crumb-component ol li.current, .bread-crumb-component ol li.done {
+    border-bottom: 0.0em solid #ffffff;
+}
+
+.bread-crumb-component ol li.current::before, .bread-crumb-component ol li.done::before {
+    background: none repeat scroll 0 0 #FFFFFF;
+  /*black*/
+    color: #555;
+  /*light pink*/
+}
+
+.bread-crumb-component ol li.current strong {
+    border-bottom: none;
+}
+
+.bread-crumb-component {
+    background-color: inherit;
+}
+
+/*Banner*/
+.pnrd-view .confirm-banner {
+    background-color: #330066;
+    color: #ffffff;
+    margin: 1.2em 0;
+    padding: 0.7em 0;
+}
+
+/*Buttons, warning etc.*/
+a, a:hover, a:visited, a:active {
+    color: #3e075b;
+}
+
+.btn-primary {
+  /* background-color: #3e075b;
+   border-color: #3e075b;
+   color: #ffffff;*/
+    background-color: #FFCC00;
+    border-color: #FFCC00;
+    color: #330066;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #330066;
+}
+
+.alert-warning {
+    background-color: #ffffff;
+    border-color: #f2f2f2;
+    color: #bc0061;
+}
+
+.thai-logo {
+    padding: 20px;
+}
+
+.star-alliance {
+    padding: 20px;
+}
+
+/*Dark purple on button when selected, hover, focus etc.*/
+.btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #3e075b;
+    border-color: #3e075b;
+}
+
+/*center FF name*/
+.row-overflowed {
+    text-align: center;
+}
+
+.row.availability-bound-tablerow {
+    text-align: center;
+}
+
+/*Hide modifyFlight dropdown*/
+#modify-flights-dropdown {
+    display: none;
+}
+
+/*Modify the display on purc page, especially useful for "call me"*/
+.fop-option-list {
+  /* margin-right:10px; */
+}
+
+.payment .payment-wrapper .fop-options-wrapper .mop-btn.fop-option-selected {
+    background-color: #3e075b;
+    color: #ffffff;
+}
+
+.fop-option-list {
+  /* display: inline; */
+}
+
+#tpl3_fopTemplate_fopDisplayMainSection a {
+    color: #d8bfd8;
+}
+
+.fop-form-wrapper .external-heading {
+    display: none;
+}
+
+#tpl3_fopTemplate_fopDisplayMainSection h2 {
+    margin: 1px;
+}
+
+/*Hide Manage my booking on CONF page*/
+#reservation-menu .dropdown-container .reservation-btn {
+    display: none;
+}
+
+/* payment page */
+.payment .fop-wrapper {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.catalogServices-teaser {
+    height: auto;
+}
+
+.catalogServices-dialog-btn-primary, .catalogDisplay-btn-validate {
+    float: none;
+}
+
+/***************************************************************/
+/*==================== ERROR Msg ====================*/
+div#ErrPic {
+    display: block;
+    clear: both;
+    float: right;
+    margin-right: 2em;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+}
+
+h4#alert-title-global-error-message {
+    width: 95%;
+    display: inline-block;
+}
+
+div#startoverlink {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
+#global-error-message > div.content {
+    padding-bottom: 3em;
+}
+
+/*==================== END ERROR Msg ====================*/
+input[type- "text"], input[type- "checkbox"] {
+    color: #330066;
+}
+
+/*wait image*/
+.loading-content {
+    // background: url("../img/languages/en/progress.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 450px;
+    background-position-x: center;
+}
+
+// .loading-image {
+//     display: none;
+// }
+
+.steps-container > ol li {
+    color: #FFF;
+}
+
+div#bread-crumb {
+    box-shadow: 0 6px 6px -3px #330066 inset;
+    -moz-box-shadow: 0 6px 6px -3px #330066 inset;
+    -webkit-box-shadow: 0 6px 6px -3px #330066 inset;
+}
+
+.btn.btn-tertiary.tripsummary-btn-title:hover {
+    color: #FFFFFF;
+    background-color: #330066;
+    border-color: #bcbcbc;
+}
+
+.fdcs-title-outboundcity {
+    color: #330066;
+}
+
+.fdcs-title-outboundairport {
+    color: #555;
+}
+
+.calendarmatrix-location-container h3 {
+    font-size: 1em;
+}
+
+.calendarmatrix-location-container i.icon-plane, .calendarmatrix-location-container i.icon-plane-return {
+    color: #330066;
+}
+
+.calendarmatrix .tooltip.calendarmatrix-tooltip {
+    background-color: #330066;
+}
+
+.calendarmatrix-horizontal-dates .calendarmatrix-date-tooltip-arrow, .calendarmatrix-outbound-dates .calendarmatrix-date-tooltip-arrow {
+    color: #330066;
+}
+
+.alert .alert-icon, .icon-service.catalogServices-title-icon {
+    color: #330066;
+}
+
+.alert-icon.alert-icon-danger {
+    color: #ce0058;
+}
+
+.calendarmatrix-matrix .control > i {
+    color: #330066;
+}
+
+.calendarmatrix-fare.lowest label:after {
+    color: #FF00CC;
+}
+
+.icon-lowest {
+    color: #330066 !important;
+}
+
+.calendarmatrix-matrix time {
+    background-color: rgba(51, 0, 102, 0.17);
+    padding: 1.4em 0 0 0;
+    margin: 0px;
+    text-align: center;
+}
+
+.calendarmatrix-fare label, .bound-table-cell-reco {
+  /*border: .3em solid rgba(255, 0, 204, 0.03);*/
+  /*background-color: rgba(255, 0, 204, 0.06);*/
+}
+
+.calendarmatrix-carousel-control {
+    background-color: #330066;
+    color: #FFF;
+}
+
+.calendarmatrix-carousel-control:hover {
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    color: #330066;
+}
+
+.calendarmatrix-tooltip-lowestfare {
+    background-color: #FF00CC !important;
+}
+
+.calendarmatrix-tooltip-lowestfare > .arrow:after {
+    border-top-color: #FF00CC !important;
+}
+
+.calendarmatrix-matrix .calendarmatrix-fare input:active + label, .calendarmatrix-matrix .calendarmatrix-fare input.calendarmatrix-radio-button-checked + label {
+    background-color: #330066;
+}
+
+.calendarmatrix-fare input:active + label, .calendarmatrix-fare input.calendarmatrix-radio-button-checked + label {
+    border-color: #330066;
+}
+
+.calendarmatrix-horizontal-dates > .active, .calendarmatrix-outbound-dates > .active {
+    color: #FFF;
+}
+
+.calendarmatrix-fare label:not(.calendarmatrix-disabled):hover {
+    border-color: rgba(51, 0, 102, 0.6);
+}
+
+.calendarmatrix-matrix > header .calendarmatrix-inbound-dates div.active time, .calendarmatrix-matrix > header .calendarmatrix-outbound-dates div.active time {
+    background-color: rgba(51, 0, 102, 0.6);
+}
+
+.calendarmatrix-matrix > header .calendarmatrix-outbound-dates div.active time {
+    border-left: 7px solid #330066;
+}
+
+.calendarmatrix-matrix > header .calendarmatrix-inbound-dates div.active time {
+    border-top: 7px solid #330066;
+}
+
+.calendarmatrix-inner-cell.selected {
+    background-color: #330066;
+}
+
+.calendarmatrix-inner-cell.selected i.icon-lowest {
+    color: #ffffff !important;
+}
+
+.btn.btn-tertiary.tripsummary-btn-price:hover {
+    text-align: center;
+    color: #FFF;
+    background-color: #330066;
+    border-color: #dfdfdf;
+    font-size: 130%;
+    float: right;
+    padding: 6px 12px;
+}
+
+.farereview-title, article.panel.flight-notes-panel > .panel-heading, .purchase-conditions-popup h2 {
+  /*background-color: #8664A8;*/
+    background-color: #330066;
+    color: #ddd;
+}
+
+.farereview-traveller-icon {
+    background-color: #fFCC00;
+    color: #fff;
+}
+
+.availability-page-title {
+    color: #330066;
+}
+
+.availability-page-title > span {
+  /*color:#FF00CC*/
+    color: #555;
+}
+
+a.availability-header-date-calendarLink {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    padding-right: 16px;
+}
+
+.shortcut-container {
+  /*color: #1B1B1B !important;*/
+    color: #FFF;
+}
+
+.icon-caret-down, .icon-remove {
+    color: #555;
+}
+
+.panel-heading-filter .icon-caret-down,
+.panel-heading-filter .icon-remove {
+    color: #FFF;
+}
+
+button:focus, .panel-heading-filter:focus {
+  /*    outline-color: rgba(255, 0, 204, 0.5); */
+    outline-color: #FFF !important;
+}
+
+.panel-heading-filter[aria-expanded=false] {
+    background: #330066;
+  /*background: #DFDFDF;*/
+}
+
+.panel-heading-filter[aria-expanded=true] {
+  /*background: #B699D3;*/
+  /*background: #330066;*/
+    background: #330066;
+  /*background: #DFDFDF;*/
+}
+
+.cell-reco-unavailable {
+    background: #F5F5F5;
+}
+
+.has-feedback .form-control-feedback {
+    color: #785DA7;
+}
+
+.purchase-conditions-popup .btn-category-selected {
+    background-color: #DEDEDE;
+    border-left: 3px solid #555;
+}
+
+.btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active, .btn-tertiary.active, .open .dropdown-toggle.btn-tertiary {
+    background-color: #dfdfdf;
+}
+
+.DPURCView .panel .main-icon {
+    color: #FFCC00;
+}
+
+.icon-question-sign {
+    color: #FFCC00;
+}
+
+input[type="checkbox"] {
+    colot: #330066 !important;
+}
+
+.fop-options-wrapper > ul li {
+    list-style: none;
+}
+
+.slider-handle {
+    border: 2px solid #330066;
+}
+
+.slider-selection {
+    background-image: linear-gradient(to bottom, rgba(51, 0, 102, 0.73) 0%, #330066 100%);
+}
+
+.filter-indicator, .filter-indicator .icon-trash {
+    color: #FFCC00;
+}
+
+.traveller-contact-information-title-icon {
+    display: none;
+}
+
+h2.traveller-page-title .traveller-page-title-icon.icon-main.icon-adult {
+    display: none;
+}
+
+h3.catalogServices-teaser .catalogServices-teaser-title, h2.dialog-title {
+    color: #330066;
+}
+
+.dialog-tabs li.active > a, .dialog-tabs.nav-tabs > li.active > a:hover, .dialog-tabs.nav-tabs > li.active > a:focus {
+    border-top: 5px solid #330066;
+}
+
+.dialog-tabs li.active > a > span {
+    font-weight: 900;
+    padding-bottom: 0.2em;
+}
+
+:not(#foo) .travellers input[type="radio"]:checked + .travellerBox {
+    border-color: #FF00CC;
+}
+
+button.catalogDisplay-service-remove-button {
+    background-color: #330066;
+    color: #FFF;
+}
+
+li.active .flightNumber {
+    color: #777 !important;
+    margin-top: 0.3em;
+}
+
+div.sectionTitle {
+    margin-top: 2em;
+}
+
+div.decks div.deck {
+    margin-top: 0em;
+}
+
+.decks .deck input[name="decks"]:checked + label.deckBox {
+    background-color: #306;
+    color: #FFF;
+}
+
+div.catalogDisplay-dialog-service-price {
+    color: #FF00CC;
+    font-weight: 900;
+}
+
+#servicesbreakdown-container h3 {
+  /*color: #D41F90;*/
+  /* color: #330066; */
+}
+
+.DPURCView .heading-text {
+    font-weight: 800;
+    font-size: 1.5em;
+    top: 0px;
+}
+
+.payment-wrapper .row div > span span {
+    color: #8E1653;
+}
+
+/** Booking Confirmed ***/
+section.panel.reservation-info .area > i {
+    font-size: 4.5em;
+}
+
+section.panel.reservation-info .area > h4 {
+    font-size: 1.5em;
+}
+
+i.icon-plane.main-icon {
+    color: #330066;
+}
+
+ul.status-message-list > li {
+    list-style: none;
+}
+
+.pnrd-view .bold {
+  /* font-size: 1.5em; */
+}
+
+.timeline-segment-line {
+    background: #330066;
+}
+
+.timeline-segment-line:before, .timeline-segment-line:after {
+    border: 0.04em solid #330066;
+}
+
+.timeline-segment:hover > .timeline-segment-line, .timeline-segment:focus > .timeline-segment-line {
+    background: #673AB7;
+}
+
+.timeline-segment:hover > .timeline-segment-line:before, .timeline-segment:hover > .timeline-segment-line:after, .timeline-segment:focus > .timeline-segment-line:before, .timeline-segment:focus > .timeline-segment-line:after {
+  /*  border: 0.04em solid #330066; */
+}
+
+h2.before-departure > i {
+    color: #FFCC00;
+}
+
+botton.reservation-btn {
+    border: 1px solid #F1F1F1;
+}
+
+th.availability-bound-tablecell {
+    text-align: center;
+}
+
+.cell-reco-unavailable {
+    vertical-align: middle;
+    float: left;
+    padding-top: 27px;
+    line-height: 24px;
+    width: 100%;
+}
+
+span#additional_info_conf {
+    display: block;
+}
+
+div.different-airport.different-airport-arrival-departure {
+    padding: 2em;
+}
+
+/******************************************/
+div.travellerColumn {
+    margin-top: 11px;
+}
+
+div.seatColumn div.icon {
+    padding-top: 10px;
+}
+
+div.seatColumn div.icon:after {
+    color: #FFF !important;
+  /*background: #330066 !important;*/
+}
+
+:not(#foo) .travellers input[type=radio]:checked + .travellerBox .icon-seat-selected-num {
+    color: #7441A7;
+}
+
+.seatMapContainer[paxn="paxN1"] .paxN1:before, .seatMapContainer[paxn="paxN2"] .paxN2:before, .seatMapContainer[paxn="paxN3"] .paxN3:before, .seatMapContainer[paxn="paxN4"] .paxN4:before, .seatMapContainer[paxn="paxN5"] .paxN5:before, .seatMapContainer[paxn="paxN6"] .paxN6:before, .seatMapContainer[paxn="paxN7"] .paxN7:before, .seatMapContainer[paxn="paxN8"] .paxN8:before, .seatMapContainer[paxn="paxN9"] .paxN9:before, .icon-seat-available, .icon-seat-chargeable {
+    color: #7441A7;
+}
+
+/*Link*/
+.availability-show-timeline-link {
+    color: #330066;
+}
+
+.tripsummary-primary-btn-icon-caret {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.link-farecomparisons a, .availability-show-timeline-link {
+    font-size: 100% !important;
+}
+
+/* tripsummary-details*/
+.tripsummary-details {
+    font-weight: 100;
+}
+
+a:focus {
+    outline-width: 0px;
+    outline-style: solid;
+    outline-color: #FFF;
+}
+
+/****************************************************/
+/****************** btn *****************************/
+/***************************************************/
+.btn-cancel {
+    background-color: #F3F3F3;
+}
+
+.btn-cancel:hover {
+    background-color: #BCBCBC;
+}
+
+.purchase-conditions .panel.area {
+    background: #F0F0F0 !important;
+}
+
+.header-date-daymonth.availability-header-date-daymonth {
+    font-size: 79%;
+}
+
+i.icon-calendar.header-icon-calendar.availability-header-icon-calendar {
+    font-size: 1.5em;
+}
+
+li.calendar-cell.col-xs-24.calendar-day-cell.best-price {
+    border-top: 0.4em solid #330066;
+    background-color: #FFFFFF;
+}
+
+.month-year-title.month-year-title-span-7-7 {
+    font-size: 120%;
+}
+
+header.bound-header.availability-bound-header {
+    padding: 1em;
+}
+
+.tripsummary-primary-btn-text {
+    text-transform: uppercase;
+}
+
+/**----------------------------Step 1 Flights selection--------------------------------------**/
+/*NT: FF name in center in FPOW page*/
+td.bound-table-header-col {
+    text-align: center;
+}
+
+/*NT: FF name in center in FDFF page*/
+th.ffcomp-col-xs-height1 {
+    text-align: center;
+}
+
+/*NT: FF compare table equal cell in FDFF page*/
+table#ffcomp-table-id.ff-comparison-table {
+    table-layout: fixed;
+}
+
+div.availability-filters {
+    -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
+    background-color: #F5F5F5;
+}
+
+div.shortcut-container > span.filter-indicator-container {
+    float: right;
+    margin-right: 2em;
+}
+
+div.shortcut-container span.filter-indicator {
+    font-weight: normal;
+}
+
+div.price-taxes-details-row > span.price-taxes-qsurcharges-text {
+    display: none !important;
+}
+
+/* Lang = Fr  Show:090617/Pascale */
+/* html[lang='fr'] button#button-tripsummary-purchase-conditions{
+    display: none;
+} */
+/****************************************************************/
+/*********************** Passenger page**************************/
+/****************************************************************/
+/*.panel-primary > .panel-heading {
+    background: none repeat scroll 0 0 #785DA7;
+    border-color: #785DA7;
+    color: #ffffff;
+}*/
+header.servicesbreakdown-panel-heading, header.panel-heading, .panel-primary > .panel-heading, .heading-text.bold {
+    background: #330066;
+    background-color: #330066  !important;
+    color: #FFF !important;
+    letter-spacing: 1px;
+}
+
+section.traveller-contact-information-panel > header {
+    background-color: #330066  !important;
+    color: #FFF !important;
+    letter-spacing: 1px;
+}
+
+.heading-text.bold {
+    font-size: 1.3em;
+}
+
+.traveller-list-container .panel .panel-heading .travellerList-avatar {
+    background-color: #330066;
+    color: #3E075B;
+    border: solid 1px #330066;
+}
+
+.apimTraveller-link.collapsed .icon-chevron-down {
+    color:white;
+}
+
+/*.panel-heading legend{
+    color: #555 !important;
+}*/
+/*.panel-footer{
+    background-color: #E0E0E0;
+    border-top: 4px solid #BCBCBC;;
+}*/
+/**----------------------------Step 2 Choose Services (DFSR)--------------------------------------**/
+/*NT: customize galley icon in seatmap*/
+.uicFacilityGalley {
+    background: #767676 url("../img/client/icon-galley23.jpg") no-repeat scroll 50% 50%;
+}
+
+/*NT: hide seat price*/
+.seatmapPriceBreakdown {
+    display: none;
+}
+
+/*NT: hide services price breakdown*/
+.servicesbreakdown-service-price {
+    display: none;
+}
+
+.servicesbreakdown-total-price {
+    display: none;
+}
+
+/*NT: hide meal price*/
+.catalogDisplay-dialog-total-price {
+    display: none;
+}
+
+.catalogDisplay-dialog-total {
+  /* display:none; */
+    box-shadow: none !important;
+    background: none;
+}
+
+.catalogDisplay-dialog-total > header.panel-heading, .catalogDisplay-dialog-total > section.panel-body {
+    display: none;
+}
+
+div.panel-body.catalogServices-subcategory-panel-body > div.catalogServices-subcategory-panel-desc,
+th.catalogServices-subcategory-price-header.catalogServices-subcategory-table-cell,
+.catalogServices-subcategory-service-price.catalogServices-subcategory-table-cell,
+.catalogServices-subcategory-total-price-section,
+div.panel.panel-default.catalogServices-dialog-total-price {
+    display: none;
+}
+
+div.catalogDisplay-dialog-footer > button,
+button.catalogServices-dialog-btn-primary,
+button.btn-primary.timeout-alert-btn-availability,
+button.btn-primary.timeout-alert-btn-start-over,
+div.panel-btn.filters-panel-btn > button,
+button.timeout-warning-btn-reset-session-text, button.timeout-warning-btn-reset-session.pull-right {
+    font-size: 1em;
+}
+
+span.catalogServices-category-price {
+    display: none;
+}
+
+article.catalogServices-teaser.catalogServices-teaser-MEA > span {
+  /*  display:none !important; */
+  /*  position:relative;
+      top:-30px; */
+}
+
+div.catalogServices-btn-delete {
+  /* position:relative; */
+  /* top: -33px; */
+}
+
+span.teaserDescription {
+    float: left;
+    width: 100%;
+  /*padding-left:1.2em;*/
+}
+
+span.teaserDescription img {
+    width: 100%;
+}
+
+ul.servicesbreakdown-segment-category-list.servicesbreakdown-category-list {
+    margin: 0.5em 0 2em 0;
+}
+
+.catalogServices-teaser-column a {
+    text-decoration: none;
+}
+
+p.box_service {
+    float: left;
+    margin: 0.5em;
+    padding: 0.3em;
+}
+
+/**----------------------------Step 3 PAYMENT (PURC)--------------------------------------**/
+/*NT: add padding top to the default FOP wrapper*/
+.payment .fop-wrapper {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+#tpl3_fopTemplate_fopDisplayMainSection {
+    background-color: #F3F3F3;
+    color: #555;
+    height: auto;
+}
+
+div.row.margin-left-zero, div.row.margin-left-zero div.fop-wrapper {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.row.margin-left-zero, div.fop-options-wrapper {
+    margin-top: 0.5em;
+}
+
+span#tpl5_baggagePolicy > div.panel {
+    margin-top: 2em !important;
+}
+
+div.area.baggage-policy-section {
+    background-color: #330066;
+    color: #FFF;
+}
+
+.ss {
+    font-size: 100;
+}
+
+#showCondition {
+    opacity: 1 !important;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5em;
+}
+
+#FYIHtml {
+    height: 350px;
+    border: 1px solid #cfcfcf;
+    padding: 1em;
+    overflow: auto;
+    overflow-y: scroll;
+    margin: 1em 0;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#TAC {
+    padding: 1.5em;
+}
+
+/*NT: hide insurance header*/
+div.insurance div.heading h2.heading-banner {
+    display: none;
+}
+
+/**----------------------------Multi City flow--------------------------------------**/
+.availability-schedule-outbound-itin, .availability-schedule-inbound-itin {
+    background-color: #f4effa;
+}
+
+.availability-schedule-outbound-flights, .availability-schedule-inbound-flights {
+    background-color: #F9F9F9;
+    border: 1px solid #E8E8E8;
+}
+
+.availability-schedule-active .availability-schedule-outbound-itin, .availability-schedule-active .availability-schedule-inbound-itin {
+    background-color: #330066;
+}
+
+.availability-schedule-select.availability-schedule-outbound-flights, .availability-schedule-select.availability-schedule-inbound-flights {
+  /*     border-color: #330066; */
+    overflow: hidden;
+}
+
+.availability-schedule-outbound-flights {
+    transition-duration: 0.3s;
+}
+
+.availability-schedule-outbound-flights:hover,
+.availability-schedule-inbound-flights:hover {
+    border: 1px #FFCC00 solid;
+    -moz-box-shadow: 0px 0px 7px #BFBFBF;
+    -webkit-box-shadow: 0px 0px 7px #BFBFBF;
+    box-shadow: 0px 0px 7px #BFBFBF;
+}
+
+.availability-schedule-select.availability-schedule-outbound-flights, .availability-schedule-select.availability-schedule-inbound-flights {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #FFCC00;
+}
+
+.availability-schedule-header-cities .fromcity, .availability-schedule-header-cities .tocity {
+    color: #330066;
+}
+
+.availability-schedule-header .header-choose-flight {
+    font-size: 15px;
+}
+
+.availability-schedule-active .availability-schedule-outbound-itin {
+    background-color: #4d2c6e;
+    color: #FFFFFF;
+}
+
+i.selected-flight-icon-class {
+    color: #e0b300;
+}
+
+.fromcity, .tocity {
+  /*     border-bottom: 1px solid #CCC !important;
+      padding-bottom: 0.1em !important; */
+    color: #330066;
+    font-size: 1.2em;
+}
+
+.availability-schedule-date {
+    font-size: 1.2em;
+}
+
+.availability-schedule-info-row > strong {
+  /*      border-bottom: 1px solid #555 !important;
+      padding-bottom: 0.1em !important; */
+    font-size: 1.1em;
+    letter-spacing: 0.02cm;
+}
+
+.availability-schedule-pricing-option-header {
+    background-color: #330066;
+    color: #FFF;
+}
+
+.complex-availability-schedule-badge {
+    border-radius: 10%;
+    background-color: #330066 !important;
+}
+
+.segment-details-right {
+    background-color: #F5F5F5;
+}
+
+.timeline-day-difference {
+    top: 14px;
+}
+
+/* .availability-schedule-active.availability-schedule-outbound-flights, .availability-schedule-active.availability-schedule-inbound-flights */
+/* PTR#10907106 - To display the first letter in capital letter */
+.tripsummary-travellers, .travellerdetails .travellers, .pricedetails .price-taxes-total-traveller {
+    text-transform: initial;
+}
+
+/**-------------(MAPI)-----------**/
+body[data-template-name="MALPI"] div.tripsummary-section-price,
+body[data-template-name="MALPI"] div.pricedetails {
+    display: none !important;
+}
+
+/**-------------(MDFSR)-----------**/
+body[data-template-name="MDFSR"] div.tripsummary-section-price,
+body[data-template-name="MDFSR"] div.pricedetails {
+    display: none !important;
+}
+// body[data-template-name="MDFSR"]{
+//     .box_service{
+//         display: none;
+//     }
+// }
+
+/**----------------------------Confirmation page (CONF)--------------------------------------**/
+/* CSS for offer links in CONF and RTPL*/
+body[data-template-name="RTPL"] .reservation-amount,
+body[data-template-name="RTPL"] .additional-info > p,
+body[data-template-name="RTPL"] #fare-review-price,
+body[data-template-name="RTPL"] .mod-info,
+body[data-template-name="MDFSR"] .icon.icon-seat-available.icon-seat-chargeable,
+body[data-template-name="CONF"] .btn.pay-now-btn {
+    display: none !important;
+}
+
+body[data-template-name="RTPL"] .flight-info-airline-flight {
+    display: block;
+    clear: both;
+    font-size: 1em;
+}
+
+.reservation-actions {
+    display: none;
+}
+
+.TableOffer {
+    width: 100%;
+    background-color: #F3F3F3;
+    border-spacing: 0px;
+}
+
+table.TableOffer tbody tr > td {
+    border: 1px solid #FFF;
+    width: 50%;
+}
+
+.TGINSBanner {
+    text-align: center;
+    display: block !important;
+    clear: both;
+    float: left;
+}
+
+.TGINSBanner > h3 {
+    color: #330066;
+}
+
+.box_TGINSBanner--3box {
+    display: inline-block;
+  /* float:left; */
+  /* width:calc(100%/3); */
+    height: 130px;
+    margin: 0 !important;
+    padding: 0 0.5em;
+}
+
+.box_TGINSBanner--1box {
+    display: inline-block;
+    float: left;
+    margin: 0 !important;
+    padding: 0 0.5em;
+}
+
+.box_TGINSBannerMenu {
+    display: block;
+    clear: both;
+    margin: 1em 0.3em !important;
+    padding: 0;
+    width: 100%;
+}
+
+.box_TGINSBannerMenu > a {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.box_TGINSBannerMenu > a img {
+    width: 100%;
+}
+
+.TGINSBanner > aside img {
+    width: 100%;
+}
+
+i.icon-ticket.main-icon {
+    color: #FFF;
+}
+
+.timeline-segment-line:before, .timeline-segment-line:after {
+    border: none;
+    color: #330066;
+}
+li.servicesbreakdown-bound-no-services{
+    display: none;
+}
+
+/*-----------------FF-comparison------------edit 150816-15:27----*/
+#ffcomp-table-id > tbody tr > td i, #ffcomp-table-id > tbody tr > td, .ffcomp-col-xs-height1, .farefamily-header-cell {
+    color: #FFF !important;
+}
+
+.farefamily-header-cell {
+    text-align: center;
+}
+
+/*---  font-variant 260116-16:18 ---*/
+.flight-info-left,
+.total-duration-text {
+    font-variant: normal !important;
+}
+
+/*--- farefamily-header-cell  260116-16:18---*/
+/*---METHOD OF DELIVERY 260116-16:18---*/
+.DPURCView .panel {
+    border: 1px solid #F3F3F3;
+}
+
+.content-panel-wrapper .panel {
+    padding: 0 1em;
+}
+
+/* Pink Banner TableOffer */
+.TableOffer {
+    margin: 1.5em 0;
+}
+
+.TableOffer > table {
+    background: #eddaf0;
+}
+
+.TableOffer > table tr > td {
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+/* Contact information */
+label[for="tpl14_widget-input-travellerList-additionalOptions-rememberDetails"],
+label[for="tpl14_widget-input-travellerList-additionalOptions-gotoServices"] {
+    color: #3C0077;
+}
+
+/* flight-info-cabin */
+/* .flight-info-cabin div.flight-info-right{color: #ce0058;} */
+/*------ FDFFCPX -------*/
+.ff-column-title {
+  /*text style*/
+    width: 100%;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 5px;
+    overflow: visible;
+    white-space: normal;
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    color: #FFF !important;
+}
+
+.ff-cell {
+    border: none;
+}
+
+.ff-bestprice .ff-besprice-container {
+    border-bottom: none;
+    padding: 0 !important;
+}
+
+.ff-bestprice-text {
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #000000;
+}
+
+#tpl3_fare-family-comparison td {
+    color: #FFF !important;
+    border: none !important;
+}
+
+#tpl3_fare-family-comparison-link-cell {
+    padding-bottom: 0.5em;
+}
+
+.complex-itinerary-city {
+    color: #330066;
+}
+
+.complex-itinerary-bound-index {
+    background-color: #330066;
+}
+
+/*================== pinkbanner ======================*/
+#pinkbanner table.TableOffer tbody tr > td {
+    width: 25% !important;
+}
+
+/*==================== ROH Cross Sell ====================*/
+.box-roh {
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+.box-roh_item {
+    padding: 0.5em;
+    border: 1px solid #e4e4e4;
+    float: left;
+    width: 30%;
+  /* width:calc(95%/3); */
+    box-sizing: border-box;
+    margin: 0.5em;
+    -webkit-box-shadow: 1px 1px 4px -3px gray;
+    -moz-box-shadow: 1px 1px 4px -3px gray;
+    box-shadow: 1px 1px 4px -3px gray;
+}
+
+.box-roh_item > a button {
+    background-color: #FFCC00;
+    border-color: #FFCC00;
+    color: #330066;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.box-roh_item > a {
+    display: block;
+  /*  border:1px solid #333; */
+    float: left;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    position: relative;
+    top: -2em;
+}
+
+.box-roh_item > header {
+    text-align: center;
+    padding: 0.5em;
+    color: #2f007b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    height: 3.5em;
+}
+
+.box-roh_item img {
+    width: 50%;
+    height: 120px;
+    border: 1px solid #555;
+    display: inline-block;
+    float: left;
+}
+
+.box-rop_price-disc {
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+section#roh {
+    display: block;
+    clear: both;
+  /* float: left; */
+  /* width: 100%; */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section#roh > h3 {
+    text-align: left;
+    background-color: #330066;
+    padding: 0.5em;
+    color: #FFF;
+}
+
+section#roh > h4 {
+    text-align: left;
+    color: #8e1653;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.box-roh_item > ul {
+    display: inline-block;
+    width: 120px;
+    float: left;
+    padding: 0 0em;
+    text-align: right;
+}
+
+.box-rop_txt {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+}
+
+.box-rop_price {
+    font-weight: bold;
+    color: #330066;
+}
+
+.box-roh_price-disc {
+    text-decoration: line-through;
+    font-size: 0.5em !important;
+}
+
+.box-roh_exc {
+    background-color: #ff9aeb;
+    color: #330066;
+    text-align: center;
+}
+
+.box-roh_price-disc, .box-roh_price, .box-roh_txt {
+    text-align: right;
+}
+
+.box-roh_txt {
+    color: #c2bbbb;
+}
+
+.box-roh_item > button {
+    float: right;
+    margin-top: 1.5em;
+}
+
+.box-rop_exc {
+    background-color: #8e1653;
+    color: #FFF;
+    text-align: center;
+}
+
+a.box-roh_link_more {
+    margin-right: 1em;
+    display: block;
+    clear: both;
+    position: relative;
+    text-align: right;
+    padding: 1.5em 0;
+}
+
+a.box-roh_link_more > span {
+    margin-left: 0.5em;
+}
+
+.box-roh > p {
+    text-align: left;
+}
+
+.box-roh > a {
+    display: block;
+  /* width: 250px; */
+}
+
+.box-roh_logoROH {
+    width: 250px;
+    display: block;
+    padding: 0.5em;
+}
+
+.box-roh_linklogo {
+    display: block;
+    clear: both;
+    width: 250px;
+}
+// .HotelsOffers{
+//     display: none;
+// }
+/*==================== END ROH Cross Sell ====================*/
+/*===== Add Travellers Info ======*/
+.box-travellers, .box-goodservice_india {
+    width: 100%;
+    margin: 0 0 2em 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ececec;
+}
+
+.box-travellers > header, .box-goodservice_india > header {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: "Roboto Bold";
+}
+
+.box-travellers > header i, .box-goodservice_india > header i {
+    padding-right: 0.6em;
+}
+
+.box-travellers > header ol, .box-goodservice_india > header ol {
+    padding: 1em 0;
+}
+
+.box-travellers > header ol > li, .box-goodservice_india > header ol > li {
+    display: inline-block;
+    margin: 0 1em;
+    width: 40%;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.box-travellers p, .box-goodservice_india p {
+    text-indent: 1em;
+    padding: 0.5em;
+}
+
+.box-travellers p span.box-txt_b, .box-goodservice_india p span.box-txt_b {
+    font-weight: bold;
+}
+
+/*================== Insurance ==================*/
+.insurance div.insurance-select > section.panel.area {
+    float: left;
+}
+
+.insurance .insurance-banner img {
+    max-height: 6em;
+    display: block;
+    margin: 0 auto;
+}
+
+.terms-and-conditions :not(#foo) input[type=checkbox] + label:before, :not(#foo) input[type=radio] + label:before {
+    line-height: 15px !important;
+    vertical-align: middle !important;
+    color: #330066;
+    left: 0 !important;
+    font-size: 16px !important;
+}
+
+/*================== END Insurance ==================*/
+/*==========Subscribe==========*/
+.box-subsrcibe p {
+    padding: 0.5em;
+}
+
+/*==========End Subscribe==========*/
+/**releases JAN17**/
+.owd-calendar-container .calendar-cell .day-info, .owd-calendar-container .calendar-cell .change-week-info {
+    font-size: 18px;
+    color: #888888;
+}
+
+.owd-calendar-container .calendar-cell .inner-calendar-cell-bottom {
+    color: #888888;
+}
+
+.owd-calendar-container .calendar-cell {
+    background-color: #f2ecfa;
+}
+
+.owd-calendar-container .calendar-cell[selected] {
+    border-top: 5px solid #330066;
+    border-left: 1px solid #330066;
+    border-right: 1px solid #330066;
+}
+
+.owd-calendar-container .calendar-cell[selected] > a,
+.owd-calendar-container .calendar-cell[selected] .inner-calendar-cell-bottom,
+.owd-calendar-container .calendar-cell[selected] .day-info {
+    color: #330066 !important;
+}
+
+.owd-calendar-container.calendar-container {
+    background-color: #fbfbfb;
+}
+
+.btn.owd-calendar-slide {
+    background-color: #330066;
+}
+
+.bound-table-flightline:not(.bound-table-flightline-disabled):hover .bound-table-flightline-details {
+    border-left: 10px solid #330066;
+}
+
+/* 08/01/2018 - Coverage for DX responsive - Author : Ambroise PASQUET - Amadeus */
+/* Button disabled style */
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #FFE681;
+    border-color: #FFCC00;
+}
+
+.tripsummary-price-amount .icon-info-sign {
+    color: #330066;
+}
+
+[data-page-device-type="MOBILE"] footer.traveller-panel-footer .col-xs-24 .col-xs-10,
+[data-page-device-type="TABLET"] footer.traveller-panel-footer .col-xs-24 .col-xs-10 {
+    width: 100%;
+}
+
+[data-page-device-type="MOBILE"] footer.traveller-panel-footer .col-xs-24 .col-xs-10 > .form-group,
+[data-page-device-type="TABLET"] footer.traveller-panel-footer .col-xs-24 .col-xs-10 > .form-group {
+    width: 50%;
+}
+
+[data-page-device-type="MOBILE"] .traveller-contact-information-panel [autocomplete] > input.form-control,
+[data-page-device-type="TABLET"] .traveller-contact-information-panel [autocomplete] > input.form-control {
+    width: calc(100% - 15px);
+}
+
+[data-page-device-type="MOBILE"] .seatMapSection div.decks {
+    width: auto;
+}
+
+.DPURCView .box-travellers ol#pList {
+    margin-top: 10px;
+}
+
+.travellerBox .seatPax:after {
+    color: #7441A7;
+}
+
+[data-page-device-type="MOBILE"] #CONF-page input#subscribe {
+    visibility: hidden;
+}
+
+[data-page-device-type="MOBILE"] #CONF-page .box-subsrcibe input[type=checkbox] + label:before {
+    margin-left: 0;
+}
+
+[data-page-device-type="MOBILE"] .plnext-accordion-header,
+[data-page-device-type="TABLET"] .plnext-accordion-header {
+    background-color: #330066;
+}
+
+[data-page-device-type="MOBILE"] .plnext-accordion-header .icon-caret-down,
+[data-page-device-type="TABLET"] .plnext-accordion-header .icon-caret-down {
+    color: white;
+}
+
+[data-page-device-type="MOBILE"] #tripsummary-mini-container .underline-bar,
+[data-page-device-type="MOBILE"] #tripsummary-extended-content .underline-bar,
+[data-page-device-type="TABLET"] #tripsummary-mini-container .underline-bar,
+[data-page-device-type="TABLET"] #tripsummary-extended-content .underline-bar {
+    background-color: #330066;
+}
+
+.reservation-heading.confirmed,
+.reservation-heading.cancelled {
+    background-color: #3e075b;
+}
+
+.confirmation-email-text .icon-envelope,
+.envelope-text,
+.availability-bound .city-name {
+    color: #3e075b;
+}
+
+[data-page-device-type="MOBILE"] .pnrd-view.row .flight-notes-panel span.panel-body,
+[data-page-device-type="TABLET"] .pnrd-view.row .flight-notes-panel span.panel-body {
+    display: block;
+}
+
+[data-page-device-type="MOBILE"] .pnrd-view.row .flight-notes-panel span.panel-body ul {
+    -webkit-padding-start: 10px;
+}
+
+[data-page-device-type="MOBILE"] .servicesbreakdown.panel span.panel-body,
+[data-page-device-type="TABLET"] .servicesbreakdown.panel span.panel-body {
+    display: block;
+}
+
+/*======================= FARE PAGE ==========================*/
+
+section.traveller-panel-body{ 
+    &.panel-body.container-xs-height{
+        .traveller-list-item {
+            width: calc(100%/3);
+            .traveller-icon-border{
+                @include borderStyle(white,auto,auto);
+                @include border-radius(70px);
+                >i{                
+                    @include border-radius(70px);
+                }
+            }
+        }
+
+    }
+}
+
+
+div.price-amount.price-total-amount{ 
+    .price{
+        &-value{
+            @extend %priceTotal;
+        }
+        &-currency{
+            @extend %priceTotal-txt;
+        }
+    }
+}
+div.price-amount.pricebreakdown-total-amount{
+    color:$color_05;
+}
+
+#currency-converter-dialog{
+    div.currency-converter-amount{
+        color:$color_05;
+
+    }
+}
+
+
+/*================== tripsummary-container ===================*/
+@import 'tripsummary-container'; /* 13JUN18*/
+
+/*================== CAR AF UI ======================*/
+/*hide manage booking link on CARS page*/
+#carSearchPanel #manage-booking-link {
+    display: none;
+}
+
+
+/*======================RTPL PAGE=== MAR 02-03-18 =========================*/
+section#RTPL-page-content{
+    .price-details{
+        display: none;
+    }
+}
+
+/*======================FPOW PAGE============================*/
+
+div.traveller-list{ // MAR 02-03-18 
+    width: 100%;
+    .traveller-list-item.traveller-list-item-ADT{
+        display: inline-block;
+        min-width: calc(100%/3);
+    }
+}
+
+#FPOW-page-content{
+    .upsell-bound{
+        .bound-table-cell-reco-available{
+           border-width: 2px;
+       }
+       .availability-reco-icon-lowest, .availability-reco-icon-waiver{
+            padding: 0.3em;
+       }
+   }
+}
+.lowestprice{        
+    border: 2px solid #259800
+}
+@import 'farescomparison'; /* 05JUN18*/
+
+
+/*======================APIM PAGE============================*/
+@import 'APIM';
+
+// div.tpl4_travellerFormContent{
+//     .traveller-panel-body.panel-body  {
+
+//     }
+//     .box-mandatory{
+//         padding: 1em 1em 0 1em;
+//     }
+//     .traveller{
+//         &-panel-body{
+//             &.panel-body {
+//                 padding: 0 1em 1em 1em;
+//             }
+//         }
+//     }
+// }
+
+
+/*======================PURC PAGE=== ========================*/
+div[data-placeholder-path="PURC/pageContent/servicesPolicy"]{
+    margin-top: 2em;
+    header.services-policy-heading{
+        background-color: #330066;
+        color: #FFF;
+    }
+}
+
+div.payment{
+    section.fop-form-wrapper div.fop-wrapper{
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+        margin-top: 7px;
+    }
+}
+
+label[for='abandon']{
+    margin-left: 1.5em;
+    display: block;    
+    >span{
+        padding: 0 0.7em;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;    
+        top: -22px;
+    }
+}
+
+.DPURCView{
+    div.title-text{
+        max-width: 100%;
+    }
+}
+
+
+.popover-content, div.popover.right.shown{ /* <-- 24MAY18*/
+    display: none;
+
+}
+@import 'box-insurance'; /* 05JUN18*/
+/*=========================================================================*/
+
+
+
+@import 'screen';
+@import 'print';
+
+@import 'carrentals';
+
+
+/**********************-- Responsive --***************************/
+@import 'dx-responsive'

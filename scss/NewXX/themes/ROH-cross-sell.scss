@@ -1,0 +1,148 @@
+/*==================== ROH Cross Sell ====================*/
+.box-roh {
+	box-shadow: 1px 1px 1px $color-126;
+	> p {
+		text-align: left;
+	}
+	> a {
+		/* width: 250px; */
+		display: block;
+	}
+}
+
+.box-roh_item {
+	padding: 0.5em;
+	border: 1px solid $color-127;
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	margin: 0.5em;
+	@extend %extend_4;
+	/* width:calc(95%/3); */
+	> a {
+		/* 	border:1px solid #333; */
+		display: block;
+		float: left;
+		width: 100%;
+		text-align: right;
+		box-sizing: border-box;
+		position: relative;
+		top: -2em;
+		button {
+			background-color: $color-129;
+			border-color: $color-129;
+			color: $color-130;
+			font-size: 1.em;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	> header {
+		text-align: center;
+		padding: 0.5em;
+		color: $color-131;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 0.9em;
+		height: 3.5em;
+	}
+	img {
+		width: 50%;
+		height: 120px;
+		border: 1px solid $color-132;
+		display: inline-block;
+		float: left;
+	}
+	> ul {
+		display: inline-block;
+		width: 120px;
+		float: left;
+		padding: 0;
+		text-align: right;
+	}
+	> button {
+		float: right;
+		margin-top: 1.5em;
+	}
+}
+.box-rop_price-disc {
+	text-decoration: line-through;
+	font-size: 1em;
+}
+.box-rop_txt {
+	font-size: 12px;
+	color: $color-135;
+	text-align: right;
+}
+.box-rop_price {
+	font-weight: bold;
+	color: $color-130;
+}
+.box-roh_price-disc {
+	text-decoration: line-through;
+	font-size: 0.5em !important;
+	text-align: right;
+}
+.box-roh_exc {
+	background-color: $color-136;
+	color: $color-130;
+	text-align: center;
+}
+.box-roh_price {
+	text-align: right;
+}
+.box-roh_txt {
+	text-align: right;
+	color: $color-137;
+}
+.box-rop_exc {
+	background-color: $color-134;
+	color: $color-133;
+	text-align: center;
+}
+.box-roh_logoROH {
+	width: 250px;
+	display: block;
+	padding: 0.5em;
+}
+.box-roh_linklogo {
+	display: block;
+	clear: both;
+	width: 250px;
+}
+#pinkbanner table.TableOffer tbody tr > td {
+	width: 25% !important;
+}
+section#roh {
+	/* float: left; */
+	/* width: 100%; */
+	display: block;
+	clear: both;
+	box-sizing: border-box;
+	text-align: center;
+	> h3 {
+		text-align: left;
+		background-color: $color-130;
+		padding: 0.5em;
+		color: $color-133;
+	}
+	> h4 {
+		text-align: left;
+		color: $color-134;
+		font-weight: bold;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+}
+a.box-roh_link_more {
+	margin-right: 1em;
+	display: block;
+	clear: both;
+	position: relative;
+	text-align: right;
+	padding: 1.5em 0;
+	> span {
+		margin-left: 0.5em;
+	}
+} 
+/*==================== END ROH Cross Sell ====================*/

@@ -1,0 +1,124 @@
+@media (max-width: 767px) {
+
+    /*#######  Header ######*/
+    header#main-layout-header {
+        padding: 1em;
+    }
+    /*#######  Content ######*/
+    #page-content {
+        padding-top: 0px !important;
+    }
+
+
+
+    /*#######  body calendar matrix ######*/
+    .body-ax-calendar-matrix {
+
+        .fdcs-title .bound-header{
+        	div.header-panel .city-name{
+				    color: #330066;
+        	}
+
+        }
+        .calendarmatrix{
+        	.calendarmatrix-legend{
+        		margin-right: 0px;
+        	}
+        	.legend-icon-container{
+        		margin-right: 8px
+        	}
+        }
+        #calendarmatrix-container {
+        	.calendarmatrix-inner-cell.cell-shape.selected{
+        		background-color: #330066;
+        		border-left: 1px solid #330066;
+        		border-right: 1px solid #330066;
+        		border-bottom: 1px solid #330066;
+        	}
+        }
+    }
+
+    /*#### Fare ####*/
+	.bound-table-flightline:not(.bound-table-flightline-disabled):hover .bound-table-flightline-details{
+		border-left: 0px solid #330066;
+	}
+	.bound-table-flightline-fare-family-list{
+		border-left: 0px solid #330066;	
+	}
+
+    /*#######  Continue ######*/
+    #tripsummary-container {
+        display: none;
+        #tripsummary-mini-container {
+            background-color: #F3F3F3;
+        }
+        button.nav-button {
+            background-color: #FFFFFF;
+            color: #330066;
+        }
+        .tripsummary-price-amount {
+            .tripsummary-price-note-button {
+                background-color: #F3F3F3;
+                >i {
+                    color: #330066;
+                }
+            }
+        }
+
+        .tripsummary-tablet-row-expanded {
+            background-color: #330066;
+            .tripsummary-price-note-button {
+                background-color: #330066;
+                >i {
+                    color: #FFFFFF;
+                }
+            }
+            .tripsummary-cell-expanded>h2 span,
+            .tripsummary-cell-expanded>h2 i,
+            .tripsummary-cell-price {
+                color: #FFFFFF;
+            }
+            .tripsummary-price-amount-container {
+                >abbr,
+                >span {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .tripsummary-sticky-wrapper {
+        top: auto !important;
+        bottom: 0;
+        display: block !important;
+        position: fixed;
+    }
+    #page-content {
+        padding-bottom: 7em;
+    }
+
+    /*#### breadcrumb ####*/
+    .bread-crumb-component {
+        .steps-container {
+            ol>li.current {
+                border-bottom: 0px solid #FFFFFF;
+            }
+        }
+    }
+    .bread-crumb-component {
+        .steps-container {
+            margin-top: 10px;
+        }
+    }
+
+
+    /*#### Hide ####*/
+    .calendarmatrix-result-header ,#owd-pricing-description, #matrix-pricing-description{
+        display: none;
+    }
+}
+
+@media (max-height: 479px) {
+    #tripsummary-container.tripsummary-sticky {
+        position: fixed !important;
+    }
+}

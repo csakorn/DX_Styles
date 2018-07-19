@@ -1,0 +1,47 @@
+// --------------------- PURC
+.box-insurance {
+    margin: 0;
+    p{
+        font-size: 13px;        
+    }
+    >ul li {
+        font-family: Roboto Regular !important;
+        font-weight: normal !important;
+        i{ font-size: 13px;}
+    }
+    &_detail {
+    	float: left;
+        &-img {
+            display: inline-block;
+            float: left;
+            img{
+            	width: 60px;
+            }
+        }
+        &-content {
+            float: left !important;
+            font-family: Roboto Regular !important;
+            font-weight: normal !important;
+            display: inline-block;
+            width: 80%;
+            float: left !important;
+            margin-left: 1em;
+            font-size: 13px;
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.insurance {
+    .insurance-banner{ width: 20%;}
+    .insurance-purchase { width: 80%;}
+}
+
+.insurance-radio-selection{	float:left;}
+.insurance-warning-message{
+    display: block !important;
+    clear: both !important;
+    padding: 0.5em;
+}

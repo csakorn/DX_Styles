@@ -1,0 +1,7 @@
+/*'Your booking'*/
+.tripsummary-title-text { 
+	color: $color-02;
+    background-color: $color-03;    
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='$color-04', endColorstr='$color-05');/*For IE7-8-9*/ 
+	height: 1%;/*For IE7*/   
+}

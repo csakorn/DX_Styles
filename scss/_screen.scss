@@ -1,0 +1,113 @@
+@media screen and(max-device-width: 883px) {
+	.availability-header-locationfrom {
+		padding: 0;
+		margin: 0;
+	}
+	.availability-header-date {
+		padding: 0;
+	}
+	.bound-table-flightline-details {
+		border: none;
+		padding: 0.5em 0.5em;
+	}
+	.cell-reco-unavailable {
+		border: 1px solid $color_03;
+	}
+	.bound-table-cell-reco-available {
+		border: 1px solid $color_03;
+	}
+	.availability-font-xlarge {
+		font-size: 2.1vw;
+	}
+	.availability-table-fare-cell {
+		padding: 0 0.3em;
+		margin-left: 0.21em;
+	}
+	.box-roh_item {
+		> img {
+			width: 100%;
+			display: block;
+			clear: both;
+		}
+		> ul {
+			width: 100%;
+			display: block;
+			clear: both;
+			li {
+				width: 100%;
+				display: block;
+				clear: both;
+			}
+		}
+		> a {
+			top: inherit;
+		}
+	}
+	.header-destination.availability-header-destination {
+		float: left;
+		margin: 0 0 1em 0;
+		.icon-arrow-right {
+			padding: 0;
+			margin: 0;
+			font-size: 4vw !important;
+		}
+		> .icon-plane {
+			padding: 0;
+			margin: 0;
+			font-size: 5vw;
+		}
+	}
+	.header-date.availability-header-date > .availability-header-date-details {
+		font-size: 3vw;
+	}
+	div.cell-reco {
+		padding: 0 2px 0 0 !important;
+	}
+	.cell-reco-price > abbr {
+		font-size: 2.1vw;
+	}
+	.show-timeline.availability-show-timeline {
+		width: 100% !important;
+	}
+	.tripsummary-details > {
+		.tripsummary-time {
+			font-size: 2.2vw;
+		}
+		.tripsummary-departure {
+			display: block;
+			clear: both;
+		}
+		.tripsummary-return {
+			display: block;
+			clear: both;
+		}
+	}
+}
+
+@media screen and(max-device-width: 1024px) and(min-device-width: 768px) {
+	.box-roh_item {
+		width: 30%;
+		> img {
+			display: block;
+			clear: both;
+			margin: 0 auto;
+			float: none;
+		}
+		> ul {
+			display: block;
+			clear: both;
+			margin: 0 auto;
+			float: none;
+			li {
+				display: block;
+				clear: both;
+				margin: 0 auto;
+				float: none;
+			}
+		}
+		> a {
+			top: inherit;
+			float: none;
+		}
+	}
+}

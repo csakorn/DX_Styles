@@ -1,0 +1,1724 @@
+@import 'colors';
+@import 'extend';
+
+
+body {
+    background-color: $color_04;
+}
+
+header {
+    &#main-layout-header {
+        padding: 0.5em 0 0 1em;
+    }
+    &.servicesbreakdown-panel-heading {
+        @extend %extend_1;
+    }
+    &.panel-heading {
+        @extend %extend_1;
+    }
+    &.bound-header.availability-bound-header {
+        padding: 1em;
+    }
+}
+
+.tripsummary-title-text {
+    color: $color_04;
+    background-color: $color_05;
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='$color_06', endcolorstr='$color_07');
+    height: 1%;
+}
+
+.current {
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: none !important;
+}
+
+.bread-crumb-title {}
+
+.bread-crumb-container {
+    background: $color_05;
+}
+
+#page-template-header {}
+
+.bread-crumb-component {
+    background-color: inherit;
+    ol li {
+        &.current {
+            border-bottom: 0.0em solid $color_04;
+            strong {
+                border-bottom: none;
+            }
+        }
+        &.done {
+            border-bottom: 0.0em solid $color_04;
+        }
+        &.current::before {
+            background: none repeat scroll 0 0 $color_04;
+            color: $color_01;
+        }
+        &.done::before {
+            background: none repeat scroll 0 0 $color_04;
+            color: $color_01;
+        }
+    }
+}
+
+
+.pnrd-view {
+    .confirm-banner {
+        background-color: $color_08;
+        color: $color_04;
+        margin: 0;
+        padding: 0.7em 0;
+    }
+    .bold {}
+}
+
+a {
+    color: $color_08;
+    &:hover {
+        color: $color_08;
+    }
+    &:visited {
+        color: $color_08;
+    }
+    &:active {
+        color: $color_08;
+    }
+    &.availability-header-date-calendarLink {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        padding-right: 16px;
+    }
+    &:focus {
+        outline-width: 0;
+        outline-style: solid;
+        outline-color: $color_04;
+    }
+    &.box-roh_link_more {
+        margin-right: 1em;
+        display: block;
+        clear: both;
+        position: relative;
+        text-align: right;
+        padding: 1.5em 0;
+        >span {
+            margin-left: 0.5em;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $color_06;
+    border-color: $color_06;
+    color: $color_05;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        background-color: $color_05;
+    }
+    &:focus {
+        background-color: $color_08;
+        border-color: $color_08;
+    }
+    &:active {
+        background-color: $color_08;
+        border-color: $color_08;
+    }
+    &.active {
+        background-color: $color_08;
+        border-color: $color_08;
+    }
+    &.disabled {
+        background-color: $color_44;
+        border-color: $color_06;
+        &:hover {
+            background-color: $color_44;
+            border-color: $color_06;
+        }
+        &:focus {
+            background-color: $color_44;
+            border-color: $color_06;
+        }
+        &:active {
+            background-color: $color_44;
+            border-color: $color_06;
+        }
+        &.active {
+            background-color: $color_44;
+            border-color: $color_06;
+        }
+    }
+}
+
+.alert-warning {
+    background-color: $color_04;
+    border-color: $color_09;
+    color: $color_10;
+}
+
+.thai-logo {
+    padding: 20px;
+}
+
+.star-alliance {
+    padding: 20px;
+}
+
+.row-overflowed {
+    text-align: center;
+}
+
+#modify-flights-dropdown {
+    display: none;
+}
+
+.fop-option-list {}
+
+.payment {
+    .fop-wrapper {
+        padding-left: 8px;
+        padding-top: 8px;
+    }
+    .payment-wrapper .fop-options-wrapper .mop-btn.fop-option-selected {
+        background-color: $color_08;
+        color: $color_04;
+    }
+}
+
+#tpl3_fopTemplate_fopDisplayMainSection {
+    background-color: $color_25;
+    color: $color_01;
+    height: auto;
+    a {
+        color: $color_11;
+    }
+    h2 {
+        margin: 1px;
+    }
+}
+
+.catalogServices-teaser {
+    height: auto;
+}
+
+.catalogServices-dialog-btn-primary {
+    float: none;
+}
+
+.catalogDisplay-btn-validate {
+    float: none;
+}
+
+div {
+    &#ErrPic {
+        display: block;
+        clear: both;
+        float: right;
+        margin-right: 2em; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+    }
+    &#startoverlink {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1em;
+    }
+    &#bread-crumb {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 6px 6px -3px $color_05 inset;
+    }
+    &.sectionTitle {
+        margin-top: 2em;
+    }
+    &.catalogDisplay-dialog-service-price {
+        color: $color_14;
+        font-weight: 900;
+    }
+    &.travellerColumn {
+        margin-top: 11px;
+    }
+    &.availability-filters {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 3px 3px 1px $color_27;
+        background-color: $color_18;
+    }
+    &.shortcut-container {
+        >span.filter-indicator-container {
+            float: right;
+            margin-right: 2em;
+        }
+        span.filter-indicator {
+            font-weight: normal;
+        }
+    }
+    &.catalogServices-btn-delete {}
+    &.fop-options-wrapper {
+        margin-top: 0.5em;
+    }
+    &.decks div.deck {
+        margin-top: 0;
+    }
+    &.seatColumn div.icon {
+        padding-top: 10px;
+        &:after {
+            color: $color_04 !important;
+        }
+    }
+    &.price-taxes-details-row>span.price-taxes-qsurcharges-text {
+        display: none !important;
+    }
+    &.panel-body.catalogServices-subcategory-panel-body>div.catalogServices-subcategory-panel-desc {
+        display: none;
+    }
+    &.panel.panel-default.catalogServices-dialog-total-price {
+        display: none;
+    }
+    &.catalogDisplay-dialog-footer>button {
+        font-size: 1em;
+    }
+    &.panel-btn.filters-panel-btn>button {
+        font-size: 1em;
+    }
+    &.row.margin-left-zero {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.5em;
+        div.fop-wrapper {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &.area.baggage-policy-section {
+        background-color: $color_05;
+        color: $color_04;
+    }
+    &.insurance div.heading h2.heading-banner {
+        display: none;
+    }
+}
+
+input[type="text"] {
+    color: $color_05;
+}
+
+input[type="checkbox"] {
+    color: $color_05;
+    colot: $color_05 !important;
+}
+
+.loading-content {
+    background: $url_0 no-repeat scroll 0 0 transparent;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 450px;
+    background-position-x: center;
+}
+
+.loading-image {
+    display: none;
+}
+
+.btn {
+    &.btn-tertiary {
+        &.tripsummary-btn-title:hover {
+            color: $color_04;
+            background-color: $color_05;
+            border-color: $color_12;
+        }
+        &.tripsummary-btn-price:hover {
+            text-align: center;
+            color: $color_04;
+            background-color: $color_05;
+            border-color: $color_16;
+            font-size: 130%;
+            float: right;
+            padding: 6px 12px;
+        }
+    }
+    &.owd-calendar-slide {
+        background-color: $color_05;
+    }
+}
+
+.fdcs-title-outboundcity {
+    color: $color_05;
+}
+
+.fdcs-title-outboundairport {
+    color: $color_01;
+}
+
+.calendarmatrix-location-container {
+    h3 {
+        font-size: 1em;
+    }
+    i {
+        &.icon-plane {
+            color: $color_05;
+        }
+        &.icon-plane-return {
+            color: $color_05;
+        }
+    }
+}
+
+.calendarmatrix-horizontal-dates {
+    .calendarmatrix-date-tooltip-arrow {
+        color: $color_05;
+    }
+    >.active {
+        color: $color_04;
+    }
+}
+
+.calendarmatrix-outbound-dates {
+    .calendarmatrix-date-tooltip-arrow {
+        color: $color_05;
+    }
+    >.active {
+        color: $color_04;
+    }
+}
+
+.calendarmatrix-matrix {
+    time {
+        background-color: $color_15;
+        padding: 1.4em 0 0 0;
+        margin: 0;
+        text-align: center;
+    }
+    >header {
+        .calendarmatrix-inbound-dates div.active time {
+            background-color: $color_17;
+            border-top: 7px solid $color_05;
+        }
+        .calendarmatrix-outbound-dates div.active time {
+            background-color: $color_17;
+            border-left: 7px solid $color_05;
+        }
+    }
+    .control>i {
+        color: $color_05;
+    }
+    .calendarmatrix-fare input {
+        &:active+label {
+            background-color: $color_05;
+        }
+        &.calendarmatrix-radio-button-checked+label {
+            background-color: $color_05;
+        }
+    }
+}
+
+.calendarmatrix-fare {
+    input {
+        &:active+label {
+            border-color: $color_05;
+        }
+        &.calendarmatrix-radio-button-checked+label {
+            border-color: $color_05;
+        }
+    }
+    &.lowest label:after {
+        color: $color_14;
+    }
+    label:not(.calendarmatrix-disabled):hover {
+        border-color: $color_17;
+    }
+}
+
+.icon-lowest {
+    color: $color_05 !important;
+}
+
+.bound-table-cell-reco {}
+
+.calendarmatrix-carousel-control {
+    background-color: $color_05;
+    color: $color_04;
+    &:hover {
+        background-color: $color_04;
+        border: 1px solid $color_16;
+        color: $color_05;
+    }
+}
+
+.calendarmatrix-tooltip-lowestfare {
+    background-color: $color_14 !important;
+    >.arrow:after {
+        border-top-color: $color_14 !important;
+    }
+}
+
+.farereview-title {
+    background-color: $color_05;
+    color: $color_03;
+}
+
+article {
+    &.panel.flight-notes-panel>.panel-heading {
+        background-color: $color_05;
+        color: $color_03;
+    }
+    &.catalogServices-teaser.catalogServices-teaser-MEA>span {}
+}
+
+.purchase-conditions-popup {
+    h2 {
+        background-color: $color_05;
+        color: $color_03;
+    }
+    .btn-category-selected {
+        background-color: $color_03;
+        border-left: 3px solid $color_01;
+    }
+}
+
+.farereview-traveller-icon {
+    background-color: $color_06;
+    color: $color_04;
+}
+
+.availability-page-title {
+    color: $color_05;
+    >span {
+        color: $color_01;
+    }
+}
+
+.shortcut-container {
+    color: $color_04;
+}
+
+.icon-caret-down {
+    color: $color_01;
+}
+
+.icon-remove {
+    color: $color_01;
+}
+
+.panel-heading-filter {
+    .icon-caret-down {
+        color: $color_04;
+    }
+    .icon-remove {
+        color: $color_04;
+    }
+    &:focus {
+        outline-color: $color_04!important;
+    }
+}
+
+button {
+    &:focus {
+        outline-color: $color_04!important;
+    }
+    &.catalogDisplay-service-remove-button {
+        background-color: $color_05;
+        color: $color_04;
+    }
+    &.catalogServices-dialog-btn-primary {
+        font-size: 1em;
+    }
+    &.btn-primary {
+        &.timeout-alert-btn-availability {
+            font-size: 1em;
+        }
+        &.timeout-alert-btn-start-over {
+            font-size: 1em;
+        }
+    }
+    &.timeout-warning-btn-reset-session-text {
+        font-size: 1em;
+    }
+    &.timeout-warning-btn-reset-session.pull-right {
+        font-size: 1em;
+    }
+}
+
+.panel-heading-filter[aria-expanded=false] {
+    background: $color_05;
+}
+
+.panel-heading-filter[aria-expanded=true] {
+    background: $color_05;
+}
+
+.cell-reco-unavailable {
+    background: $color_18;
+    vertical-align: middle;
+    float: left;
+    padding-top: 27px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.btn-tertiary {
+    &:hover {
+        background-color: $color_16;
+    }
+    &:focus {
+        background-color: $color_16;
+    }
+    &:active {
+        background-color: $color_16;
+    }
+    &.active {
+        background-color: $color_16;
+    }
+}
+
+.DPURCView {
+    .panel {
+        border: 1px solid $color_25;
+        .main-icon {
+            color: $color_06;
+        }
+    }
+    .heading-text {
+        font-weight: 800;
+        font-size: 1.5em;
+        top: 0;
+    }
+    .box-travellers ol#pList {
+        margin-top: 10px;
+    }
+}
+
+.icon-question-sign {
+    color: $color_06;
+}
+
+.slider-handle {
+    border: 2px solid $color_05;
+}
+
+.slider-selection {
+    background-image: linear-gradient(to bottom, $color_20 0, $color_05 100%);
+}
+
+.filter-indicator {
+    color: $color_06;
+    .icon-trash {
+        color: $color_06;
+    }
+}
+
+.traveller-contact-information-title-icon {
+    display: none;
+}
+
+h2 {
+    &.dialog-title {
+        color: $color_05;
+    }
+    &.traveller-page-title .traveller-page-title-icon.icon-main.icon-adult {
+        display: none;
+    }
+    &.before-departure>i {
+        color: $color_06;
+    }
+}
+
+.dialog-tabs {
+    li.active>a {
+        border-top: 5px solid $color_05;
+        >span {
+            font-weight: 900;
+            padding-bottom: 0.2em;
+        }
+    }
+    &.nav-tabs>li.active>a {
+        &:hover {
+            border-top: 5px solid $color_05;
+        }
+        &:focus {
+            border-top: 5px solid $color_05;
+        }
+    }
+}
+
+li {
+    &.active .flightNumber {
+        color: $color_21 !important;
+        margin-top: 0.3em;
+    }
+    &.calendar-cell.col-xs-24.calendar-day-cell.best-price {
+        border-top: 0.4em solid $color_05;
+        background-color: $color_04;
+    }
+}
+
+section {
+    &#roh {
+        display: block;
+        clear: both; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        text-align: center;
+        >h3 {
+            text-align: left;
+            background-color: $color_05;
+            padding: 0.5em;
+            color: $color_04;
+        }
+        >h4 {
+            text-align: left;
+            color: $color_22;
+            font-weight: bold;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+    }
+    &.panel.reservation-info .area {
+        >i {
+            font-size: 4.5em;
+        }
+        >h4 {
+            font-size: 1.5em;
+        }
+    }
+}
+
+i {
+    &.selected-flight-icon-class {
+        color: $color_34;
+    }
+    &.icon-plane.main-icon {
+        color: $color_05;
+    }
+    &.icon-calendar.header-icon-calendar.availability-header-icon-calendar {
+        font-size: 1.5em;
+    }
+    &.icon-ticket.main-icon {
+        color: $color_04;
+    }
+}
+
+ul {
+    &.status-message-list>li {
+        list-style: none;
+    }
+    &.servicesbreakdown-segment-category-list.servicesbreakdown-category-list {
+        margin: 0.5em 0 2em 0;
+    }
+}
+
+.timeline-segment-line {
+    background: $color_05;
+    &:before {
+        border: none;
+        color: $color_05;
+    }
+    &:after {
+        border: none;
+        color: $color_05;
+    }
+}
+
+.timeline-segment {
+    &:hover>.timeline-segment-line {
+        background: $color_23;
+        &:before {}
+        &:after {}
+    }
+    &:focus>.timeline-segment-line {
+        background: $color_23;
+        &:before {}
+        &:after {}
+    }
+}
+
+th {
+    &.availability-bound-tablecell {
+        text-align: center;
+    }
+    &.ffcomp-col-xs-height1 {
+        text-align: center;
+    }
+    &.catalogServices-subcategory-price-header.catalogServices-subcategory-table-cell {
+        display: none;
+    }
+}
+
+.icon-seat-available {
+    color: $color_24;
+}
+
+.icon-seat-chargeable {
+    color: $color_24;
+}
+
+.availability-show-timeline-link {
+    color: $color_05;
+    font-size: 100% !important;
+}
+
+.tripsummary-primary-btn-icon-caret {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.tripsummary-details {
+    font-weight: 100;
+}
+
+.btn-cancel {
+    background-color: $color_25;
+    &:hover {
+        background-color: $color_12;
+    }
+}
+
+.tripsummary-primary-btn-text {
+    text-transform: uppercase;
+}
+
+table {
+    &#ffcomp-table-id.ff-comparison-table {
+        table-layout: fixed;
+    }
+    &.TableOffer tbody tr>td {
+        border: 1px solid $color_04;
+        width: 50%;
+    }
+}
+
+.uicFacilityGalley {
+    background: $color_21 $url_1 no-repeat scroll 50% 50%;
+}
+
+.seatmapPriceBreakdown {
+    display: none;
+}
+
+.servicesbreakdown-service-price {
+    display: none;
+}
+
+.servicesbreakdown-total-price {
+    display: none;
+}
+
+.catalogDisplay-dialog-total-price {
+    display: none;
+}
+
+.catalogDisplay-dialog-total {
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none !important;
+    background: none;
+    >header.panel-heading {
+        display: none;
+    }
+    >section.panel-body {
+        display: none;
+    }
+}
+
+.catalogServices-subcategory-total-price-section {
+    display: none;
+}
+
+span {
+    &.catalogServices-category-price {
+        display: none;
+    }
+    &.teaserDescription {
+        float: left;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &#tpl5_baggagePolicy>div.panel {
+        margin-top: 2em !important;
+    }
+}
+
+.ss {
+    font-size: 100;
+}
+
+#showCondition {
+    opacity: 1 !important;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5em;
+}
+
+#FYIHtml {
+    height: 350px;
+    border: 1px solid $color_28;
+    padding: 1em;
+    overflow: auto;
+    overflow-y: scroll;
+    margin: 1em 0; //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 2px 2px 8px $color_29;
+}
+
+#TAC {
+    padding: 1.5em;
+}
+
+.availability-schedule-outbound-itin {
+    background-color: $color_30;
+}
+
+.availability-schedule-inbound-itin {
+    background-color: $color_30;
+}
+
+.availability-schedule-outbound-flights {
+    background-color: $color_31;
+    border: 1px solid $color_32; //Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+    transition-duration: 0.3s;
+    &:hover {
+        border: 1px $color_06 solid; //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 7px $color_12;
+    }
+}
+
+.availability-schedule-inbound-flights {
+    background-color: $color_31;
+    border: 1px solid $color_32;
+    &:hover {
+        border: 1px $color_06 solid; //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 7px $color_12;
+    }
+}
+
+.availability-schedule-active {
+    .availability-schedule-outbound-itin {
+        background-color: $color_05;
+        background-color: $color_33;
+        color: $color_04;
+    }
+    .availability-schedule-inbound-itin {
+        background-color: $color_05;
+    }
+}
+
+.availability-schedule-select {
+    &.availability-schedule-outbound-flights {
+        @extend %extend_2;
+    }
+    &.availability-schedule-inbound-flights {
+        @extend %extend_2;
+    }
+}
+
+.availability-schedule-header-cities {
+    .fromcity {
+        color: $color_05;
+    }
+    .tocity {
+        color: $color_05;
+    }
+}
+
+.fromcity {
+    color: $color_05;
+    font-size: 1.2em;
+}
+
+.tocity {
+    color: $color_05;
+    font-size: 1.2em;
+}
+
+.availability-schedule-date {
+    font-size: 1.2em;
+}
+
+.availability-schedule-pricing-option-header {
+    background-color: $color_05;
+    color: $color_04;
+}
+
+.complex-availability-schedule-badge {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 10%;
+    background-color: $color_05 !important;
+}
+
+.segment-details-right {
+    background-color: $color_18;
+}
+
+.timeline-day-difference {
+    top: 14px;
+}
+
+.tripsummary-travellers {
+    text-transform: initial;
+}
+
+body[data-template-name="MDFSR"] {
+    div {
+        &.tripsummary-section-price {
+            display: none !important;
+        }
+        &.pricedetails {
+            display: none !important;
+        }
+    }
+    .icon.icon-seat-available.icon-seat-chargeable {
+        display: none !important;
+    }
+}
+
+body[data-template-name="RTPL"] {
+    .reservation-amount {
+        display: none !important;
+    }
+    #fare-review-price {
+        display: none !important;
+    }
+    .mod-info {
+        display: none !important;
+    }
+    .flight-info-airline-flight {
+        display: block;
+        clear: both;
+        font-size: 1em;
+    }
+    .additional-info>p {
+        display: none !important;
+    }
+}
+
+// 280218
+section#RTPL-page{
+    .reservation-heading .price-details{
+        display: none;
+    }
+}
+
+.reservation-actions {
+    display: none;
+}
+
+.TableOffer {
+    width: 100%;
+    background-color: $color_25;
+    border-spacing: 0;
+    margin: 1.5em 0;
+    >table {
+        background: $color_35;
+        tr>td {
+            border-bottom: 1px solid $color_18;
+            border-top: 1px solid $color_18;
+            border-left: 1px solid $color_18;
+            border-right: 1px solid $color_18;
+        }
+    }
+}
+
+.TGINSBanner {
+    text-align: center;
+    display: block !important;
+    clear: both;
+    float: left;
+    >h3 {
+        color: $color_05;
+    }
+    >aside img {
+        width: 100%;
+    }
+}
+
+.box_TGINSBanner--3box {
+    display: inline-block;
+    height: 130px;
+    margin: 0 !important;
+    padding: 0 0.5em;
+}
+
+.box_TGINSBanner--1box {
+    display: inline-block;
+    float: left;
+    margin: 0 !important;
+    padding: 0 0.5em;
+}
+
+.box_TGINSBannerMenu {
+    display: block;
+    clear: both;
+    margin: 1em 0.3em !important;
+    padding: 0;
+    width: 100%;
+    >a {
+        width: 100%;
+        display: block;
+        clear: both;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.ffcomp-col-xs-height1 {
+    color: $color_04!important;
+}
+
+.farefamily-header-cell {
+    color: $color_04!important;
+    text-align: center;
+}
+
+.flight-info-left {
+    font-variant: normal !important;
+}
+
+.total-duration-text {
+    font-variant: normal !important;
+}
+
+label[for="tpl14_widget-input-travellerList-additionalOptions-rememberDetails"] {
+    color: $color_36;
+}
+
+label[for="tpl14_widget-input-travellerList-additionalOptions-gotoServices"] {
+    color: $color_36;
+}
+
+.ff-column-title {
+    width: 100%;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 5px;
+    overflow: visible;
+    color_04-space: normal;
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    color: $color_04!important;
+}
+
+.ff-cell {
+    border: none;
+}
+
+.ff-bestprice-text {
+    color: $color_04; //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 0 1px $color_07;
+}
+
+#tpl3_fare-family-comparison-link-cell {
+    padding-bottom: 0.5em;
+}
+
+.complex-itinerary-city {
+    color: $color_05;
+}
+
+.complex-itinerary-bound-index {
+    background-color: $color_05;
+}
+
+.box-roh {
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 1px 1px 1px $color_37;
+    >p {
+        text-align: left;
+    }
+    >a {
+        display: block;
+    }
+}
+
+.box-roh_item {
+    padding: 0.5em;
+    border: 1px solid $color_38;
+    float: left;
+    width: 30%; //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    margin: 0.5em; //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 1px 1px 4px -3px $color_29;
+    >a {
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: right; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        position: relative;
+        top: -2em;
+        button {
+            background-color: $color_06;
+            border-color: $color_06;
+            color: $color_05;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    >header {
+        text-align: center;
+        padding: 0.5em;
+        color: $color_36;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9em;
+        height: 3.5em;
+    }
+    img {
+        width: 50%;
+        height: 120px;
+        border: 1px solid $color_01;
+        display: inline-block;
+        float: left;
+    }
+    >ul {
+        display: inline-block;
+        width: 120px;
+        float: left;
+        padding: 0;
+        text-align: right;
+    }
+    >button {
+        float: right;
+        margin-top: 1.5em;
+    }
+}
+
+.box-rop_price-disc {
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+.box-rop_txt {
+    font-size: 12px;
+    color: $color_39;
+    text-align: right;
+}
+
+.box-rop_price {
+    font-weight: bold;
+    color: $color_05;
+}
+
+.box-roh_price-disc {
+    text-decoration: line-through;
+    font-size: 0.5em !important;
+    text-align: right;
+}
+
+.box-roh_exc {
+    background-color: $color_40;
+    color: $color_05;
+    text-align: center;
+}
+
+.box-roh_price {
+    text-align: right;
+}
+
+.box-roh_txt {
+    text-align: right;
+    color: $color_41;
+}
+
+.box-rop_exc {
+    background-color: $color_22;
+    color: $color_04;
+    text-align: center;
+}
+
+.box-roh_logoROH {
+    width: 250px;
+    display: block;
+    padding: 0.5em;
+}
+
+.box-roh_linklogo {
+    display: block;
+    clear: both;
+    width: 250px;
+}
+
+.box-travellers {
+    @extend %extend_3;
+    >header {
+        @extend %extend_4;
+        i {
+            padding-right: 0.6em;
+        }
+        ol {
+            padding: 1em 0;
+            >li {
+                @extend %extend_5;
+            }
+        }
+    }
+    p {
+        text-indent: 1em;
+        padding: 0.5em;
+        span.box-txt_b {
+            font-weight: bold;
+        }
+    }
+}
+
+.box-goodservice_india {
+    @extend %extend_3;
+    >header {
+        @extend %extend_4;
+        i {
+            padding-right: 0.6em;
+        }
+        ol {
+            padding: 1em 0;
+            >li {
+                @extend %extend_5;
+            }
+        }
+    }
+    p {
+        text-indent: 1em;
+        padding: 0.5em;
+        span.box-txt_b {
+            font-weight: bold;
+        }
+    }
+}
+
+.insurance {
+    div.insurance-select>section.panel.area {
+        float: left;
+    }
+    .insurance-banner img {
+        max-height: 6em;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+.owd-calendar-container {
+    .calendar-cell {
+        background-color: $color_30;
+        .day-info {
+            font-size: 18px;
+            color: $color_39;
+        }
+        .change-week-info {
+            font-size: 18px;
+            color: $color_39;
+        }
+        .inner-calendar-cell-bottom {
+            color: $color_39;
+        }
+    }
+    .calendar-cell[selected] {
+        border-top: 5px solid $color_05;
+        border-left: 1px solid $color_05;
+        border-right: 1px solid $color_05;
+        >a {
+            color: $color_05 !important;
+        }
+        .inner-calendar-cell-bottom {
+            color: $color_05 !important;
+        }
+        .day-info {
+            color: $color_05 !important;
+        }
+    }
+    &.calendar-container {
+        background-color: $color_31;
+    }
+}
+
+.btn-primary[disabled] {
+    background-color: $color_44;
+    border-color: $color_06;
+    &:hover {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &:focus {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &:active {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &.active {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+}
+
+[data-page-device-type="MOBILE"] {
+    #CONF-page {
+        input#subscribe {
+            visibility: hidden;
+        }
+        .box-subsrcibe input[type=checkbox]+label:before {
+            margin-left: 0;
+        }
+    }
+    .plnext-accordion-header {
+        background-color: $color_05;
+        .icon-caret-down {
+            color: $color_04;
+        }
+    }
+    footer.traveller-panel-footer .col-xs-24 .col-xs-10 {
+        width: 100%;
+        >.form-group {
+            width: 50%;
+        }
+    }
+    .traveller-contact-information-panel [autocomplete]>input.form-control {
+        width: calc(100% - 15px);
+    }
+    .seatMapSection div.decks {
+        width: auto;
+    }
+    #tripsummary-mini-container .underline-bar {
+        background-color: $color_05;
+    }
+    #tripsummary-extended-content .underline-bar {
+        background-color: $color_05;
+    }
+}
+
+[data-page-device-type="TABLET"] {
+    .plnext-accordion-header {
+        background-color: $color_05;
+        .icon-caret-down {
+            color: $color_04;
+        }
+    }
+    footer.traveller-panel-footer .col-xs-24 .col-xs-10 {
+        width: 100%;
+        >.form-group {
+            width: 50%;
+        }
+    }
+    .traveller-contact-information-panel [autocomplete]>input.form-control {
+        width: calc(100% - 15px);
+    }
+    #tripsummary-mini-container .underline-bar {
+        background-color: $color_05;
+    }
+    #tripsummary-extended-content .underline-bar {
+        background-color: $color_05;
+    }
+}
+
+.reservation-heading {
+    &.confirmed {
+        background-color: $color_08;
+    }
+    &.cancelled {
+        background-color: $color_08;
+    }
+}
+
+.envelope-text {
+    color: $color_08;
+}
+
+.open .dropdown-toggle {
+    &.btn-primary {
+        background-color: $color_08;
+        border-color: $color_08;
+    }
+    &.btn-tertiary {
+        background-color: $color_16;
+    }
+}
+
+.row.availability-bound-tablerow {
+    text-align: center;
+}
+
+.fop-form-wrapper .external-heading {
+    display: none;
+}
+
+#reservation-menu .dropdown-container .reservation-btn {
+    display: none;
+}
+
+h4#alert-title-global-error-message {
+    width: 95%;
+    display: inline-block;
+}
+
+#global-error-message>div.content {
+    padding-bottom: 3em;
+}
+
+.steps-container>ol li {
+    color: $color_04;
+}
+
+.calendarmatrix .tooltip.calendarmatrix-tooltip {
+    background-color: $color_05;
+}
+
+.alert .alert-icon {
+    color: $color_05;
+}
+
+.icon-service.catalogServices-title-icon {
+    color: $color_05;
+}
+
+.alert-icon.alert-icon-danger {
+    color: $color_13;
+}
+
+.calendarmatrix-inner-cell.selected {
+    background-color: $color_05;
+    i.icon-lowest {
+        color: $color_04!important;
+    }
+}
+
+.has-feedback .form-control-feedback {
+    color: $color_19;
+}
+
+.fop-options-wrapper>ul li {
+    list-style: none;
+}
+
+h3.catalogServices-teaser .catalogServices-teaser-title {
+    color: $color_05;
+}
+
+:not(#foo) {
+    .travellers {
+        input[type="radio"]:checked+.travellerBox {
+            border-color: $color_14;
+        }
+        input[type=radio]:checked+.travellerBox .icon-seat-selected-num {
+            color: $color_24;
+        }
+    }
+    input[type=radio]+label:before {
+        @extend %extend_6;
+    }
+}
+
+.decks .deck input[name="decks"]:checked+label.deckBox {
+    background-color: $color_05;
+    color: $color_04;
+}
+
+#servicesbreakdown-container h3 {}
+
+.payment-wrapper .row div>span span {
+    color: $color_22;
+}
+
+botton.reservation-btn {
+    border: 1px solid $color_02;
+}
+
+.seatMapContainer[paxn="paxN1"] .paxN1:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN2"] .paxN2:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN3"] .paxN3:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN4"] .paxN4:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN5"] .paxN5:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN6"] .paxN6:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN7"] .paxN7:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN8"] .paxN8:before {
+    color: $color_24;
+}
+
+.seatMapContainer[paxn="paxN9"] .paxN9:before {
+    color: $color_24;
+}
+
+.link-farecomparisons a {
+    font-size: 100% !important;
+}
+
+.purchase-conditions .panel.area {
+    background: $color_26 !important;
+}
+
+.header-date-daymonth.availability-header-date-daymonth {
+    font-size: 79%;
+}
+
+.month-year-title.month-year-title-span-7-7 {
+    font-size: 120%;
+}
+
+td.bound-table-header-col {
+    text-align: center;
+}
+
+.panel-primary>.panel-heading {
+    @extend %extend_1;
+}
+
+.heading-text.bold {
+    @extend %extend_1;
+    font-size: 1.3em;
+}
+
+.traveller-list-container .panel .panel-heading .travellerList-avatar {
+    background-color: $color_05;
+    color: $color_08;
+    border: solid 1px $color_05;
+}
+
+.catalogServices-subcategory-service-price.catalogServices-subcategory-table-cell {
+    display: none;
+}
+
+.catalogServices-teaser-column a {
+    text-decoration: none;
+}
+
+p.box_service {
+    float: left;
+    margin: 0.5em;
+    padding: 0.3em;
+}
+
+.availability-schedule-header .header-choose-flight {
+    font-size: 15px;
+}
+
+.availability-schedule-info-row>strong {
+    font-size: 1.1em;
+    letter-spacing: 0.02cm;
+}
+
+.travellerdetails .travellers {
+    text-transform: initial;
+}
+
+.pricedetails .price-taxes-total-traveller {
+    text-transform: initial;
+}
+
+body[data-template-name="MALPI"] div {
+    &.tripsummary-section-price {
+        display: none !important;
+    }
+    &.pricedetails {
+        display: none !important;
+    }
+}
+
+body[data-template-name="CONF"] .btn.pay-now-btn {
+    display: none !important;
+}
+
+#ffcomp-table-id>tbody tr>td {
+    color: $color_04!important;
+    i {
+        color: $color_04 !important;
+    }
+}
+
+.content-panel-wrapper .panel {
+    padding: 0 1em;
+}
+
+.ff-bestprice .ff-besprice-container {
+    border-bottom: none;
+    padding: 0 !important;
+}
+
+#tpl3_fare-family-comparison td {
+    color: $color_04!important;
+    border: none !important;
+}
+
+#pinkbanner table.TableOffer tbody tr>td {
+    width: 30% !important;
+}
+
+.terms-and-conditions :not(#foo) input[type=checkbox]+label:before {
+    @extend %extend_6;
+}
+
+.box-subsrcibe p {
+    padding: 0.5em;
+}
+
+.bound-table-flightline:not(.bound-table-flightline-disabled):hover .bound-table-flightline-details {
+    border-left: 10px solid $color_05;
+}
+
+fieldset[disabled] .btn-primary {
+    background-color: $color_44;
+    border-color: $color_06;
+    &:hover {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &:focus {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &:active {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+    &.active {
+        background-color: $color_44;
+        border-color: $color_06;
+    }
+}
+
+.tripsummary-price-amount .icon-info-sign {
+    color: $color_05;
+}
+
+.travellerBox .seatPax:after {
+    color: $color_24;
+}
+
+.confirmation-email-text .icon-envelope {
+    color: $color_08;
+}
+
+.availability-bound .city-name {
+    color: $color_08;
+}
+
+@import 'screen';
+@import 'print';

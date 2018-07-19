@@ -1,0 +1,672 @@
+/*==========Subscribe==========*/
+@page {
+	size: A4;
+	margin: 1em 1.5em;
+}
+@media print {
+	* {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		font-size: 7pt;
+	}
+	#pinkbanner {
+		display: none;
+	}
+	#flights-timeline {
+		display: none;
+	}
+	#skip-to-RTPL-page {
+		display: none;
+	}
+	.TGINSBanner {
+		display: none;
+	}
+	#car-search {
+		display: none;
+	}
+	#plnext-skip-link-container {
+		display: none;
+	}
+	.box-roh {
+		display: none !important;
+	}
+	.box_TGINSBanner--3box {
+		display: none !important;
+	}
+	.box_TGINSBanner--1box {
+		display: none !important;
+	}
+	.services-policy {
+		display: none !important;
+	}
+	.box-subsrcibe {
+		display: none !important;
+	}
+	#rentalCar {
+		display: none !important;
+		display: none !important;
+	}
+	.ticket-details {
+		display: inline-block;
+	}
+	.traveller-name {
+		font-size: 1.3em;
+	}
+	/*Header*/
+	#main-layout-header {
+		padding: 0.7em 0 !important;
+		> img {
+			width: 12em;
+		}
+		a > img {
+			width: 150px;
+			height: 15px;
+		}
+	}
+	/* BOOKING CONFIRMED */
+	.confirm-banner {
+		font-size: 230%;
+		margin-top: 0 !important;
+	}
+	/* reservation    */
+	#reservation-details {
+		margin: 0.5em 0 !important;
+		padding: 0.2em !important;
+		border: 1px solid $color-141;
+		h3 {
+			font-size: 3em !important;
+			margin-top: 1em !important;
+			margin-left: 1em !important;
+		}
+		h2 {
+			font-size: 3em !important;
+			margin-top: 1em !important;
+			margin-left: 1em !important;
+		}
+		span {
+			font-size: 0.8em !important;
+			font-weight: 300 !important;
+		}
+		/*.reservation-amount span>span{ font-weight:2em !important; border:1px solid #555; padding:1.5em !important;} */
+		ul.reservation-table {
+			margin-left: 2em !important;
+			font-size: 1.5em;
+		}
+		div.mod-info {
+			dt {
+				font-weight: normal;
+				font-size: 0.8em;
+			}
+			dd {
+				font-weight: normal;
+				font-size: 0.8em;
+			}
+		}
+	}
+	.additional-info {
+		margin-left: 2em !important;
+	}
+	.reservation-payment-info-standard {
+		font-size: 1.3em;
+		margin-bottom: 1.5em !important;
+	}
+	/*  BOOKING SUMMARY   */
+	/*  Price */
+	#fare-review-price {
+		margin-top: 2em !important;
+		h2.horizontal-title {
+			display: none;
+		}
+	}
+	.price-right {
+		h3.subtitle.price-taxes {
+			font-size: 1.7em !important;
+			margin-top: 1em !important;
+		}
+		ul.breakdown-list li.price-taxes {
+			font-size: 1.7em !important;
+		}
+	}
+	.farereview-container-dialog-horizontal-row {
+		padding: 0 1.5em !important;
+		div.price-summary {
+			margin: 0.3em 0 !important;
+		}
+	}
+	.bounds-list {
+		padding-bottom: 1em!important;
+	}
+	.itinerary-details {
+		position: static;
+		margin-top: -1.1em !important;
+		margin-left: 0.5em!important;
+		padding: 0 !important;
+		position: static !important;
+		float: right;
+		padding-left: 0.5em !important;
+	}
+	/*.bounds-list{display:none;}*/
+	#fare-review-bounds {
+		margin: 0 !important;
+		border: 1px solid $color-141;
+		padding: 0.6em !important;
+		margin-top: 0.7em !important;
+		a.bound-timeline-link {
+			display: none;
+		}
+		h3.title {
+			margin: 0.8em 0 !important;
+		}
+	}
+	#fare-review-travellers {
+		border: 1px solid $color-141;
+		padding: 0.6em !important;
+		margin-top: 0.7em !important;
+		margin: 0 !important;
+		margin-top: 1.2em !important;
+	}
+	.segment-details-departure {
+		margin: 0 !important, padding:0em !important;
+	}
+	.segment-details-left {
+		margin: 0.2em 0 !important;
+		padding: 0 0 0 1em !important;
+	}
+	.segment-details-right {
+		margin-top: -1em !important;
+		padding-left: 0.5em !important;
+	}
+	.col-section-traveller {
+		margin: 0 !important;
+		border: none !important;
+	}
+	.traveller-list {
+		margin: 0 !important;
+	}
+	#services-breakdown {
+		margin: 0 !important;
+		margin-top: 1.2em !important;
+	}
+	#before-departure {
+		margin: 0 !important;
+		.area-content {
+			width: 100% !important;
+			font-size: 0.5em;
+			h3 {
+				font-size: 1.5em;
+			}
+		}
+		h3 {
+			font-size: 0.6em;
+			margin-top: 1em !important;
+			> i:before {
+				font-size: 0.7em !important;
+			}
+		}
+		h2 {
+			font-size: 1em !important;
+		}
+	}
+	.servicesbreakdown {
+		margin-top: 1.2em !important;
+		h3 {
+			font-size: 1em !important;
+		}
+		ul > li {
+			font-size: 0.7em !important;
+		}
+	}
+	#flight-notes {
+		clear: both;
+		margin: 0.8em 0 !important;
+		ul {
+			padding-left: 1.5em !important;
+		}
+	}
+	/* ADDITIONAL INFORMATION: */
+	#additional_info_conf {
+		padding: 0 !important;
+		margin: 0 !important;
+		b {
+			font-weight: normal !important;
+			font-size: 0.8em;
+		}
+	}
+	.area {
+		padding: 0.5em;
+	}
+	/* #additional_info_conf ul>li{font-size:0.5em !important;} */
+	.servicesbreakdown-panel-body {
+		> h3 {
+			width: calc(100%/2);
+			box-sizing: border-box;
+			display: inline-block;
+			float: left;
+			position: absolute;
+			margin-top: 0.5em !important;
+		}
+		> ul {
+			width: calc(100%/2);
+			box-sizing: border-box;
+			display: inline-block;
+			float: left;
+			margin-top: 2em !important;
+			> ul li {
+				border-bottom: 1px solid $color-142;
+				> div {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+	a[href]:after {
+		content: "";
+	}
+	a.ticket-link {
+		font-size: 0.98em;
+		text-decoration: inherit !important;
+		font-family: $font_1;
+		> i {
+			display: none;
+		}
+	}
+	ul.reservation-table {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.price-taxes.clearfix {
+		font-size: 1.5em;
+	}
+	.price-airline-charges.clearfix {
+		font-size: 1.5em;
+	}
+	.price-traveller.small-text {
+		font-size: 1.5em;
+	}
+	.price-currency.price-total-amount-currency {
+		font-size: 1em !important;
+	}
+	.price-value.price-total-amount-value {
+		font-size: 1em !important;
+	}
+	.pricedetails .breakdown-list > li {
+		margin: 0.2em 0 !important;
+	}
+	.full-width-print > h2 {
+		font-size: 2em;
+		padding-bottom: 1em !important;
+	}
+	.price-panel-body div {
+		&.price-left {
+			font-size: 0.76em !important;
+		}
+		&.price-right {
+			font-size: 0.76em !important;
+		}
+	}
+	/* Travellers */
+	.traveller-details-text {
+		&.traveller-type {
+			font-size: 0.7em!important;
+		}
+		&.traveller-name {
+			font-size: 1em!important;
+			font-weight: 600;
+		}
+	}
+	.traveller-list-row {
+		width: calc(100%/2);
+		float: left;
+		> div {
+			width: calc(100%/2);
+		}
+	}
+	.traveller-icon.icon-adult {
+		font-size: 1.5em;
+	}
+	/*itinerary-details */
+	span.itinerary {
+		font-size: 0.8em !important;
+	}
+	time.date {
+		font-size: 0.8em !important;
+	}
+	/* .reservation-info header{display:none;} */
+}
+@media screen and(max-device-width: 883px) {
+	/*------------Step 1 -----------*/
+
+	/*## destination ##*/
+	.availability-header-locationfrom {
+		padding: 0;
+		margin: 0;
+	}
+	/*## date ##*/
+	.availability-header-date {
+		padding: 0;
+	}
+	/*## Booking Confirmed ##*/
+	.bound-table-flightline-details {
+		border: none;
+		padding: 0.5em 0.5em;
+	}
+	.cell-reco-unavailable {
+		border: 1px solid $color-143;
+	}
+	.bound-table-cell-reco-available {
+		border: 1px solid $color-143;
+	}
+	.availability-font-xlarge {
+		font-size: 2.1vw;
+	}
+	.availability-table-fare-cell {
+		padding: 0 0.3em;
+		margin-left: 0.21em;
+	}
+	.box-roh_item {
+		> img {
+			width: 100%;
+			display: block;
+			clear: both;
+		}
+		> ul {
+			width: 100%;
+			display: block;
+			clear: both;
+			li {
+				width: 100%;
+				display: block;
+				clear: both;
+			}
+		}
+		> a {
+			top: inherit;
+		}
+	}
+	.header-destination.availability-header-destination {
+		float: left;
+		margin: 0 0 1em 0;
+		.icon-arrow-right {
+			padding: 0;
+			margin: 0;
+			font-size: 4vw !important;
+		}
+		> .icon-plane {
+			padding: 0;
+			margin: 0;
+			font-size: 5vw;
+		}
+	}
+	.header-date.availability-header-date > .availability-header-date-details {
+		font-size: 3vw;
+	}
+	div.cell-reco {
+		padding: 0 2px 0 0 !important;
+	}
+	.cell-reco-price > abbr {
+		font-size: 2.1vw;
+	}
+	.show-timeline.availability-show-timeline {
+		width: 100% !important;
+	}
+	/*## tripsummary  ##*/
+	/* 	.tripsummary-itinerary-details .tripsummary-total-duration-value{ font-size:vw} */
+	.tripsummary-details > {
+		.tripsummary-time {
+			font-size: 2.2vw;
+		}
+		.tripsummary-departure {
+			display: block;
+			clear: both;
+		}
+		.tripsummary-return {
+			display: block;
+			clear: both;
+		}
+	}
+
+	/* ROH	 */
+	.box-roh_item {
+		> ul {
+			@extend %extend_9;
+			li {
+				@extend %extend_9;
+			}
+		}
+		> a {
+			top: inherit;
+		}
+	}
+	box-roh_item > img {
+		@extend %extend_9;
+	}
+}
+/**releases JAN17**/
+.owd-calendar-container {
+	.calendar-cell {
+		background-color: $color-145;
+		.day-info {
+			font-size: 18px;
+			color: $color-144;
+		}
+		.change-week-info {
+			font-size: 18px;
+			color: $color-144;
+		}
+		.inner-calendar-cell-bottom {
+			color: $color-144;
+		}
+	}
+	.calendar-cell[selected] {
+		border-top: 5px solid $color-146;
+		border-left: 1px solid $color-146;
+		border-right: 1px solid $color-146;
+		> a {
+			color: $color-146 !important;
+		}
+		.inner-calendar-cell-bottom {
+			color: $color-146 !important;
+		}
+		.day-info {
+			color: $color-146 !important;
+		}
+	}
+	&.calendar-container {
+		background-color: $color-147;
+	}
+}
+@media screen and(max-device-width: 1024px) and(min-device-width: 768px) {
+	/* ROH	 */
+	.box-roh_item {
+		width: 30%;
+		> img {
+			@extend %extend_10;
+		}
+		> ul {
+			@extend %extend_10;
+			li {
+				@extend %extend_10;
+			}
+		}
+		> a {
+			top: inherit;
+			float: none;
+		}
+	}
+}
+
+/* 08/01/2018 - Coverage for DX responsive - Author : Ambroise PASQUET - Amadeus */
+
+/* Button disabled style */
+.btn-primary[disabled] {
+	background-color: $color-148;
+	border-color: $color-149;
+	&:hover {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:focus {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&.active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+}
+[data-page-device-type="MOBILE"] {
+	#CONF-page {
+		input#subscribe {
+			visibility: hidden;
+		}
+		.box-subsrcibe input[type=checkbox] + label:before {
+			margin-left: 0;
+		}
+	}
+	.plnext-accordion-header {
+		background-color: $color-146;
+		.icon-caret-down {
+			color: $color-152;
+		}
+	}
+	footer.traveller-panel-footer .col-xs-24 .col-xs-10 {
+		width: 100%;
+		> .form-group {
+			width: 50%;
+		}
+	}
+	.traveller-contact-information-panel [autocomplete] > input.form-control {
+		width: calc(100% - 15px);
+	}
+	.seatMapSection div.decks {
+		width: auto;
+	}
+	#tripsummary-mini-container .underline-bar {
+		background-color: $color-146;
+	}
+	#tripsummary-extended-content .underline-bar {
+		background-color: $color-146;
+	}
+	.pnrd-view.row .flight-notes-panel span.panel-body {
+		display: block;
+		ul {
+			//vendor-prefix found
+			//-webkit-padding-start: 10px
+		}
+	}
+	.servicesbreakdown.panel span.panel-body {
+		display: block;
+	}
+}
+[data-page-device-type="TABLET"] {
+	.plnext-accordion-header {
+		background-color: $color-146;
+		.icon-caret-down {
+			color: $color-152;
+		}
+	}
+	footer.traveller-panel-footer .col-xs-24 .col-xs-10 {
+		width: 100%;
+		> .form-group {
+			width: 50%;
+		}
+	}
+	.traveller-contact-information-panel [autocomplete] > input.form-control {
+		width: calc(100% - 15px);
+	}
+	#tripsummary-mini-container .underline-bar {
+		background-color: $color-146;
+	}
+	#tripsummary-extended-content .underline-bar {
+		background-color: $color-146;
+	}
+	.pnrd-view.row .flight-notes-panel span.panel-body {
+		display: block;
+	}
+	.servicesbreakdown.panel span.panel-body {
+		display: block;
+	}
+}
+.reservation-heading {
+	&.confirmed {
+		background-color: $color-151;
+	}
+	&.cancelled {
+		background-color: $color-151;
+	}
+}
+.envelope-text {
+	color: $color-151;
+}
+.box-subsrcibe p {
+	padding: 0.5em;
+}
+.btn.owd-calendar-slide {
+	background-color: $color-146;
+}
+.bound-table-flightline:not(.bound-table-flightline-disabled):hover .bound-table-flightline-details {
+	border-left: 10px solid $color-146;
+}
+.btn-primary.disabled {
+	background-color: $color-148;
+	border-color: $color-149;
+	&:hover {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:focus {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&.active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+}
+fieldset[disabled] .btn-primary {
+	background-color: $color-148;
+	border-color: $color-149;
+	&:hover {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:focus {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&:active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+	&.active {
+		background-color: $color-148;
+		border-color: $color-149;
+	}
+}
+.tripsummary-price-amount .icon-info-sign {
+	color: $color-146;
+}
+.DPURCView .box-travellers ol#pList {
+	margin-top: 10px;
+}
+.travellerBox .seatPax:after {
+	color: $color-150;
+}
+.confirmation-email-text .icon-envelope {
+	color: $color-151;
+}
+.availability-bound .city-name {
+	color: $color-151;
+}

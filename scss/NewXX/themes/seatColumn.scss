@@ -1,0 +1,60 @@
+div {
+	&.travellerColumn {
+		margin-top: 11px;
+	}
+	&.seatColumn div.icon {
+		/*background: #330066 !important;*/
+		padding-top: 10px;
+		&:after {
+			color: $color-88 !important;
+		}
+	}
+}
+
+.icon-seat-available {
+	color: $color-89;
+}
+
+.icon-seat-chargeable {
+	color: $color-89;
+}
+
+:not(#foo) .travellers input[type=radio]:checked + .travellerBox .icon-seat-selected-num {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN1"] .paxN1:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN2"] .paxN2:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN3"] .paxN3:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN4"] .paxN4:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN5"] .paxN5:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN6"] .paxN6:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN7"] .paxN7:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN8"] .paxN8:before {
+	color: $color-89;
+}
+
+.seatMapContainer[paxn="paxN9"] .paxN9:before {
+	color: $color-89;
+}

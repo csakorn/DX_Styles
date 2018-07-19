@@ -1,0 +1,189 @@
+/**----------------------------Confirmation page (CONF)--------------------------------------**/
+/* CSS for offer links in CONF and RTPL*/
+body[data-template-name="RTPL"] {
+	.reservation-amount {
+		display: none !important;
+	}
+	#fare-review-price {
+		display: none !important;
+	}
+	.mod-info {
+		display: none !important;
+	}
+	.flight-info-airline-flight {
+		display: block;
+		clear: both;
+		font-size: 1em;
+	}
+	.additional-info > p {
+		display: none !important;
+	}
+}
+.reservation-actions {
+	display: none;
+}
+
+.TGINSBanner {
+	text-align: center;
+	display: block !important;
+	clear: both;
+	float: left;
+	> h3 {
+		color: $color-121;
+	}
+	> aside img {
+		width: 100%;
+	}
+}
+.box_TGINSBanner--3box {
+	/* float:left; */
+	/* width:calc(100%/3); */
+	display: inline-block;
+	height: 130px;
+	margin: 0 !important;
+	padding: 0 0.5em;
+}
+.box_TGINSBanner--1box {
+	display: inline-block;
+	float: left;
+	margin: 0 !important;
+	padding: 0 0.5em;
+}
+.box_TGINSBannerMenu {
+	display: block;
+	clear: both;
+	margin: 1em 0.3em !important;
+	padding: 0;
+	width: 100%;
+	> a {
+		width: 100%;
+		display: block;
+		clear: both;
+		img {
+			width: 100%;
+		}
+	}
+}
+.timeline-segment-line {
+	&:before {
+		border: none;
+		color: $color-121;
+	}
+	&:after {
+		border: none;
+		color: $color-121;
+	}
+}
+
+.ff-column-title {
+	width: 100%;
+	letter-spacing: -0.02em;
+	margin: 0;
+	padding: 5px;
+	overflow: visible;
+	color-120-space: normal;
+	text-align: center;
+	position: relative;
+	font-weight: 300;
+	color: $color-120 !important;
+}
+
+#tpl3_fare-family-comparison-link-cell {
+	padding-bottom: 0.5em;
+}
+.complex-itinerary-city {
+	color: $color-121;
+}
+.complex-itinerary-bound-index {
+	background-color: $color-121;
+}
+body[data-template-name="MDFSR"] .icon.icon-seat-available.icon-seat-chargeable {
+	display: none !important;
+}
+body[data-template-name="CONF"] .btn.pay-now-btn {
+	display: none !important;
+}
+table.TableOffer tbody tr > td {
+	border: 1px solid $color-120;
+	width: 50%;
+}
+i.icon-ticket.main-icon {
+	color: $color-120;
+}
+
+/*-----------------FF-comparison------------edit 150816-15:27----*/
+#ffcomp-table-id > tbody tr > td {
+	color: $color-120 !important;
+	i {
+		color: $color-120 !important;
+	}
+}
+.ffcomp-col-xs-height1 {
+	color: $color-120 !important;
+}
+.farefamily-header-cell {
+	color: $color-120 !important;
+	text-align: center;
+}
+
+/*---  font-variant 260116-16:18 ---*/
+.flight-info-left {
+	font-variant: normal !important;
+}
+.total-duration-text {
+	font-variant: normal !important;
+}
+/*--- farefamily-header-cell  260116-16:18---*/
+
+/*---METHOD OF DELIVERY 260116-16:18---*/
+.DPURCView .panel {
+	border: 1px solid $color-119;
+}
+.content-panel-wrapper .panel {
+	padding: 0 1em;
+}
+
+#tpl3_fare-family-comparison td {
+	color: $color-120 !important;
+	border: none !important;
+}
+
+/* Pink Banner TableOffer */
+.TableOffer {
+	width: 100%;
+	background-color: $color-119;
+	border-spacing: 0;
+	margin: 1.5em 0;
+	> table {
+		background: $color-122;
+		tr > td {
+			border-bottom: 1px solid $color-123;
+			border-top: 1px solid $color-123;
+			border-left: 1px solid $color-123;
+			border-right: 1px solid $color-123;
+		}
+	}
+}
+
+/* Contact information */
+label[for="tpl14_widget-input-travellerList-additionalOptions-rememberDetails"] {
+	color: $color-124;
+}
+label[for="tpl14_widget-input-travellerList-additionalOptions-gotoServices"] {
+	color: $color-124;
+}
+/* flight-info-cabin */
+/* .flight-info-cabin div.flight-info-right{color: #ce0058;} */
+
+/*------ FDFFCPX -------*/
+.ff-cell {
+	border: none;
+}
+.ff-bestprice-text {
+	color: $color-120;
+	text-shadow: 0 0 1px $color-125;
+}
+.ff-bestprice .ff-besprice-container {
+	border-bottom: none;
+	padding: 0 !important;
+}

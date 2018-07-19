@@ -1,0 +1,81 @@
+%extend_1 {
+	background: $color-99;
+	background-color: $color-99 !important;
+	color: $color-100 !important;
+	letter-spacing: 1px;
+}
+
+%extend_2 {
+	overflow: hidden;
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: $color-113;
+}
+
+%extend_3 {
+	border: 1px $color-113 solid;
+	-moz-box-shadow: 0px 0px 7px #BFBFBF;
+	-webkit-box-shadow: 0px 0px 7px #BFBFBF;
+	box-shadow: 0 0 7px $color-114;
+}
+
+%extend_4 {
+	-webkit-box-shadow: 1px 1px 4px -3px rgba(128,128,128,1);
+	-moz-box-shadow: 1px 1px 4px -3px rgba(128,128,128,1);
+	box-shadow: 1px 1px 4px -3px $color-128;
+}
+
+%extend_5 {
+	width: 100%;
+	margin: 0 0 2em 0;
+	background-color: $color-138;
+	border-top: 1px solid $color-139;
+}
+
+%extend_6 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-family: $font_1;
+}
+
+%extend_7 {
+	display: inline-block;
+	margin: 0 1em;
+	width: 40%;
+	padding: 0.5em 0;
+	text-transform: uppercase;
+}
+
+%extend_8 {
+	line-height: 15px !important;
+	vertical-align: middle !important;
+	color: $color-140;
+	left: 0 !important;
+	font-size: 16px !important;
+}
+
+%extend_9 {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+%extend_10 {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	float: none;
+}
+
+%extend_11 {
+	background:#330066;
+	background: -moz-linear-gradient(#330066, #3F0677);
+	background: -o-linear-gradient(#330066, #3F0677);
+	background: -ms-linear-gradient(#330066, #3F0677);/*For IE10*/
+}
+
+%extend_12 {
+	box-shadow: 0 6px 6px -3px #330066 inset;
+	-moz-box-shadow: 0 6px 6px -3px #330066 inset;	
+	-webkit-box-shadow: 0 6px 6px -3px #330066 inset;
+}

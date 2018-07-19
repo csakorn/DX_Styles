@@ -1,0 +1,39 @@
+/****************************************************/
+/****************** btn *****************************/
+/***************************************************/
+.btn-cancel {
+	background-color: $color-92;
+	&:hover {
+		background-color: $color-93;
+	}
+}
+
+.tripsummary-primary-btn-text {
+	text-transform: uppercase;
+}
+
+.purchase-conditions .panel.area {
+	background: $color-94 !important;
+}
+
+.header-date-daymonth.availability-header-date-daymonth {
+	font-size: 79%;
+}
+
+i.icon-calendar.header-icon-calendar.availability-header-icon-calendar {
+	font-size: 1.5em;
+}
+
+li.calendar-cell.col-xs-24.calendar-day-cell.best-price {
+	border-top: 0.4em solid $color-95;
+	background-color: $color-96;
+}
+
+.month-year-title.month-year-title-span-7-7 {
+	font-size: 120%;
+}
+
+header.bound-header.availability-bound-header {
+	padding: 1em;
+}
+

@@ -1,0 +1,17 @@
+body {
+	background-color: $color_04;
+}
+header {
+	&#main-layout-header {
+		padding: 0.5em 0 0 1em;
+	}
+	&.servicesbreakdown-panel-heading {
+		@extend %extend_1;
+	}
+	&.panel-heading {
+		@extend %extend_1;
+	}
+	&.bound-header.availability-bound-header {
+		padding: 1em;
+	}
+}

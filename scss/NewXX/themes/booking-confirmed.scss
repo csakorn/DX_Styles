@@ -1,0 +1,73 @@
+/** Booking Confirmed ***/
+
+.timeline-segment-line {
+	background: $color-84;
+	&:before {
+		border: 0.04em solid $color-84;
+	}
+	&:after {
+		border: 0.04em solid $color-84;
+	}
+}
+
+.timeline-segment {
+	&:hover > .timeline-segment-line {
+		background: $color-85;
+		&:before {
+			/* 	border: 0.04em solid #330066; */
+		}
+		&:after {
+			/* 	border: 0.04em solid #330066; */
+		}
+	}
+	&:focus > .timeline-segment-line {
+		background: $color-85;
+		&:before {
+			/* 	border: 0.04em solid #330066; */
+		}
+		&:after {
+			/* 	border: 0.04em solid #330066; */
+		}
+	}
+}
+
+.cell-reco-unavailable {
+	vertical-align: middle;
+	float: left;
+	padding-top: 27px;
+	line-height: 24px;
+	width: 100%;
+}
+
+section.panel.reservation-info .area {
+	> i {
+		font-size: 4.5em;
+	}
+	> h4 {
+		font-size: 1.5em;
+	}
+}
+
+i.icon-plane.main-icon {
+	color: $color-84;
+}
+
+ul.status-message-list > li {
+	list-style: none;
+}
+
+.pnrd-view .bold {
+	/* font-size: 1.5em; */
+}
+
+h2.before-departure > i {
+	color: $color-86;
+}
+
+botton.reservation-btn {
+	border: 1px solid $color-87;
+}
+
+th.availability-bound-tablecell {
+	text-align: center;
+}

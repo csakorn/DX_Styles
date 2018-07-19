@@ -1,0 +1,55 @@
+div[data-placeholder-path="CARS/pageContent"]{
+	#leftPanel{
+		width: 100%;
+		div#tpl1_leftContentContainer{
+			background: none;
+			div.fidelity-field.IDfield{
+				div.text-widget{
+					margin-top: 1.4em;
+				}
+			}
+		}
+	}
+	#rightPanel{
+		display: none;
+	}
+	.searchPanelTitle,.searchPanelBody{
+		color:#330066;
+		text-shadow:none;
+	}
+	#carSearchContent{
+		button.search-button{
+			.car-submit-btn{
+				padding: 0 0.5em;
+			}
+		}
+	}
+	#tpl3_advancedSearch div.fidelity-field{
+		background: none;
+	}
+}
+div[data-placeholder-path="CARA/pageContent/carSearchBar"]{
+	div#searchbar-button button img{
+		display: none;
+	}
+}
+
+aside#car-booking-area{
+	.bookingArea-title-text{
+		background-color: #FFCC00;
+		color:#330066;
+	}
+	.car-avail-line.Postpaid{
+		border: none !important;
+	}	
+}
+table#flatRatesDisplay{
+	.panel-heading.bg-primary.priceHeader.priceHeaderPostpaid{
+		background-color: #330066;
+	}
+}
+div#bookingArea-container{
+	.bookingArea-primary-btn-icon-car img{
+		display: none;
+	}
+}

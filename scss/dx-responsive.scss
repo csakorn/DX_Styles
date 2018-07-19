@@ -1,0 +1,232 @@
+@media only screen and (max-width: 599px) {
+    header#main-layout-header {
+        padding: 0.5em;
+        img[alt='Thai Airways Logo'] {
+            max-width: 25%;
+        }
+        img[alt='Star Alliance Logo'] {
+            max-width: 45%;
+            padding-right: 0;
+            padding-top: 0.5em;
+        }
+    }
+    #main-container {
+        a.header-date-calendarLink,
+        .bound-table-actionbar,
+        .availability-bound .bound-header-container .header-location span,
+        .availability-bound .bound-header-container .spacer,
+        .availability-bound .container-text.container-text-to {
+            display: none;
+        }
+        .availability-bound .bound-header-container .container-icon {
+            display: inline-block;
+        }        
+    }
+    #page-content {
+        .owd-calendar-container {
+            .calendar-header-responsive {
+                text-align: right;
+                font-size: large;
+            }
+            .calendar-bar-container {
+                height: 72px;
+            }
+            .calendar-cell-top {
+                height: auto !important;
+                padding-top: 0px !important;
+            }
+        }
+        div.slideDown {
+            .availability {
+                &-bound-table-header {
+                    background-color: #FFF !important;
+                }
+            }
+            .bound-table-flightline {
+                &-fare-family-list {
+                    border-color: 0;
+                    border-left: 0px;
+                    .availability {
+                        &-recommendation-sidebar {
+                            vertical-align: middle;
+                        }
+                        &-table-fare-rows-cells>fieldset {
+                            .availability {
+                                &-list-fares-reco {}
+                                &-recommendation.selected {
+                                    >.availability-recommendation-content {
+                                        padding: 0px;
+                                        >div {
+                                            color: #330066;
+                                        }
+                                    }
+                                }
+                                &-recommendation-content {
+                                    .col-xs-4 {
+                                        display: none;
+                                    }
+                                    span.cell-reco-seats-text {
+                                        color: #FFF!important;
+                                        background-color: #FF00CC !important;
+                                        float: right;
+                                    }
+                                }
+                                &-recommendation-description {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-details {
+                    border: 1px solid #d0c7dd;
+                    background: #FFF;
+                    .availability-flight-details-button {
+                        display: table;
+                        width: 100%;
+                        padding: 0.3em 0.5em;
+                        margin-top: 0.2em;
+                        background-color: #f5f5f5;
+                        span.row-info-bestprice-integer {
+                            font-size: 1.5em !important;
+                            display: block;
+                            color: #330066;
+                        }
+                    }
+                    .availability-flight-details {
+                        h3.flight-details-container-rowtitle-header {
+                            width: 50%;
+                            display: inline-block;
+                            float: left;
+                            .flight-details-location {
+                                &.availability-flight-details-location {
+                                    font-size: 12px;
+                                    display: inline-block;
+                                    width: 49%;
+                                    vertical-align: top;
+                                    &.return {
+                                        display: none !important;
+                                    }
+                                }
+                                &.bound-type.departure {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .flight-details-group {
+                            width: 45%;
+                            padding: 0 3px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        #apim-traveller{
+        	#message-apim-top{
+        		float: left;
+        		span.icon-info-sign{
+        			float: left;
+        		}
+        		div.content{
+        			float: right;
+        			width: 85%;
+        			margin-top: 0px !important;
+        		}
+        	}
+        }     
+
+    }
+    #page-container{
+    	#tripsummary{
+    		&-mini-container{
+    			div.nav-button-container>button{
+    				background: #FFCC00;
+    				color: #330066;
+    			}
+    		}
+    		&-extended-container{
+    			button.tripsummary-btn-hide-details{
+    				background-color: #FFCC00;
+    				color: #330066;
+    				font-weight: bold;
+    			}
+    		}
+    	}
+
+    }
+
+
+    .availability-bound {
+    	header.bound-header {    		
+    		h2.header-text{
+    			font-size: 125%;
+    		}
+    		.header-panel .container-icon>i{
+    			color:#330066;
+    		}	
+    	}
+    	.recap-bound{
+    		h3.flight-details-container-rowtitle-header{
+    			>div{
+
+    			}
+				>div>time{
+					font-size: unset;
+				}
+    		}
+    	}
+    	
+        .header-panel .city-name {
+            text-transform: uppercase !important;
+        }
+        .bound-header {
+            text-align: center !important;
+        }
+        .flight {
+            &-price-container {
+                margin-top: 0px !important;
+                .fare-family {
+                    float: left!important;
+                }
+                i.icon-ok-sign {
+                    position: relative !important;
+                    top: 6px !important;
+                }
+            }
+        }
+    }
+
+    .bread-crumb-component {
+        .title-container.has-steps {
+            padding: 10px 11px 0 10px;
+        }
+        .steps-container {
+            margin-top: 5px;
+            padding-left: 0px;
+            ol>li.current {
+                border-bottom: none !important;
+            }
+        }
+    } 
+	
+    //******* ERROR ******//
+    section.global {
+        &-error-container {
+            #global-error-message {
+                span.icon-exclamation-sign,
+                h4#alert-title-global-error-message {
+                    float: left;
+                }
+                h4#alert-title-global-error-message {
+                    width: auto;
+                }
+                div.content {
+                    display: block;
+                    clear: both;
+                    padding-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
