@@ -1,7 +1,7 @@
 /*
- Modifide Date : Thu Jul 05 2018 10:39:47 GMT+0700 (SE Asia Standard Time)
+ Modifide Date : 16 MAY 2019 09:22:12 GMT+0700 (SE Asia Standard Time)
  Modifide By : Chalermpol Sakorn
- Comment : Box-insurance, Total Price */ 
+ Comment : Box-insurance, Total Price, div.popover.right.shown */ 
 div.price-amount.price-total-amount .price-value, .tripsummary-price-amount-text {
 	color: #330066;
 	font-size: 1.7em;
@@ -1015,6 +1015,7 @@ i.selected-flight-icon-class {
 
 .segment-details-right {
 	background-color: #F5F5F5;
+	padding: 0.5em;
 }
 
 .timeline-day-difference {
@@ -1027,6 +1028,7 @@ i.selected-flight-icon-class {
 	text-transform: initial;
 }
 
+/**-------------------ALPI-------------------------**/
 /**-------------(MAPI)-----------**/
 body[data-template-name="MALPI"] div.tripsummary-section-price,
 body[data-template-name="MALPI"] div.pricedetails {
@@ -1306,10 +1308,12 @@ section#roh {
 section#roh > h3 {
 	text-align: left;
 	background-color: #330066;
-	padding: 0.5em;
+	padding: 1.0em;
 	color: #FFF;
 }
-
+.roh-img-logo{
+	width:90px;
+}
 section#roh > h4 {
 	text-align: left;
 	color: #8e1653;
@@ -1790,6 +1794,47 @@ i.travellerList-avatar-icon {
 	display: none;
 }
 
+.paxN1, .paxN2, .paxN3, .paxN4, .paxN5, .paxN6, .paxN7, .paxN8, .paxN9, .icon-seat-selected-alone:before {
+	color: #7441A7 !important;
+}
+
+div.legendItem .icon.icon-seat-available {
+	color: #303030;
+}
+
+.travellerBox .seatPax.selected-pax:after {
+	color: #7441A7;
+}
+
+.vertical [data-seat-selected='true']:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-weight: 700;
+	color: white;
+	font-size: 12px;
+	width: 20px;
+	height: 20px;
+	line-height: calc(16px + 2*2px);
+}
+
+span[id^='tpl4_apim-recap-section-form-APIM_ADT'] {
+	display: none;
+}
+
+label#BusinessPhone, label#HomePhone {
+	cursor: pointer;
+}
+
+.apimTraveller-panel .panel-heading legend, .apimTraveller-panel.panel-primary .panel-heading, .apimTraveller-panel.panel-default .panel-heading, .apimTraveller-panel .close-apim-panel .icon-chevron-up, .apimTraveller-panel .close-apim-panel .icon-chevron-down {
+	color: #FFFFFF !important;
+}
+
+.catalogServices-teaser-column {
+	width: 33.333%;
+	margin: 1em 0;
+}
+
 /*======================PURC PAGE=== ========================*/
 div[data-placeholder-path="PURC/pageContent/servicesPolicy"] {
 	margin-top: 2em;
@@ -1823,9 +1868,22 @@ label[for='abandon'] > span {
 	max-width: 100%;
 }
 
-.popover-content, div.popover.right.shown {
-  /* <-- 24MAY18*/
+.plnext-message > .content ul li {
+	display: list-item;
+	margin: 0.3em;
+	line-height: 17px;
+}
+
+li.globalError {
+	display: none !important;
+}
+
+html[lang='it'] .checkbox > label .textMandatory, html[lang='it'] .checkbox > label .lower-case {
 	display: none;
+}
+
+.text-right {
+	width: 100% !important;
 }
 
 .box-insurance {
@@ -2433,6 +2491,38 @@ div#bookingArea-container .bookingArea-primary-btn-icon-car img {
 	display: none;
 }
 
+/******************************* Star Ratings ROH ***************************************/
+.score {
+  display: block;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-wrap {
+  display: inline-block;
+  position: relative;
+  height: 19px;
+}
+
+.score .stars-active {
+  color: #EEBD01;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.score .stars-inactive {
+  color: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: initial;
+  /* overflow: hidden; */
+}
+
 /**********************-- Responsive --***************************/
 @media only screen and (max-width: 599px) {
 	header#main-layout-header {
@@ -2642,3 +2732,11 @@ div#bookingArea-container .bookingArea-primary-btn-icon-car img {
 		padding-bottom: 0 !important;
 	}
 }
+
+@media (min-width: 1200px) {
+	div[id^='tpl4_ADT'] > div:nth-of-type(1), div[id^='tpl4_ADT'] > div:nth-of-type(2),
+  div[id^='tpl4_CHD'] > div:nth-of-type(1), div[id^='tpl4_CHD'] > div:nth-of-type(2) {
+		width: 16.66666667%;
+	}
+}
+

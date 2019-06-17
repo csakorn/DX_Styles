@@ -61,3 +61,39 @@ i.travellerList-avatar-icon{
 		}
 	}
 }
+
+.paxN1,.paxN2,.paxN3,.paxN4,.paxN5,.paxN6,.paxN7,.paxN8,.paxN9,.icon-seat-selected-alone:before{
+    color: #7441A7 !important;
+}
+
+div.legendItem .icon.icon-seat-available{
+    color:#303030;
+}
+.travellerBox .seatPax.selected-pax:after{
+    color:#7441A7;
+}
+.vertical [data-seat-selected='true']:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: calc(16px + 2*2px);
+}
+
+span[id ^='tpl4_apim-recap-section-form-APIM_ADT']{
+    display:none;
+}
+
+label#BusinessPhone,label#HomePhone { cursor: pointer;}
+.apimTraveller-panel .panel-heading legend, .apimTraveller-panel.panel-primary .panel-heading, .apimTraveller-panel.panel-default .panel-heading, .apimTraveller-panel .close-apim-panel .icon-chevron-up, .apimTraveller-panel .close-apim-panel .icon-chevron-down{
+    color: #FFFFFF !important;
+}
+
+.catalogServices-teaser-column{// catalogServices SIT MEA BAF
+    width:33.333%;
+    margin: 1em 0;
+}
