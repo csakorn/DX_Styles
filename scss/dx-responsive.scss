@@ -1,250 +1,346 @@
+// @media only screen and (max-width: 767px) {
+
+//     //-- Select Flight
+//     .calendarPerBound-inner-cell.selected {
+//         .fare-label {
+//             background-color: $BG-SELECT_FLIGHT;
+//         }
+//     }
+
+//     // City to - City Form
+//     .calendar-bound .city-name {
+//         color: $FONT-HILIGHT_COLOR !important;
+//     }
+
+//     .pricesummarybottom {
+//         &-tablet-row {
+//             font-size: 2.3rem;
+//         }
+//     }
+// }
+
 @media only screen and (max-width: 599px) {
-    .recap-bound .flight-price-container .fare-family .icon-ok-sign {
-        font-size: 30px;
-        position: relative;
-        top: 6px;
-        line-height: 15px;
-    }
+  // // Header Logo
+  // #main-layout-header {
+  //     margin: auto 0 !important;
 
-    .steps-container{
-        > ol li{
-            color: #555;
-        }
-    }
+  //     img {
+  //         max-height: 40px !important;
+  //     }
 
-    /*     header#main-layout-header {
-        padding: 0.5em;
-        img[alt='Thai Airways Logo'] {
-            max-width: 25%;
-        }
-        img[alt='Star Alliance Logo'] {
-            max-width: 45%;
-            padding-right: 0;
-            padding-top: 0.5em;
-        }
+  //     #TGLogo {
+  //         max-width: 30%;
+  //         margin: 1em 0em 1em 8px;
+  //     }
+
+  //     #StarLogo {
+  //         max-width: 40%;
+  //         float: right;
+  //         margin-right: 8px;
+  //         margin-top: 5px;
+  //         margin: 1.2em 8px 1em 0em;
+  //     }
+  // }
+
+  // .recap-bound .flight-price-container .fare-family .icon-ok-sign {
+  //     font-size: 30px;
+  //     position: relative;
+  //     top: 6px;
+  //     line-height: 15px;
+  // }
+
+  // .steps-container {
+  //     >ol li {
+  //         color: #555;
+  //     }
+  // }
+
+  // // Select Flight
+  // .bound-header-container {
+  //     .availability-bound .header-text {
+  //         padding: 1em 0 0em 0;
+  //     }
+  // }
+
+  // // --- DX
+  // .tripsummary-header-arrow{
+  //     background-color: $DEP_ARR-COLOR;
+  //     .icon-chevron-down:before{
+  //         color: $FONT-COLOR_ON_BTN;
+  //     }
+  // }
+
+  // #bottom-continue-button {
+  //     height: 60px;
+
+  //     >span {
+  //         font-size: 1.2em;
+  //         text-align: center;
+  //     }
+  // }
+  // .pricesummarybottom-cell{
+  //     &-content{
+  //         margin: 1em 0;
+  //     }
+  //     .icon-info-sign{
+  //         font-size: 2.5rem;
+  //         color: $BG-COLOR;
+  //     }
+  //     .displayPriceNoteContent{
+  //         background-color: $BG-COLOR;
+  //         >.arrow{
+  //             background-color: $BG-COLOR;
+  //         }
+  //     }
+  //     span.pricesummarybottom-price-note-price-traveller-relation,span.pricesummarybottom-price-note-including-tax-and-fee{
+  //         font-size: 1.6rem;
+  //     }
+  // }
+
+  // Bottom --- New DX Responsive
+  // #price-summary-panel-container {
+  //     .pricesummarybottom-cell-continue {
+  //         max-width: 30% !important;
+
+  //     }
+
+  //     .plnext-widget-btn-text {}
+
+  //     #bottom-continue-button {
+  //         font-size: 1em;
+  //         padding: 0 !important;
+
+  //         >span {
+  //             text-align: center !important;
+  //         }
+  //     }
+
+  // }
+
+  header#main-layout-header {
+    padding: 0.5em;
+    img[alt="Thai Airways Logo"] {
+      max-width: 25%;
     }
-    #main-container {
-        a.header-date-calendarLink,
-        .bound-table-actionbar,
-        .availability-bound .bound-header-container .header-location span,
-        .availability-bound .bound-header-container .spacer,
-        .availability-bound .container-text.container-text-to {
-            display: none;
-        }
-        .availability-bound .bound-header-container .container-icon {
-            display: inline-block;
-        }        
+    img[alt="Star Alliance Logo"] {
+      max-width: 45%;
+      padding-right: 0;
+      padding-top: 0.5em;
     }
-    #page-content {
-        .owd-calendar-container {
-            .calendar-header-responsive {
-                text-align: right;
-                font-size: large;
-            }
-            .calendar-bar-container {
-                height: 72px;
-            }
-            .calendar-cell-top {
-                height: auto !important;
-                padding-top: 0px !important;
-            }
+  }
+  #main-container {
+    a.header-date-calendarLink,
+    .bound-table-actionbar,
+    .availability-bound .bound-header-container .header-location span,
+    .availability-bound .bound-header-container .spacer,
+    .availability-bound .container-text.container-text-to {
+      display: none;
+    }
+    .availability-bound .bound-header-container .container-icon {
+      display: inline-block;
+    }
+  }
+  #page-content {
+    .owd-calendar-container {
+      .calendar-header-responsive {
+        text-align: right;
+        font-size: large;
+      }
+      .calendar-bar-container {
+        height: 72px;
+      }
+      .calendar-cell-top {
+        height: auto !important;
+        padding-top: 0px !important;
+      }
+    }
+    div.slideDown {
+      .availability {
+        &-bound-table-header {
+          background-color: #fff !important;
         }
-        div.slideDown {
-            .availability {
-                &-bound-table-header {
-                    background-color: #FFF !important;
-                }
+      }
+      .bound-table-flightline {
+        &-fare-family-list {
+          border-color: 0;
+          border-left: 0px;
+          .availability {
+            &-recommendation-sidebar {
+              vertical-align: middle;
             }
-            .bound-table-flightline {
-                &-fare-family-list {
-                    border-color: 0;
-                    border-left: 0px;
-                    .availability {
-                        &-recommendation-sidebar {
-                            vertical-align: middle;
-                        }
-                        &-table-fare-rows-cells>fieldset {
-                            .availability {
-                                &-list-fares-reco {}
-                                &-recommendation.selected {
-                                    >.availability-recommendation-content {
-                                        padding: 0px;
-                                        >div {
-                                            color: #330066;
-                                        }
-                                    }
-                                }
-                                &-recommendation-content {
-                                    .col-xs-4 {
-                                        display: none;
-                                    }
-                                    span.cell-reco-seats-text {
-                                        color: #FFF!important;
-                                        background-color: #FF00CC !important;
-                                        float: right;
-                                    }
-                                }
-                                &-recommendation-description {
-                                    display: none;
-                                }
-                            }
-                        }
+            &-table-fare-rows-cells > fieldset {
+              .availability {
+                &-recommendation.selected {
+                  > .availability-recommendation-content {
+                    padding: 0px;
+                    > div {
+                      color: #330066;
                     }
+                  }
                 }
-                &-details {
-                    border: 1px solid #d0c7dd;
-                    background: #FFF;
-                    .availability-flight-details-button {
-                        display: table;
-                        width: 100%;
-                        padding: 0.3em 0.5em;
-                        margin-top: 0.2em;
-                        background-color: #f5f5f5;
-                        span.row-info-bestprice-integer {
-                            font-size: 1.5em !important;
-                            display: block;
-                            color: #330066;
-                        }
-                    }
-                    .availability-flight-details {
-                        h3.flight-details-container-rowtitle-header {
-                            width: 50%;
-                            display: inline-block;
-                            float: left;
-                            .flight-details-location {
-                                &.availability-flight-details-location {
-                                    font-size: 12px;
-                                    display: inline-block;
-                                    width: 49%;
-                                    vertical-align: top;
-                                    &.return {
-                                        display: none !important;
-                                    }
-                                }
-                                &.bound-type.departure {
-                                    display: none;
-                                }
-                            }
-                        }
-                        .flight-details-group {
-                            width: 45%;
-                            padding: 0 3px;
-                            float: right;
-                        }
-                    }
-                }
-            }
-        }
-        #apim-traveller{
-            #message-apim-top{
-                float: left;
-                span.icon-info-sign{
-                    float: left;
-                }
-                div.content{
+                &-recommendation-content {
+                  .col-xs-4 {
+                    display: none;
+                  }
+                  span.cell-reco-seats-text {
+                    color: #fff !important;
+                    background-color: #ff00cc !important;
                     float: right;
-                    width: 85%;
-                    margin-top: 0px !important;
+                  }
                 }
+                &-recommendation-description {
+                  display: none;
+                }
+              }
             }
-        }     
-
+          }
+        }
+        &-details {
+          border: 1px solid #d0c7dd;
+          background: #fff;
+          .availability-flight-details-button {
+            display: table;
+            width: 100%;
+            padding: 0.3em 0.5em;
+            margin-top: 0.2em;
+            background-color: #f5f5f5;
+            span.row-info-bestprice-integer {
+              font-size: 1.5em !important;
+              display: block;
+              color: #330066;
+            }
+          }
+          .availability-flight-details {
+            h3.flight-details-container-rowtitle-header {
+              width: 50%;
+              display: inline-block;
+              .flight-details-location {
+                &.availability-flight-details-location {
+                  font-size: 12px;
+                  display: inline-block;
+                  width: 49%;
+                  vertical-align: top;
+                  &.return {
+                    display: none !important;
+                  }
+                }
+                &.bound-type.departure {
+                  display: none;
+                }
+              }
+            }
+            .flight-details-group {
+              width: 45%;
+              padding: 0 3px;
+              float: right;
+            }
+          }
+        }
+      }
     }
-    #page-container{
-        #tripsummary{
-            &-mini-container{
-                div.nav-button-container>button{
-                    background: #FFCC00;
-                    color: #330066;
-                }
-            }
-            &-extended-container{
-                button.tripsummary-btn-hide-details{
-                    background-color: #FFCC00;
-                    color: #330066;
-                    font-weight: bold;
-                }
-            }
+    #apim-traveller {
+      #message-apim-top {
+        float: left;
+        span.icon-info-sign {
+          float: left;
         }
+        div.content {
+          float: right;
+          width: 85%;
+          margin-top: 0px !important;
+        }
+      }
+    }
+  }
+  #page-container {
+    #tripsummary {
+      &-mini-container {
+        div.nav-button-container > button {
+          background: #ffcc00;
+          color: #330066;
+        }
+      }
+      &-extended-container {
+        button.tripsummary-btn-hide-details {
+          background-color: #ffcc00;
+          color: #330066;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 
+  .availability-bound {
+    header.bound-header {
+      h2.header-text {
+        font-size: 125%;
+      }
+      .header-panel .container-icon > i {
+        color: #330066;
+      }
+    }
+    .recap-bound {
+      h3.flight-details-container-rowtitle-header {
+        > div > time {
+          font-size: unset;
+        }
+      }
     }
 
-
-    .availability-bound {
-        header.bound-header {           
-            h2.header-text{
-                font-size: 125%;
-            }
-            .header-panel .container-icon>i{
-                color:#330066;
-            }   
-        }
-        .recap-bound{
-            h3.flight-details-container-rowtitle-header{
-                >div{
-
-                }
-                >div>time{
-                    font-size: unset;
-                }
-            }
-        }
-        
-        .header-panel .city-name {
-            text-transform: uppercase !important;
-        }
-        .bound-header {
-            text-align: center !important;
-        }
-        .flight {
-            &-price-container {
-                margin-top: 0px !important;
-                .fare-family {
-                    float: left!important;
-                }
-                i.icon-ok-sign {
-                    position: relative !important;
-                    top: 6px !important;
-                }
-            }
-        }
+    .header-panel .city-name {
+      text-transform: uppercase !important;
     }
-
-    .bread-crumb-component {
-        .title-container.has-steps {
-            padding: 10px 11px 0 10px;
-        }
-        .steps-container {
-            margin-top: 5px;
-            padding-left: 0px;
-            ol>li.current {
-                border-bottom: none !important;
-            }
-        }
-    } */
-
-    //******* ERROR ******//
-    section.global {
-        &-error-container {
-            #global-error-message {
-
-                span.icon-exclamation-sign,
-                h4#alert-title-global-error-message {
-                    float: left;
-                }
-
-                h4#alert-title-global-error-message {
-                    width: auto;
-                }
-
-                div.content {
-                    display: block;
-                    clear: both;
-                    padding-bottom: 0 !important;
-                }
-            }
-        }
+    .bound-header {
+      text-align: center !important;
     }
+    .flight {
+      &-price-container {
+        margin-top: 0px !important;
+        .fare-family {
+          float: left !important;
+        }
+        i.icon-ok-sign {
+          position: relative !important;
+          top: 6px !important;
+        }
+      }
+    }
+  }
+
+  .bread-crumb-component {
+    .title-container.has-steps {
+      padding: 10px 11px 0 10px;
+    }
+    .steps-container {
+      margin-top: 5px;
+      padding-left: 0px;
+      ol > li.current {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+  //******* ERROR ******//
+  section.global {
+    &-error-container {
+      #global-error-message {
+        span.icon-exclamation-sign,
+        h4#alert-title-global-error-message {
+          float: left;
+        }
+
+        h4#alert-title-global-error-message {
+          width: auto;
+        }
+
+        div.content {
+          display: block;
+          clear: both;
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+  }
 }
 
 /* @media (min-width: 1200px){
@@ -255,796 +351,11 @@
     }    
 } */
 .bread-crumb-component {
-    .steps-container {
-        ol>li::after {
-            left: 30px !important;
-        }
-
-        padding: 0 !important;
+  .steps-container {
+    ol > li::after {
+      left: 30px !important;
     }
-}
 
-.bread-crumb-component .steps-container ol>li:after
-
-/************** New Desing Responsive *****************/
-* {
-    color: #3e3e3e;
-}
-
-.availability-bound {
-    padding: 0px;
-}
-
-/* Header */
-header#main-layout-header img {
-    max-height: 30px;
-}
-
-header#main-layout-header {
-    background: #3D1A6E;
-}
-
-/* BreadCrumb */
-.bread-crumb-component .steps-container {
-    margin-top: 10px;
-}
-
-.bread-crumb-component {
-    background-color: #f8f8f8;
-    color: #555;
-}
-
-.owd-calendar-container .calendar-cell[selected] .calendar-cell-bottom {
-    top: 0px;
-}
-
-.bread-crumb-component div.pull-left {
-    display: none;
-}
-
-.bread-crumb-component .steps-container ol>li:before {
-    margin: initial;
-    margin-right: 15px;
-    display: inline-block;
-    border-radius: 3px;
-    border: 0px solid #fff;
-    background: #ddd;
-}
-
-.bread-crumb-component .steps-container ol>li {
-    text-shadow: none;
-    text-transform: none;
-    padding-bottom: 15px;
-}
-
-.bread-crumb-component .steps-container ol>li.current {
-    border-bottom: 0px solid #FFFFFF;
-}
-
-.bread-crumb-component .steps-container ol>li.current strong {
-    border-bottom: 0px solid #FFFFFF;
-    color: #3D1A6E;
-}
-
-.bread-crumb-component .steps-container ol>li.current:before {
-    background: linear-gradient(35deg, #C5168D, #3D1A6E);
-    color: #fff;
-}
-
-.bread-crumb-component .steps-container ol>li:after {
-    content: ' ';
-    position: absolute;
-    left: 43px;
-    bottom: 0px;
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(35deg, #C5168D, #3D1A6E);
-}
-
-
-/* TripSummary */
-#tripsummary-mini-container.mobile-app-container {
-    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
-}
-
-.tripsummary-header-arrow {
-    background-color: white;
-}
-
-.icon-tripsummary-btn {
-    font-size: 20px;
-}
-
-.tripsummary-header-trip-row:first-child {
-    margin-bottom: 5px;
-    border-bottom: 1px #d4d4d4 dashed;
-    padding-bottom: 5px;
-}
-
-.tripsummary-header-trip-airport-code {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.tripsummary-header-trip-date span,
-.tripsummary-header-trip-airport-name span {
-    color: #555;
-}
-
-.tripsummary-header-trip-date span {
-    font-weight: 700;
-    color: #727272;
-}
-
-.tripsummary-header-trip-traveller-count {
-    padding-left: 0px;
-}
-
-/* Info panel */
-#owd-pricing-description,
-.bound-table-actionbar,
-.availability-bound-table-header {
-    display: none;
-}
-
-/* Bound Header */
-.availability-bound .header-text {
-    text-transform: lowercase;
-    text-align: center;
-    margin: 0;
-}
-
-.availability-bound .header-text:first-letter {
-    text-transform: capitalize;
-}
-
-.availability-bound .header-date-calendarLink,
-.availability-bound .date {
-    display: none;
-}
-
-.availability-bound .header-panel {
-    display: none;
-}
-
-.availability-bound h2 {
-    font-family: 'Roboto Regular', sans-serif;
-}
-
-.availability-bound .bound-header-container {
-    margin: 0px;
-}
-
-.owd-calendar-container .calendar-header-responsive {
-    padding-top: 0px;
-}
-
-/* Calendar */
-.owd-calendar-container .calendar-cell a {
-    position: relative;
-}
-
-.calendar-header-responsive .month-date {
-    display: none;
-}
-
-.owd-calendar-container .calendar-cell {
-    padding-top: 15px;
-}
-
-.owd-calendar-container.calendar-container {
-    border: none;
-    background-color: #f8f8f8;
-}
-
-.owd-calendar-container .calendar-cell {
-    background-color: white;
-    border-radius: 3px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
-    overflow: visible;
-}
-
-.owd-calendar-container .calendar-bar-wrapper {
-    padding-top: 25px;
-    padding-bottom: 5px;
-}
-
-.owd-calendar-container .calendar-cell .calendar-cell-top {
-    position: absolute;
-    top: -52px;
-    width: 100%;
-}
-
-i.calendar-cell.calendar-day-cell.best-price {
-    overflow: visible;
-}
-
-.owd-calendar-container .calendar-cell .day-info,
-.owd-calendar-container .calendar-cell .change-week-info {
-    font-size: 16px;
-}
-
-.owd-calendar-container .calendar-cell .day-info,
-.owd-calendar-container .calendar-cell .change-week-info {
-    font-family: 'Roboto Regular', sans-serif;
-}
-
-.owd-calendar-container .calendar-cell[selected] .calendar-cell-top {
-    top: -52px;
-    position: absolute;
-}
-
-.owd-calendar-slide.owd-calendar-slide-next {
-    border-radius: 30px 0px 0px 30px;
-    height: 60px;
-    top: 45px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.owd-calendar-slide.owd-calendar-slide-previous {
-    border-radius: 0px 30px 30px 0px;
-    height: 60px;
-    top: 45px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.owd-calendar-slide .icon-circle-arrow {
-    font-size: 20px;
-}
-
-.owd-calendar-slide.owd-calendar-slide-previous .icon-circle-arrow-left:before {
-    content: "\e90d";
-}
-
-.owd-calendar-slide.owd-calendar-slide-next .icon-circle-arrow-right:before {
-    content: "\e90c";
-}
-
-i.icon-circle-arrow-left {
-    float: left;
-}
-
-i.icon-circle-arrow-right {
-    float: right;
-}
-
-span.cell-header-date {
-    color: #747474;
-}
-
-.calendar-cell[selected] span.cell-header-date {
-    color: black;
-    font-weight: 700;
-}
-
-.calendar-bottom-line {
-    display: none;
-}
-
-.owd-calendar-container .calendar-cell .cell-divider {
-    display: none;
-}
-
-.owd-calendar-container .calendar-cell .label-days,
-.owd-calendar-container .calendar-cell .price {
-    font-family: "Roboto Regular";
-}
-
-.owd-calendar-container .calendar-cell .price {
-    font-weight: 700;
-}
-
-.owd-calendar-container .calendar-cell {
-    height: 90px;
-}
-
-.owd-calendar-container .calendar-cell[selected] {
-    background: linear-gradient(30deg, #C5168D, #3D1A6E);
-    border: none;
-}
-
-.owd-calendar-container .calendar-cell[selected] * {
-    color: white;
-}
-
-.inner-calendar-cell-bottom span {
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-/* Footer */
-#pricesummarybottom-container {
-    padding: 0px;
-    border-top: none;
-    margin: 0px;
-}
-
-.pricesummarybottom-tablet-row {
-    padding: 0px;
-    flex-direction: row;
-}
-
-.pricesummarybottom-cell-content {
-    background: #3D1A6E;
-    padding: 15px;
-    padding-left: 25px;
-    flex-grow: 8;
-}
-
-.pricesummarybottom-cell-content * {
-    color: white;
-    justify-content: flex-start;
-    margin-bottom: 0px;
-}
-
-.pricesummarybottom-price-amount-container {
-    margin: 0;
-}
-
-.pricesummarybottom-cell-continue {
-    background: #C5168D;
-    flex-grow: 1;
-    width: auto;
-    min-width: 130px;
-}
-
-.btn-primary {
-    background: #C5168D;
-}
-
-#bottom-continue-button {
-    border: none;
-    box-shadow: none;
-    height: 100%;
-    line-height: 100%;
-    padding-top: 0px;
-    padding-right: 0px;
-}
-
-#bottom-continue-button * {
-    color: white;
-    text-transform: capitalize;
-}
-
-.pricesummarybottom-cell-price-note {
-    display: none;
-}
-
-.pricesummarybottom-cell-price-content {
-    flex-direction: column;
-}
-
-.icon-caret-right:before {
-    left: -20px;
-    position: relative;
-    content: "\e90c";
-}
-
-/* Flight Card */
-.upsell-bound {
-    padding: 0px 15px;
-}
-
-.bound-table-flightline-details {
-    border-left: none;
-    padding: 10px 0px;
-}
-
-.selected .time-from,
-.selected .time-to {
-    color: #C5168D;
-}
-
-.row-button-with-price-icon {
-    display: none;
-}
-
-.flight-details.availability-flight-details.flight-details-with-button.availability-flight-details-with-button {
-    padding: 10px 20px;
-}
-
-.availability-flight-details .urgency-to-book-panel {
-    display: none;
-}
-
-.row-button-with-price-lowest-fare.mobile-lowest-fare .icon-lowest {
-    display: none;
-}
-
-.row-button-with-price-lowest-fare.mobile-lowest-fare>span {
-    display: inline;
-    font-size: 50%;
-    font-family: "Roboto Regular";
-    text-transform: uppercase;
-}
-
-.bound-table-flightline-details {
-    padding: 0px;
-}
-
-.row-button-with-price-content {
-    padding: 10px;
-    text-align: center;
-    background: #f8f8f8;
-    border-top: 1px solid #d8d8d8;
-}
-
-.row-button-with-price-content.best-price-true {
-    background: linear-gradient(30deg, #C5168D, #3D1A6E);
-    text-align: center;
-    line-height: 17px;
-    padding-bottom: 5px;
-    display: block;
-    width: 100%;
-    color: white;
-}
-
-.row-button-with-price-content.best-price-true * {
-    color: white;
-}
-
-.row-button-with-price-lowest-fare.mobile-lowest-fare {
-    display: none;
-}
-
-.row-info-currency,
-.row-info-bestprice-integer {
-    font-weight: 700;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.bound-table-flightline {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .15);
-}
-
-.bound-table-flightline.selected {
-    border: 2px solid #C5168D;
-}
-
-.urgency-to-book-panel-number {
-    background: #3E1B75;
-    color: white;
-    font-weight: 400;
-    padding: 1px 8px 3px 10px;
-    border-radius: 5px;
-}
-
-.urgency-to-book-panel-number .icon-family {
-    color: white;
-}
-
-.availability-bound .urgency-to-book-panel {
-    color: #3e3e3e;
-    padding: 10px 20px;
-    border-bottom: 1px dashed grey;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.urgency-to-book-panel .icon-seedetails {
-    display: none;
-}
-
-.flight-details-container-row {
-    display: flex;
-}
-
-.flight-details-group .aircraftnumber {
-    display: none;
-}
-
-.flight-details-group {
-    text-align: center;
-}
-
-.flight-details-group * {
-    color: #B0B0B0;
-}
-
-.flight-details-location.availability-flight-details-location {
-    display: inline-flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.flight-details-location.availability-flight-details-location:last-child {
-    text-align: right;
-}
-
-.availability-flight-details-location time {
-    font-size: 90%;
-    font-weight: 400;
-    font-family: "Roboto Regular";
-}
-
-.availability-flight-details-location time.date-from,
-.availability-flight-details-location time.date-to {
-    color: #B0B0B0;
-}
-
-.flight-details-container-row .stops {
-    margin-left: 0px;
-    display: inline-block;
-    flex-grow: 3;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.flight-details-container-row .stops .stop {
-    color: #3e3e3e;
-    margin-left: 0px;
-    width: 100%;
-    text-align: center;
-}
-
-.flight-details-container-row .stops .stop:before,
-.flight-details-container-row .stops .direct:before {
-    width: 100%;
-    border-left: 0px solid #B0B0B0;
-    border-top: 1px solid #B0B0B0;
-    border-top-color: #B0B0B0;
-    border-top-style: solid;
-    left: 0px;
-}
-
-.flight-details-container-row .stops .stop:after {
-    position: absolute;
-    top: 0%;
-    left: calc(50% - 0.3em);
-    margin-left: 0;
-    background-color: #B0B0B0;
-}
-
-.flight-details-container-row .stops .direct:before {
-    border-top-color: #005eb8;
-}
-
-.flight-details-container-row .stops .direct:after {
-    content: "\f0da";
-    top: 3px;
-    left: auto;
-    right: 0px;
-}
-
-span.row-button-with-price-bestprice {
-    display: block;
-}
-
-/* Flight Card Selected */
-
-*:focus,
-a:focus,
-a.btn:focus,
-button:focus,
-button.btn:focus,
-select:focus,
-textarea:focus,
-input:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus,
-a:active,
-a.btn:active,
-button:active,
-button.btn:active {
-    outline: 1px solid #C5168D;
-    outline-offset: -1px;
-    border-color: transparent;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #C5168D;
-}
-
-.availability-recommendation,
-.availability-recommendation.selected {
-    border: none;
-    background: none !important;
-}
-
-.more-details-link-container {
-    display: none;
-}
-
-.bound-table-flightline-fare-family-list {
-    border: 0px;
-}
-
-.flight-details-btn-container,
-.show-fare-comparison-container {
-    float: left;
-    width: calc(50% - 1px);
-    padding: 0px;
-    box-shadow: none;
-}
-
-.plnext-widget-btn-text {
-    font-size: 0.8em;
-}
-
-.plnext-widget-btn.btn.btn-secondary.show-itinerary-details-btn,
-.show-fare-comparison-container button.plnext-widget-btn.btn.btn-secondary {
-    padding: 15px;
-    border: none;
-    border-top: 2px solid #C5168D;
-    border-right: 2px solid #C5168D;
-    box-shadow: none;
-}
-
-.show-fare-comparison-container button.plnext-widget-btn.btn.btn-secondary {
-    border-right: 0px;
-}
-
-.selected .flight-details-button.availability-flight-details-button {
-    display: none;
-}
-
-.availability-recommendation.selected .availability-recommendation-title {
-    color: #C5168D;
-    font-size: 1em;
-    margin-bottom: 0px;
-}
-
-.availability-recommendation .cell-reco-bestprice-integer {
-    font-size: 1em;
-    font-family: "Roboto Regular";
-    color: #9d9d9d;
-}
-
-.cell-reco-currency {
-    color: #9d9d9d;
-}
-
-.availability-recommendation.selected .cell-reco-bestprice-integer {
-    font-size: 1em;
-    font-family: "Roboto Regular";
-    color: #343434;
-}
-
-.availability-recommendation.selected .cell-reco-currency {
-    color: #343434;
-}
-
-input+.availability-recommendation>.availability-recommendation-content:before {
-    content: " ";
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    border: 2px solid #9d9d9d;
-    position: absolute;
-    top: 15px;
-    left: 10px;
-
-}
-
-.availability-recommendation.selected .availability-recommendation-content,
-.availability-recommendation .availability-recommendation-content {
-    padding: 10px 50px;
-}
-
-input+.availability-recommendation.selected>.availability-recommendation-content:before {
-    border-color: #C5168D;
-}
-
-input+.availability-recommendation.selected>.availability-recommendation-content:after {
-    content: " ";
-    height: 10px;
-    width: 10px;
-    border-radius: 20px;
-    background: #C5168D;
-    position: absolute;
-    top: 20px;
-    left: 15px;
-}
-
-.availability-recommendation.selected {
-    box-shadow: none;
-}
-
-.availability-list-fares-reco {
-    margin: 0px 20px;
-}
-
-.availability-list-fares-reco:not(:last-child) {
-    border-bottom: 1px dashed grey;
-}
-
-/** Fare popup */
-
-
-.fare-comparison-container {
-    margin-top: 20px;
-}
-
-.popover-header-content {
-    padding: 12px 20px;
-    background: #3D1A6E;
-    color: white;
-}
-
-h1.popover-heading {
-    font-weight: 400;
-}
-
-.popover-header-close-btn .icon-close {
-    color: white;
-}
-
-.popover-content-close-button-container {
-    display: none;
-}
-
-.popover-header,
-.popover-subheader {
-    box-shadow: none;
-}
-
-.fare-container-wrapper {
-    overflow: auto;
-}
-
-.fare-comparison-container .fare-container {
-    padding-left: 0px;
-    white-space: nowrap;
-}
-
-.fare-name-and-details:first-child {
-    margin-left: 15px;
-}
-
-.fare-name-and-details {
-    display: inline-block;
-    width: calc(100% - 30px);
-    margin: 2px;
-    background: white;
-    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
-}
-
-.fare-name-and-details:last-child {
-    margin-right: 15px;
-}
-
-.fare-comparison-container .fare-name {
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.fare-comparison-container .fare-details {
-    padding: 20px 25px;
-}
-
-.fare-comparison-container .fare-item {
-    padding: 10px 30px;
-    position: relative;
-}
-
-.fare-comparison-container .fare-item:not(:last-child) {
-    border-bottom: 1px solid #ececec;
-}
-
-.fare-comparison-container .fare-item i {
-    position: absolute;
-    left: 0px;
-    top: calc(50% - 7px);
-}
-
-.fare-comparison-container .fare-selectors {
-    text-align: center;
-    padding: 0px;
-}
-
-.fare-comparison-container .fare-selector {
-    background: #737373;
-    border: 2px #f8f8f8 solid;
-    border-radius: 10px;
-    width: 13px;
-    height: 13px;
-    display: inline-block;
-    margin: 6px;
-}
-
-.fare-comparison-container .fare-selector.selected {
-    border: 2px #C5168D solid;
-    background: #f8f8f8;
+    padding: 0 !important;
+  }
 }

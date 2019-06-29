@@ -13,10 +13,26 @@ body {
     background-color: #FFF;
 }
 
-header#main-layout-header {
-    // padding: 0.5em 0em 0em 1em;
-    padding: 0.5em 0;
-}
+// #main-layout-header {
+//     margin: auto 0 !important;
+//     height: 65px !important;
+//     background-color: $HEADER-BG;
+
+//     #TGLogo {
+//         max-width: 28%;
+//         margin: 0.5em 0;
+//         max-height: 50px;
+//     }
+
+//     #StarLogo {
+//         max-width: 32%;
+//         float: right;
+//         margin-right: 8px;
+//         margin-top: 18px;
+//         max-height: 45%;
+//     }
+// }
+
 
 /*'Your booking'*/
 .tripsummary-title-text {
@@ -222,8 +238,8 @@ div#startoverlink {
 }
 
 /*==================== END ERROR Msg ====================*/
-input[type- "text"],
-input[type- "checkbox"] {
+input[type="text"],
+input[type= "checkbox"] {
     color: #330066;
 }
 
@@ -1506,6 +1522,7 @@ a.box-roh_link_more>span {
         -webkit-text-stroke: initial;
     }
 }
+
 .score-wrap {
     display: inline-block;
     position: relative;
@@ -1905,9 +1922,10 @@ html[lang='it'] {
     }
 }
 
-.text-right {
-    width: 100% !important;
-}
+// -----> 26/09/2019
+// .text-right {
+//     width: 100% !important;
+// }
 
 // .popover-content, div.popover.right.shown{ /* <-- 24MAY18*/
 //     display: none;
@@ -1926,4 +1944,5 @@ html[lang='it'] {
 
 
 /**********************-- Responsive --***************************/
-@import 'dx-responsive'
+@import 'dx-responsive';
+@import 'new_responsive';
