@@ -52,9 +52,6 @@ body {
     text-shadow: none !important;
 }
 
-.bread-crumb-title {
-    /*color: #FFCC00 !important;*/
-}
 
 /*Header purchase*/
 .bread-crumb-container {
@@ -66,9 +63,7 @@ body {
 }
 
 /*Manage-booking*/
-#page-template-header {
-    /* color: #3e075b; */
-}
+
 
 /* navigation bar, size + color*/
 /* .bread-crumb-component{
@@ -165,18 +160,14 @@ a:active {
 }
 
 /*Modify the display on purc page, especially useful for "call me"*/
-.fop-option-list {
-    /* margin-right:10px; */
-}
+
 
 .payment .payment-wrapper .fop-options-wrapper .mop-btn.fop-option-selected {
     background-color: #3e075b;
     color: #ffffff;
 }
 
-.fop-option-list {
-    /* display: inline; */
-}
+
 
 #tpl3_fopTemplate_fopDisplayMainSection a {
     color: #d8bfd8;
@@ -328,11 +319,11 @@ div#bread-crumb {
     text-align: center;
 }
 
-.calendarmatrix-fare label,
-.bound-table-cell-reco {
-    /*border: .3em solid rgba(255, 0, 204, 0.03);*/
-    /*background-color: rgba(255, 0, 204, 0.06);*/
-}
+// .calendarmatrix-fare label,
+// .bound-table-cell-reco {
+//     /*border: .3em solid rgba(255, 0, 204, 0.03);*/
+//     /*background-color: rgba(255, 0, 204, 0.06);*/
+// }
 
 .calendarmatrix-carousel-control {
     background-color: #330066;
@@ -496,7 +487,7 @@ button:focus,
 }
 
 input[type="checkbox"] {
-    colot: #330066 !important;
+    color: #330066 !important;
 }
 
 .fop-options-wrapper>ul li {
@@ -572,10 +563,6 @@ div.catalogDisplay-dialog-service-price {
     font-weight: 900;
 }
 
-#servicesbreakdown-container h3 {
-    /*color: #D41F90;*/
-    /* color: #330066; */
-}
 
 .DPURCView .heading-text {
     font-weight: 800;
@@ -604,9 +591,6 @@ ul.status-message-list>li {
     list-style: none;
 }
 
-.pnrd-view .bold {
-    /* font-size: 1.5em; */
-}
 
 .timeline-segment-line {
     background: #330066;
@@ -622,12 +606,7 @@ ul.status-message-list>li {
     background: #673AB7;
 }
 
-.timeline-segment:hover>.timeline-segment-line:before,
-.timeline-segment:hover>.timeline-segment-line:after,
-.timeline-segment:focus>.timeline-segment-line:before,
-.timeline-segment:focus>.timeline-segment-line:after {
-    /*  border: 0.04em solid #330066; */
-}
+
 
 h2.before-departure>i {
     color: #FFCC00;
@@ -897,16 +876,8 @@ span.catalogServices-category-price {
     display: none;
 }
 
-article.catalogServices-teaser.catalogServices-teaser-MEA>span {
-    /*  display:none !important; */
-    /*  position:relative;
-      top:-30px; */
-}
 
-div.catalogServices-btn-delete {
-    /* position:relative; */
-    /* top: -33px; */
-}
+
 
 span.teaserDescription {
     float: left;
@@ -1177,7 +1148,6 @@ table.TableOffer tbody tr>td {
 
 .box_TGINSBanner--1box {
     display: inline-block;
-    float: left;
     margin: 0 !important;
     padding: 0 0.5em;
 }
@@ -1374,7 +1344,6 @@ label[for="tpl14_widget-input-travellerList-additionalOptions-gotoServices"] {
     height: 120px;
     border: 1px solid #555;
     display: inline-block;
-    float: left;
 }
 
 .box-rop_price-disc {
@@ -1401,7 +1370,6 @@ section#roh>h3 {
 .roh-img-logo {
     width: 90px;
 }
-
 section#roh>h4 {
     text-align: left;
     color: #8e1653;
@@ -1413,7 +1381,6 @@ section#roh>h4 {
 .box-roh_item>ul {
     display: inline-block;
     width: 120px;
-    float: left;
     padding: 0 0em;
     text-align: right;
 }
