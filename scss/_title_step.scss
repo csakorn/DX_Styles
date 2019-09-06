@@ -1,0 +1,151 @@
+.current {
+    /*color: #FFCC00 !important;*/
+    text-shadow: none !important;
+  }
+  
+  /*!Header purchase*/
+  .bread-crumb-container {
+    background: #330066;
+    background: -moz-linear-gradient(#330066, #3f0677);
+    background: -o-linear-gradient(#330066, #3f0677);
+    background: -ms-linear-gradient(#330066, #3f0677);
+    /*For IE10*/
+  }
+  
+  /*! Manage-booking*/
+  
+  /* navigation bar, size + color*/
+  /* .bread-crumb-component{
+      background-color:#330066 !important;
+  } */
+  .bread-crumb-component ol li.current,
+  .bread-crumb-component ol li.done {
+    border-bottom: 0em solid #ffffff;
+  }
+  
+  .bread-crumb-component ol li.current::before,
+  .bread-crumb-component ol li.done::before {
+    background: none repeat scroll 0 0 #ffffff;
+    /*black*/
+    color: #555;
+    /*light pink*/
+  }
+  
+  .bread-crumb-component ol li.current strong {
+    border-bottom: none;
+  }
+  
+  .bread-crumb-component {
+    background-color: inherit;
+  }
+  
+  /*Banner*/
+  .pnrd-view .confirm-banner {
+    background-color: #330066;
+    color: #ffffff;
+    margin: 1.2em 0;
+    padding: 0.7em 0;
+  }
+  
+  /*Buttons, warning etc.*/
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #3e075b;
+  }
+  
+  // .btn-primary {
+  //     /* background-color: #3e075b;
+  //    border-color: #3e075b;
+  //    color: #ffffff;*/
+  //     background-color: #FFCC00;
+  //     border-color: #FFCC00;
+  //     color: #330066;
+  //     font-size: 1.5em;
+  //     text-transform: uppercase;
+  //     font-weight: bold;
+  // }
+  
+  // .btn-primary:hover {
+  //     background-color: #330066;
+  // }
+  
+  .alert-warning {
+    background-color: #ffffff;
+    border-color: #f2f2f2;
+    color: #bc0061;
+  }
+  
+  .thai-logo {
+    padding: 20px;
+  }
+  
+  .star-alliance {
+    padding: 20px;
+  }
+  
+  /*Dark purple on button when selected, hover, focus etc.*/
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    background-color: #3e075b;
+    border-color: #3e075b;
+  }
+  
+  /*center FF name*/
+  .row-overflowed {
+    text-align: center;
+  }
+  
+  .row.availability-bound-tablerow {
+    text-align: center;
+  }
+  
+  /*Hide modifyFlight dropdown*/
+  #modify-flights-dropdown {
+    display: none;
+  }
+  
+  /*Modify the display on purc page, especially useful for "call me"*/
+  
+  .payment .payment-wrapper .fop-options-wrapper .mop-btn.fop-option-selected {
+    background-color: #3e075b;
+    color: #ffffff;
+  }
+  
+  #tpl3_fopTemplate_fopDisplayMainSection a {
+    color: #d8bfd8;
+  }
+  
+  .fop-form-wrapper .external-heading {
+    display: none;
+  }
+  
+  #tpl3_fopTemplate_fopDisplayMainSection h2 {
+    margin: 1px;
+  }
+  
+  /*Hide Manage my booking on CONF page*/
+  #reservation-menu .dropdown-container .reservation-btn {
+    display: none;
+  }
+  
+  /* payment page */
+  .payment .fop-wrapper {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  
+  .catalogServices-teaser {
+    height: auto;
+  }
+  
+  .catalogServices-dialog-btn-primary,
+  .catalogDisplay-btn-validate {
+    float: none;
+  }
+
+  /* -------- New Style -------- */
+  /* --------------------------- */

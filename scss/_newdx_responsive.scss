@@ -1,0 +1,1075 @@
+/*! --- RESPONSIVE ST1  */
+/*  HEADER  AND LOGO 2*/
+@include HEADERLOGO(0.6em 0em, 1.3em 0px 0em 0em, 30%, 40%, 100%);
+
+/* CALENDARMATRIX-FDCS */
+//calendarmatrix-inner-cell cell-shape  disabled
+.calendarmatrix {
+  &-result-header {
+    display: none;
+  }
+  &-inner-cell.disabled {
+    .fare-label * {
+      color: #b0b0b0;
+    }
+  }
+  .fdcs-title,
+  .bound-header {
+    margin: 0;
+  }
+  .header-panel * {
+    color: $TG_PURPLE1;
+  }
+}
+.header {
+  &-date-cell {
+    background-color: $TG_PURPLE1;
+    * {
+      color: $TG_WHITE;
+    }
+  }
+}
+#float-button-left,
+#float-button-right {
+  background-color: $TG_PINK2;
+  i.icon-circle-arrow {
+    &-left,
+    &-right {
+      color: $TG_WHITE;
+    }
+  }
+}
+
+/* tripsummary traveller count */
+.tripsummary {
+  &-header-trip-traveller-count {
+    text-transform: capitalize;
+  }
+}
+/*! Flight Card */
+.availability {
+  &-bound {
+    .bound-header {
+      @include GRADIENT;
+      margin-bottom: 0;
+    }
+    .header-text {
+      /* -- header text */
+      font-size: $HEADER_TEXT_FONTSIZE;
+      text-transform: uppercase !important;
+      text-align: left !important;
+      padding-left: 0.6em;
+    }
+  }
+  /* -- bound title */
+  &-bound-title {
+    &.bound-title-0,
+    &.bound-title-1 {
+      display: none;
+    }
+  }
+  &-flight-details-location {
+    /* -- +1Day */
+    display: inline-block !important;
+    &.bound-type {
+      display: none !important;
+    }
+  }
+  &-recommendation-sidebar {
+    display: none !important;
+  }
+}
+.header-popularity {
+  .urgency {
+    &-to-book-panel-number {
+      padding: 1px 2px 3px 10px;
+      margin-right: 3px;
+    }
+  }
+}
+.flight-details {
+  &.availability-flight-details {
+    /* -- flight details */
+    &.flight-details-with-button.availability-flight-details-with-button {
+      padding: unset;
+      margin-left: unset;
+    }
+  }
+
+  /* -- flight stop and direct */
+  &-container-row .stops .direct {
+    color: #fff !important;
+    &:before {
+      border-top-color: #b0b0b0;
+    }
+  }
+  &-container-row .stops {
+    z-index: 0;
+    .stop {
+      margin-top: 0.3em;
+    }
+  }
+  /* -- Airport Name */
+  &-container-row .airportname,
+  .airportname {
+    display: block;
+    clear: both;
+    font-size: 78%;
+  }
+  /* -- operated by */
+  &-group {
+    margin-bottom: 1rem;
+    > .airlines {
+      text-align: left;
+      padding: 0 1em;
+      .aircraftnumber {
+        display: initial;
+      }
+    }
+  }
+}
+/* People view */
+.urgency-to-book-panel-number {
+  text-transform: capitalize;
+}
+.bound {
+  &-header {
+    /* -- bound header */
+    margin: 1em 0;
+    padding: 1em 0;
+  }
+  &-table-flightline {
+    /* -- stops and direct */
+    &:hover {
+      .stops .direct {
+        color: $DIRECT-FONT_COLOR;
+      }
+    }
+    &-disabled {
+      &:hover .stops .direct,
+      .stops .direct {
+        color: $DIRECT-FONT_COLOR_DISABLED !important;
+        &:after {
+          background: unset;
+        }
+      }
+    }
+    /* -- bound lowest */
+    .icon-lowest {
+      color: $LOWEST-TAG;
+    }
+    @include FLIGHTLINE-DISABLED(0px);
+  }
+}
+/* tripsummary-popup */
+#tripsummary-extended {
+  &-content {
+    overflow: hidden;
+  }
+}
+#tripsummary-extended-container {
+  .fare-basis {
+    &-popup {
+      section.panel-body {
+        overflow-x: auto;
+      }
+      padding: 0;
+      .panel-body {
+        padding: 0;
+        // table > thead tr > th {
+        //   &#tpl7_fi {
+        //     width: 45vw;
+        //   }
+        //   &#tpl7_tg {
+        //     width: 28vw;
+        //   }
+        // }
+      }
+    }
+    &-table {
+      // thead,tbody{
+      //   th{
+      //     width: auto;
+      //   }
+      // }
+      thead {
+        th {
+          &:nth-child(1) {
+            width: 200px;
+          }
+          &:nth-child(2) {
+            width: 155px;
+          }
+          &:nth-child(3) {
+            width: 100px;
+          }
+        }
+      }
+      tbody {
+        th {
+          &:nth-child(1) {
+            word-break: break-word;
+          }
+          .abbr {
+            text-decoration: unset;
+          }
+          bdo[dir="ltr"] {
+            display: block;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  #tripsummary-extended {
+    &-content {
+      padding: 0 10px;
+    }
+  }
+  #fare-review {
+    &-bounds,
+    &-price,
+    &-travellers {
+      margin: 0 !important; // <-- line:3598 on newdx_responsive.scss
+    }
+  }
+  .page-actions-bar.text-right {
+    overflow: hidden;
+  }
+  x .bounddetails {
+    .bounds-list {
+      padding: 0;
+    }
+    .panel-body {
+      padding: 15px;
+    }
+  }
+  .plnext-accordion-element,
+  .service-container {
+    padding: 0;
+  }
+  .tab-bar {
+    background-color: #fff;
+  }
+  /* icon up-down */
+  .icon-caret-up:before {
+    color: #fff;
+  }
+  .plnext-accordion-header,
+  .plnext-accordion-header {
+    @include GRADIENT;
+  }
+}
+.purchase {
+  &-conditions-accordion {
+    .plnext-accordion-element {
+      h3 {
+        padding: 10px 22px;
+      }
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+/* -- recap-bound*/
+// .flight-price-container
+.recap-bound {
+  .bound-table-flightline-header {
+    border-width: unset;
+  }
+  .flight-price-container {
+    .row-info-bestprice-integer {
+      font-size: 22px !important;
+    }
+    .fare-family {
+      float: left;
+      font-size: 15px;
+      .icon-ok-sign {
+        font-size: 30px;
+        position: relative;
+        top: 6px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+.flight-price {
+  &-container {
+    i.icon-ok-sign {
+      color: $TG_PURPLE1;
+    }
+    // .button-modify > .btn {
+    //   background-color: $TG_PINK;
+    //   color: #fff;
+    //   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    //   width: auto;
+    //   @include RADIUS(100px);
+    //   span.icon-edit {
+    //     color: #fff;
+    //   }
+    // }
+    .button-modify > {
+      @include btn-mo($TG_PINK, $TG_WHITE);
+    }
+  }
+}
+
+// .flight-details-container {
+//   &-row .stops .direct {
+//     color: #fff !important;
+//     &:before {
+//       border-top-color: #b0b0b0;
+//     }
+//   }
+
+//   &-row .stops .stop {
+//     margin-top: 0.3em;
+//   }
+// }
+
+/*! FARE COMPARISION  */
+$FARECOMP_RADIUS: 10px;
+$FARECOMP_RADIUS-W: 20px;
+$FARECOMP_RADIUS-H: 20px;
+$FARECOMP_ICON_SIZE: 2rem;
+$FARECOMP_ICON_REMOVE: $TG_GRAY-L1 !important;
+$FARECOMP_ICON_OK: green;
+.fare-comparison {
+  &-container {
+    .fare-item i {
+      font-size: $FARECOMP_ICON_SIZE;
+    }
+    .icon {
+      &-remove {
+        color: $FARECOMP_ICON_REMOVE;
+      }
+      &-ok {
+        color: $FARECOMP_ICON_OK;
+      }
+    }
+    .fare-selector {
+      width: $FARECOMP_RADIUS-W;
+      height: $FARECOMP_RADIUS-H;
+      &.selected {
+        border: $BG-RADIUS_FARECOM_BORDER;
+        background: $BG-RADIUS_FARECOM;
+      }
+    }
+  }
+}
+.plnext-widget-btn-text {
+  font-size: 1.4rem;
+}
+
+/* BOX DIALOG */
+.dialog {
+  &.dialog-content {
+    .timeout {
+      &-warning {
+        &-content {
+          color: #fff;
+        }
+      }
+      &-alert {
+        &-btn-start-over-text {
+          color: #fff !important;
+        }
+      }
+    }
+    .btn-primary {
+      border-color: unset;
+    }
+  }
+}
+/*! POPOVER  */
+$POPOVER_HEADER_FONTCOLOR: $TG_PURPLE3;
+$POPOVER_HEADER_FONTSIZE: 2rem;
+.purchase {
+  &-conditions-accordion {
+    padding: 0 5px;
+  }
+}
+.popover {
+  &-body {
+    padding: 0px;
+  }
+  &-main {
+    .cityCode,
+    .cityName,
+    .date {
+      color: $POPOVER_HEADER_FONTCOLOR;
+    }
+  }
+  &-heading {
+    @include POPOVER_HEADER($POPOVER_HEADER_FONTSIZE);
+  }
+  &-header {
+    &-content {
+      h1 span {
+        color: #fff;
+      }
+    }
+    &-close-btn {
+      @include POPOVER_HEADER($POPOVER_HEADER_FONTSIZE);
+    }
+    h1.popover-heading {
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+body[data-template-name="APIM"],
+body[data-template-name="CONF"] {
+  #fare-review-bounds {
+    .flight {
+      &-details-container-row {
+        .stops {
+          margin-top: 20px;
+          .direct::before {
+            clear: both;
+            content: "";
+            display: block;
+            position: absolute;
+            width: 30%;
+            top: 24px;
+            left: 35%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control:focus {
+  border-color: $TG_PINK;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $TG_PINK;
+}
+.bounds-list #fare-review-bounds,
+.segment-details {
+  .flight-info {
+    &-left {
+      width: 32%;
+      margin-left: 0.6em;
+    }
+  }
+}
+//.traveller-panel-body label, .traveller-panel-body label.mandatory-label
+/* error - APIM */
+span[id^="tpl6_error-message"] {
+  font-size: 12px;
+}
+section.traveller-panel-body {
+  &.panel-body {
+    display: block !important;
+  }
+  &.panel-body.container-xs-height {
+    .traveller-list-item {
+      width: calc(100% / 1);
+      padding: 0;
+    }
+    .traveller-details-text {
+      &.traveller-type {
+        color: $TG_PINK2;
+        background-color: $TG_GRAY-L3;
+        // border-radius: 50% 50%;
+        @include RADIUS(50% 50%);
+        width: 50px;
+        height: 50px;
+        padding: 13px 0 0 8px;
+        text-transform: capitalize;
+        display: inline-block;
+      }
+      &.traveller-name {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* Flight Note */
+.flight-notes-panel {
+  .panel-body ul {
+    padding-left: 0.3em;
+  }
+}
+/* Baggage Policy */
+.baggage-policy-panel {
+  margin: 0 0;
+}
+
+.time-to-day-offset {
+  vertical-align: initial;
+  font-size: 100%;
+  color: $FONT-COLOR_GRAY2;
+}
+/*! Bottom --- New DX Responsive */
+#price-summary-panel-container {
+  .pricesummarybottom-cell-continue {
+    max-width: 30% !important;
+  }
+  .pricesummarybottom-cell-content {
+    padding: 8px;
+  }
+  #bottom-continue-button {
+    font-size: 1em;
+    padding: 10px 0px !important;
+
+    > span {
+      text-align: center !important;
+      font-size: 2rem;
+    }
+  }
+}
+.btn-primary {
+  background-color: $TG_PINK !important;
+  border-color: $TG_PINK !important;
+  &:hover,
+  &:focus {
+    background-color: $TG_PURPLE4;
+  }
+}
+.dialog-content {
+  .timeout {
+    &-alert button.btn-primary,
+    &-warning-btn-reset-session,
+    &-warning-content button {
+      &:hover {
+        background-color: $TG_PURPLE4;
+      }
+    }
+  }
+}
+
+// }
+/*! ---- RESPONSIVE ST2------  */
+
+.dialog.dialog-content {
+  .timeout-warning {
+    &-content {
+      color: $DIALOG-CONTENT;
+    }
+    &-btn-reset-session-icon-repeat,
+    &-btn-reset-session-text {
+      color: $BTN_FONT_COLOR;
+    }
+  }
+}
+/*! TRIPSUMMARY-MINI-CONTAINER MOBILE*/
+#tripsummary {
+  &-extended-container {
+    background-color: $TRIPSUMMARY_BG;
+  }
+  &-extended-content {
+    .nav-button-container {
+      button.nav-button {
+        background: $TG_PURPLE2;
+      }
+    }
+  }
+}
+// tripsummary-extended-content
+
+.mobile-app-container {
+  .tabs-container {
+    // margin: 1em 0;
+    padding: 0.8em 0;
+    ul > li {
+      text-transform: capitalize;
+      // font-size: .8rem;
+      padding: 5px 10px;
+      min-width: 156px;
+      width: auto !important;
+      font-size: 1.3rem;
+    }
+  }
+  .nav-button {
+    &.nav-button {
+      &-right,
+      &-left {
+        background-color: $BTN-NAV_COLOR;
+      }
+    }
+  }
+  @include TAB_BAR-FOCUS-ACTIVE;
+}
+
+/* Setp2 - Passenger info */
+.apimTraveller {
+  &-panel {
+    max-height: 53vh !important;
+  }
+}
+/* DROPDOWN - Passenger info*/
+.autocompleteBox {
+  &-item {
+    &-mouseOver,
+    &-selected {
+      background-color: $TG_PINK3;
+      color: $BG-COLOR_DROPDOWN;
+    }
+  }
+}
+label[for$="PSPT_DocumentNumber"] {
+  white-space: initial;
+}
+#apim-traveller {
+  .fare-selectors {
+    .fare-selector {
+      width: $FARECOMP_RADIUS-W;
+      height: $FARECOMP_RADIUS-H;
+      &.selected {
+        border: $BG-RADIUS_FARECOM_BORDER;
+        background: $BG-RADIUS_FARECOM;
+      }
+    }
+  }
+  h2 {
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 0;
+    // -webkit-border-radius: 5px;
+    // -moz-border-radius: 5px;
+    // border-radius: 5px;
+  }
+}
+.traveller-panel {
+  &-body {
+    select,
+    input {
+      text-transform: uppercase;
+    }
+  }
+}
+/* -- passenger info */
+.apimTraveller-panel {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 30px);
+  margin: 2px;
+  background: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 210px;
+  overflow: auto;
+  @include RADIUS(5px);
+  .apim {
+    &-optional {
+      &-section {
+        margin-left: 0 !important;
+      }
+    }
+    // &-card-title{
+    //   &-before-validation h2{
+    //     text-transform: capitalize;
+    //   }
+    // }
+  }
+  #widget-group-apimTravellers-contactInformation-SosName label {
+    display: block !important;
+  }
+  label {
+    margin-left: 0 !important;
+  }
+  .newMail-container,
+  hr {
+    display: none;
+  }
+  .emergency-contact {
+    &-content {
+      &.col-xs-24 {
+        padding: 0;
+      }
+    }
+  }
+}
+.control-label {
+  /* -- form passenger info */
+  &.sr-only {
+    position: relative;
+    display: block;
+  }
+}
+/* Payment */
+.insurance {
+  margin: unset;
+  .insurance {
+    &-select {
+      .overlay.collapsed.checked {
+        right: 1em;
+        i.icon-ok {
+          font-size: 50px;
+        }
+      }
+    }
+    &-purchase {
+      width: 100%;
+    }
+    &-banner {
+      width: 65%;
+    }
+  }
+}
+/* -- Manage Service Conditions */
+.manage-service {
+  &-panel {
+    &.title-panel {
+      @include GRADIENT;
+      h2 {
+        margin: 12px 0;
+        > span {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-info {
+    display: none;
+  }
+}
+/* -- Seat Maps */
+.popup-seat {
+  &-characteristic,
+  &-title,
+  &-price {
+    color: #fff;
+  }
+}
+
+.dialog- {
+  &-tabs {
+    li.active > a,
+    &.nav-tabs > li.active > a:hover,
+    &.nav-tabs > li.active > a:focus {
+      border-top: 5px solid $TG_PINK2;
+    }
+  }
+}
+
+.ticket-delivery,
+.payment-wrapper,
+.baggage-policy-panel h2.horizontal-title {
+  margin: 0;
+  .title {
+    font-size: 1.8rem;
+    font-family: "Roboto Bold";
+  }
+  h2 {
+    margin: 0;
+    .heading-text,
+    .title {
+      font-size: 1.8rem;
+      font-family: "Roboto Bold";
+    }
+  }
+}
+.services-policy-heading {
+  padding: 13px !important;
+}
+.purchase-conditions {
+  padding: 0;
+  #terms-and-conditions {
+    padding: 0;
+    span.icon-ok-sign {
+      color: #fff;
+      padding: 11px 5px;
+    }
+    h4.alert-title {
+      padding: 13px;
+      margin: 0;
+      strong {
+        font-size: 1.8rem;
+        font-family: "Roboto Bold";
+      }
+    }
+  }
+}
+/* -- Payment Box */
+.payment {
+  .heading-banner.total-price,
+  .mop-legend.heading-banner {
+    box-shadow: 0px 1px 2px #4c4c4c !important;
+  }
+  .fop {
+    &-dropdown-wrapper {
+      padding: 0em;
+    }
+    &-btn {
+      background-color: $TG_PINK;
+      padding: 1em;
+      span {
+        color: #fff;
+        font-size: 1.2em;
+      }
+    }
+  }
+  &-wrapper {
+    .relative.fop-wrapper,
+    .fop-dropdown-wrapper {
+      float: unset;
+    }
+  }
+  .plnext-dropdown {
+    button:hover {
+      background-color: $TG_PINK2;
+    }
+    .dropdown-menu {
+      li {
+        padding: 0.5em;
+        font-size: 1.2em;
+      }
+    }
+    button > .icon-caret-down {
+      top: 1em;
+    }
+  }
+}
+/* Catalog Services */
+// btn catalogServices-dialog-service-add
+// catalogServices-dialog-container
+.catalogServices {
+  &-teaser {
+    height: fit-content;
+    margin-bottom: 0;
+    &-column {
+      margin-bottom: 2em;
+      .teaserDescription {
+        // width: 135px; // <--- Ok
+        padding: 0px;
+        img {
+          width: unset;
+        }
+      }
+    }
+    &-container {
+      // width: calc(100% - 140px);//<---- Ok
+      width: calc(100% - 110px);
+      padding: 0px;
+      .description-text {
+        display: none;
+      }
+    }
+    &-BAG,
+    &-SIT,
+    &-MEA,
+    &-WCH {
+      &.service-selected {
+        // >div{
+        //   position: absolute;
+        // }
+        > div:nth-child(2) {
+          // display: none;
+          position: absolute;
+          width: auto;
+          right: 0;
+        }
+      }
+      .box_service {
+        width: calc(100% - 130px);
+        padding: 0px;
+        margin-left: 12px;
+      }
+    }
+    &-title {
+      margin: 0 !important;
+    }
+  }
+  &-btn {
+    &-delete {
+      margin-right: 0.5em;
+    }
+  }
+  &-dialog-container {
+    .popover-header {
+      &-content {
+        @include GRADIENT;
+      }
+    }
+    .sectionTitle {
+      i.icon-caret-right:before {
+        left: 0;
+      }
+    }
+    .service {
+      &-footer {
+        padding: 0 10px;
+      }
+      &-tile-header {
+        display: none;
+      }
+    }
+  }
+  &-dialog-service {
+    &-add {
+      @include RADIUS(10px);
+      // @include GRADIENT;
+      background-color: $TG_PINK2 !important;
+      color: #fff;
+      width: 100%;
+    }
+    &-remove {
+      @include RADIUS(5px);
+    }
+  }
+}
+p.box_service {
+  padding: 0 0.3em;
+  margin: 0;
+}
+.catalogDisplay {
+  &-dialog-SIT {
+    .btn.btn-ctrl-horizontal-prev,
+    .btn.btn-ctrl-horizontal-next {
+      background-color: $TG_PURPLE2;
+    }
+  }
+}
+// div#tpl5_SIT div:nth-child(2) {
+//   display:none;
+// }
+
+// .seatMapFooterButtons{
+//   .btn-cancel{
+//     width: 45%;
+//     margin: 0 1em 0 0;
+//   }
+//   .catalogServices-dialog-btn-primary{
+//     width: 50% !important;
+//   }
+// }
+#catalog-services {
+  margin-top: 1em;
+  .catalogServices {
+    &-page-title {
+      @include GRADIENT;
+      margin: 0;
+      padding: 0.7em;
+      i {
+        color: #fff;
+      }
+    }
+    &-teasers-container {
+      margin: 0.3em;
+    }
+  }
+  .servicesbreakdown {
+    .servicesbreakdown-panel-heading {
+      @include GRADIENT;
+    }
+    h2.servicesbreakdown-title {
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Terms and Condition */
+.plnext-message .content {
+  margin-left: 6px;
+  .checkbox {
+    padding-left: 0;
+  }
+  ul {
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+}
+/* ---------------- Booking Confirmed ------------------ */
+// insurance-select panel
+.pnrd-view {
+  .confirm-banner {
+    font-size: 5vw;
+    > i.icon-ok-sign,
+    .recloc {
+      color: #fff;
+    }
+  }
+  .panel-heading {
+    @include GRADIENT;
+    i {
+      color: #fff;
+    }
+  }
+  .insurance-select {
+    > div.row.title-panel {
+      @include GRADIENT;
+      i {
+        color: #fff;
+      }
+    }
+    i#tpl7_iIconRight0::before {
+      left: 0;
+    }
+  }
+  .reservation-info {
+    h2 {
+      background: unset;
+      background-color: unset !important;
+    }
+  }
+  .pricedetails {
+    h2 {
+      span,
+      i {
+        color: #fff;
+      }
+    }
+    .price-taxes-text {
+      text-transform: none;
+    }
+  }
+  // .icon-caret-right:before
+  #fare-review-price,
+  #fare-review-bounds {
+    margin: 0 10px;
+  }
+  .price-taxes {
+    .icon-caret-right:before {
+      left: 0;
+    }
+  }
+  #fare-review {
+    &-bounds,
+    &-price,
+    &-travellers {
+      margin: 0 !important; // <-- line:3598 on newdx_responsive.scss
+    }
+  }
+  .travellers-panel {
+    &-footer {
+      @include btn-mo($TG_PINK, $TG_WHITE) // background-color: $TG_PINK;
+        // color: #fff;
+        // box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+        // width: auto;
+        // @include RADIUS(100px);
+        // span.icon-edit {
+        //   color: #fff;
+        // };;;
+    }
+  }
+}
+/* Error Box */
+button.btn {
+  &.plnext-widget-btn.btn-primary.small-primary > span {
+    text-transform: none;
+  }
+}
+
+/* INPUT - PLACEHOLDER */
+::-webkit-input-placeholder {
+  /* Edge */
+  color: $TG_GRAY-L2 !important;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: $TG_GRAY-L2 !important;
+}
+::placeholder {
+  color: $TG_GRAY-L2 !important;
+}
+/* INPUT - CHECKBOX AND RADIO */
+:not(#foo) input[type="checkbox"] + label:before,
+:not(#foo) input[type="radio"] + label:before {
+  color: $FONT-COLOR_CHECKBOX;
+}

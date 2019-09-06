@@ -1,0 +1,174 @@
+/* --------Logo THAI and Star------ */
+@mixin HEADERLOGO($tgmargin, $starmagin, $tgwidth, $starwidth, $boxw) {
+  #main-layout-header {
+    .box-headerlogo {
+      width: $boxw;
+      margin: 0 auto;
+    }
+    margin: auto 0 !important;
+    background-color: #290052;
+    img {
+      max-height: 40px !important;
+    }
+
+    #TGLogo {
+      max-width: $tgwidth;
+      margin: $tgmargin;
+    }
+
+    #StarLogo {
+      max-width: $starwidth;
+      float: right;
+      margin-right: 8px;
+      margin-top: 5px;
+      margin: $starmagin;
+    }
+  }
+}
+/* ------- Gradient---------- */
+@mixin GRADIENT {
+  background: linear-gradient(30deg, $BG-GRADIENT1, $BG-GRADIENT2);
+  color: $TG_WHITE;
+}
+%GRADIENT {
+  @include GRADIENT;
+}
+%TXT_GRADIENT {
+  @include GRADIENT;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ---------- Hover------------- */
+@mixin BTN_HOVER {
+  background-color: $TG_PURPLE2;
+}
+%BTN-HOVER {
+  @include BTN_HOVER;
+}
+%BORDER_RADIUS {
+  border-radius: 3px;
+}
+
+/*---------------- Radius ----------------*/
+@mixin RADIUS($x) {
+  border-radius: $x;
+}
+%FLIGHT-DETAILS-LOCATION {
+  width: calc(100% / 3);
+  display: block;
+}
+@mixin TAB_BAR-FOCUS-ACTIVE {
+  .tab-bar {
+    li {
+      &:focus,
+      &:active {
+        outline: 1px solid $BORDER_COLOR_HOVER_L;
+        outline-offset: -1px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $BORDER_COLOR_HOVER_L;
+      }
+    }
+  }
+}
+@mixin FARE-NOT_AVAILABLE {
+  text-align: center;
+  font-size: 14px;
+}
+// %TGFONTSIZE2REM {
+//   font-size: $POPOVER_HEADER_FONTSIZE;
+// }
+@mixin POPOVER_HEADER($fz) {
+  font-size: $fz;
+}
+@mixin FLIGHT_STOP($c) {
+  color: $c;
+}
+@mixin BTN-PRIMARY {
+  // background-color: $TG_PINK;
+  // border-color: $TG_PINK;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@mixin BTN {
+  background-color: $TG_PINK;
+  border-color: $TG_PINK;
+  > span,
+  > i {
+    color: $BTN_FONT_COLOR;
+  }
+  &:hover {
+    @extend %BTN-HOVER;
+  }
+  // text-transform: uppercase;
+}
+@mixin FLIGHTLINE-DISABLED($x) {
+  &:not(.bound-table-flightline-disabled) {
+    .bound-table-flightline-details {
+      border-left: $x solid $BORDER_COLOR_L;
+    }
+    &:hover .bound-table-flightline-details {
+      border-left: $x solid $BORDER_COLOR_HOVER_L;
+    }
+  }
+}
+/* BREAD-CRUMB-STEP */
+@mixin step-bread_crumb {
+  &.done {
+    .icon-ok {
+      display: none;
+    }
+    &:before {
+      content: "\f00c";
+      font-family: "NewUI-icons" !important;
+      background: linear-gradient(35deg, #c5168d, #3d1a6e);
+      color: white;
+      font-weight: 400;
+    }
+  }
+  &:before {
+    margin: initial;
+    margin-right: 15px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 0px solid #fff;
+    background: #ddd;
+  }
+  &.current {
+    border-bottom: 0px solid #ffffff;
+    position: relative;
+    strong {
+      border-bottom: 0px solid #ffffff;
+      color: #3d1a6e;
+    }
+    &:before {
+      background: linear-gradient(35deg, #c5168d, #3d1a6e);
+      color: #fff;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 12px;
+      bottom: 0px;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(35deg, #c5168d, #3d1a6e);
+    }
+  }
+  text-shadow: none;
+  text-transform: none;
+  padding-bottom: 15px;
+  padding-left: 0px;
+}
+/* button modify -- PINK */
+@mixin btn-mo($c-bg, $c-font) {
+  .btn {
+    background-color: $c-bg;
+    color: $c-font;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    width: auto;
+    @include RADIUS(100px);
+    span[class^='icon'],span {
+      color: #fff;
+    }
+  }
+}

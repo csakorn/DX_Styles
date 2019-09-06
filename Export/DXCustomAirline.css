@@ -1,5 +1,5 @@
 /*
- Modifide Date :: Wed Aug 14 2019 16:17:54 GMT+0700 (Indochina Time)
+ Modifide Date :: Thu Sep 05 2019 15:29:06 GMT+0700 (Indochina Time)
  Modifide By :: Chalermpol Sakorn
  */ 
 div.price-amount.price-total-amount .price-value, .tripsummary-price-amount-text {
@@ -2049,14 +2049,14 @@ body {
 }
 
 /*! BREAD CRUMB  */
-div#bread-crumb {
+div#bread-crumb, header#bread-crumb {
     box-shadow: 0 6px 6px -6px #330066 inset;
     -moz-box-shadow: 0 6px 6px -6px #330066 inset;
     -webkit-box-shadow: 0 6px 6px -6px #330066 inset;
     background: #efefef !important;
 }
 
-div#bread-crumb .bread-crumb-component .steps-container ol > li {
+div#bread-crumb .bread-crumb-component .steps-container ol > li, header#bread-crumb .bread-crumb-component .steps-container ol > li {
     line-height: 40px;
 }
 
@@ -2179,6 +2179,10 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     background: #fff;
 }
 
+.manage-service-conditions {
+    display: none;
+}
+
 .bound-table-flightline.selected .direct {
     color: #FFF !important;
 }
@@ -2245,7 +2249,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     display: inline-block;
     flex-grow: 3;
     text-align: center;
-    margin: 30px .5em 0 .5em;
+    margin: 30px 0 0 0;
 }
 
 .bound-table-flightline .flight-details-container-row .stops .direct {
@@ -2415,8 +2419,9 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     font-size: 90%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1366px) {
   /*! ------ new  */
+  
   
     .calendarmatrix-inner-cell.selected, .owd-calendar-container .calendar-cell[selected] {
         background: linear-gradient(30deg, #c5168d, #3D1A6E);
@@ -2442,6 +2447,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         width: calc(100% / 3);
         display: block;
     }
+  
   
   /*! ************* New Desing Responsive *****************/
     * {
@@ -2500,7 +2506,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
 
     .bread-crumb-component .steps-container ol > li {
         text-shadow: none;
-        text-transform: none;
+        text-transform: capitalize;
         padding-bottom: 15px;
         padding-left: 0px;
     }
@@ -3267,7 +3273,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .itinerary-popover .boundType {
-        color: #C5168D;
+        color: #FFCC00;
         text-transform: capitalize;
         font-size: 70%;
         margin-top: 10px;
@@ -3408,7 +3414,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
   .traveller-panel-body input {
         border-radius: 3px;
         border-color: #E3E3E3;
-        color: #aaa;
+        color: #1b1b1b;
     }
 
     .traveller-panel-footer,
@@ -3744,7 +3750,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .description-text {
-        display: block !important;
+        display: block;
     }
   /*! END-----NEW DX */
   /*! ------ Over  */
@@ -3776,8 +3782,54 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         margin-top: 5px;
         margin: 1.3em 0px 0em 0em;
     }
+
+    .calendarmatrix-result-header {
+        display: none;
+    }
+
+    .calendarmatrix-inner-cell.disabled .fare-label * {
+        color: #b0b0b0;
+    }
+
+    .calendarmatrix .fdcs-title,
+  .calendarmatrix .bound-header {
+        margin: 0;
+    }
+
+    .calendarmatrix .header-panel * {
+        color: #330066;
+    }
+
+    .header-date-cell {
+        background-color: #330066;
+    }
+
+    .header-date-cell * {
+        color: #FFF;
+    }
+
+    #float-button-left,
+  #float-button-right {
+        background-color: #a31175;
+    }
+
+    #float-button-left i.icon-circle-arrow-left, #float-button-left i.icon-circle-arrow-right,
+    #float-button-right i.icon-circle-arrow-left,
+    #float-button-right i.icon-circle-arrow-right {
+        color: #FFF;
+    }
+
+    .tripsummary-header-trip-traveller-count {
+        text-transform: capitalize;
+    }
   /*! Flight Card */
     .availability {
+    }
+
+    .availability-bound .bound-header {
+        background: linear-gradient(30deg, #c5168d, #3D1A6E);
+        color: #FFF;
+        margin-bottom: 0;
     }
 
     .availability-bound .header-text {
@@ -3846,6 +3898,15 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         margin-bottom: 1rem;
     }
 
+    .flight-details-group > .airlines {
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    .flight-details-group > .airlines .aircraftnumber {
+        display: initial;
+    }
+
     .urgency-to-book-panel-number {
         text-transform: capitalize;
     }
@@ -3895,16 +3956,37 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         padding: 0;
     }
 
+    #tripsummary-extended-container .fare-basis-popup section.panel-body {
+        overflow-x: auto;
+    }
+
     #tripsummary-extended-container .fare-basis-popup .panel-body {
         padding: 0;
     }
 
-    #tripsummary-extended-container .fare-basis-popup .panel-body table > thead tr > th#tpl7_fi {
-        width: 45vw;
+    #tripsummary-extended-container .fare-basis-table thead th:nth-child(1) {
+        width: 200px;
     }
 
-    #tripsummary-extended-container .fare-basis-popup .panel-body table > thead tr > th#tpl7_tg {
-        width: 28vw;
+    #tripsummary-extended-container .fare-basis-table thead th:nth-child(2) {
+        width: 155px;
+    }
+
+    #tripsummary-extended-container .fare-basis-table thead th:nth-child(3) {
+        width: 100px;
+    }
+
+    #tripsummary-extended-container .fare-basis-table tbody th:nth-child(1) {
+        word-break: break-word;
+    }
+
+    #tripsummary-extended-container .fare-basis-table tbody th .abbr {
+        text-decoration: unset;
+    }
+
+    #tripsummary-extended-container .fare-basis-table tbody th bdo[dir="ltr"] {
+        display: block;
+        font-size: 12px;
     }
 
     #tripsummary-extended-container #tripsummary-extended-content {
@@ -3912,7 +3994,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     #tripsummary-extended-container #fare-review-bounds, #tripsummary-extended-container #fare-review-price, #tripsummary-extended-container #fare-review-travellers {
-        margin: 0;
+        margin: 0 !important;
     }
 
     #tripsummary-extended-container .page-actions-bar.text-right {
@@ -3958,8 +4040,13 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         border-width: unset;
     }
 
+    .recap-bound .flight-price-container .row-info-bestprice-integer {
+        font-size: 22px !important;
+    }
+
     .recap-bound .flight-price-container .fare-family {
         float: left;
+        font-size: 15px;
     }
 
     .recap-bound .flight-price-container .fare-family .icon-ok-sign {
@@ -3975,11 +4062,13 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
 
     .flight-price-container .button-modify > .btn {
         background-color: #c5168d;
-        color: #fff;
-        box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+        width: auto;
+        border-radius: 100px;
     }
 
-    .flight-price-container .button-modify > .btn span.icon-edit {
+    .flight-price-container .button-modify > .btn span[class^='icon'], .flight-price-container .button-modify > .btn span {
         color: #fff;
     }
   /*! FARE COMPARISION  */
@@ -3988,7 +4077,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .fare-comparison-container .icon-remove {
-        color: red;
+        color: #3e3e3e !important;
     }
 
     .fare-comparison-container .icon-ok {
@@ -4051,6 +4140,22 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         color: #fff;
     }
 
+    body[data-template-name="APIM"] #fare-review-bounds .flight-details-container-row .stops,
+  body[data-template-name="CONF"] #fare-review-bounds .flight-details-container-row .stops {
+        margin-top: 20px;
+    }
+
+    body[data-template-name="APIM"] #fare-review-bounds .flight-details-container-row .stops .direct::before,
+    body[data-template-name="CONF"] #fare-review-bounds .flight-details-container-row .stops .direct::before {
+        clear: both;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30%;
+        top: 24px;
+        left: 35%;
+    }
+
     .form-control:focus {
         border-color: #c5168d;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #c5168d;
@@ -4060,6 +4165,14 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
   .segment-details .flight-info-left {
         width: 32%;
         margin-left: 0.6em;
+    }
+
+    span[id^="tpl6_error-message"] {
+        font-size: 12px;
+    }
+
+    section.traveller-panel-body.panel-body {
+        display: block !important;
     }
 
     section.traveller-panel-body.panel-body.container-xs-height .traveller-list-item {
@@ -4082,6 +4195,10 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         display: inline-block;
     }
 
+    .flight-notes-panel .panel-body ul {
+        padding-left: 0.3em;
+    }
+
     .baggage-policy-panel {
         margin: 0 0;
     }
@@ -4102,7 +4219,7 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
 
     #price-summary-panel-container #bottom-continue-button {
         font-size: 1em;
-        padding: 10px 20px !important;
+        padding: 10px 0px !important;
     }
 
     #price-summary-panel-container #bottom-continue-button > span {
@@ -4110,10 +4227,15 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         font-size: 2rem;
     }
 
+    .btn-primary, .tripsummary-btn .btn-primary, .dialog-content .timeout-alert button.btn-primary, .dialog-content .timeout-warning-btn-reset-session > .mall-primary, .dialog-content .timeout-warning-content button {
+        background-color: #c5168d !important;
+        border-color: #c5168d !important;
+    }
+
     .btn-primary:hover,
-  .dialog-content .timeout-alert button.btn-primary:hover,
-  .dialog-content .timeout-warning-btn-reset-session > .mall-primary:hover,
-  .dialog-content .timeout-warning-content button:hover, .btn-primary:focus, .dialog-content .timeout-alert button.btn-primary:focus, .dialog-content .timeout-warning-btn-reset-session > .mall-primary:focus, .dialog-content .timeout-warning-content button:focus {
+    .dialog-content .timeout-alert button.btn-primary:hover,
+    .dialog-content .timeout-warning-btn-reset-session > .mall-primary:hover,
+    .dialog-content .timeout-warning-content button:hover, .btn-primary:focus, .dialog-content .timeout-alert button.btn-primary:focus, .dialog-content .timeout-warning-btn-reset-session > .mall-primary:focus, .dialog-content .timeout-warning-content button:focus {
         background-color: #220e3e;
     }
 
@@ -4161,7 +4283,16 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .apimTraveller-panel {
-        max-height: 64vh;
+        max-height: 53vh !important;
+    }
+
+    .autocompleteBox-item-mouseOver, .autocompleteBox-item-selected {
+        background-color: #ffdcf4;
+        color: #ffdcf4;
+    }
+
+    label[for$="PSPT_DocumentNumber"] {
+        white-space: initial;
     }
 
     #apim-traveller .fare-selectors .fare-selector {
@@ -4178,6 +4309,11 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         text-transform: capitalize;
         padding-top: 5px;
         padding-bottom: 0;
+    }
+
+    .traveller-panel-body select,
+  .traveller-panel-body input {
+        text-transform: uppercase;
     }
 
     .apimTraveller-panel {
@@ -4198,16 +4334,21 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         margin-left: 0 !important;
     }
 
+    .apimTraveller-panel #widget-group-apimTravellers-contactInformation-SosName label {
+        display: block !important;
+    }
+
     .apimTraveller-panel label {
         margin-left: 0 !important;
     }
 
-    .apimTraveller-panel .newMail-container {
+    .apimTraveller-panel .newMail-container,
+    .apimTraveller-panel hr {
         display: none;
     }
 
-    #tpl6_travellerFormContent .apimTraveller-panel {
-        max-height: 55vh;
+    .apimTraveller-panel .emergency-contact-content.col-xs-24 {
+        padding: 0;
     }
 
     .control-label {
@@ -4257,6 +4398,12 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
 
     .popup-seat-characteristic, .popup-seat-title, .popup-seat-price {
         color: #fff;
+    }
+
+    .dialog--tabs li.active > a,
+  .dialog--tabs.nav-tabs > li.active > a:hover,
+  .dialog--tabs.nav-tabs > li.active > a:focus {
+        border-top: 5px solid #a31175;
     }
 
     .ticket-delivery,
@@ -4334,7 +4481,8 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         font-size: 1.2em;
     }
 
-    .payment-wrapper .relative.fop-wrapper, .payment-wrapper .fop-dropdown-wrapper {
+    .payment-wrapper .relative.fop-wrapper,
+  .payment-wrapper .fop-dropdown-wrapper {
         float: unset;
     }
 
@@ -4351,8 +4499,16 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         top: 1em;
     }
 
+    .catalogServices-teaser {
+        height: fit-content;
+        margin-bottom: 0;
+    }
+
+    .catalogServices-teaser-column {
+        margin-bottom: 2em;
+    }
+
     .catalogServices-teaser-column .teaserDescription {
-        width: 135px;
         padding: 0px;
     }
 
@@ -4361,8 +4517,98 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .catalogServices-teaser-container {
-        width: calc(100% - 140px);
+        width: calc(100% - 110px);
         padding: 0px;
+    }
+
+    .catalogServices-teaser-container .description-text {
+        display: none;
+    }
+
+    .catalogServices-teaser-BAG.service-selected > div:nth-child(2), .catalogServices-teaser-SIT.service-selected > div:nth-child(2), .catalogServices-teaser-MEA.service-selected > div:nth-child(2), .catalogServices-teaser-WCH.service-selected > div:nth-child(2) {
+        position: absolute;
+        width: auto;
+        right: 0;
+    }
+
+    .catalogServices-teaser-BAG .box_service, .catalogServices-teaser-SIT .box_service, .catalogServices-teaser-MEA .box_service, .catalogServices-teaser-WCH .box_service {
+        width: calc(100% - 130px);
+        padding: 0px;
+        margin-left: 12px;
+    }
+
+    .catalogServices-teaser-title {
+        margin: 0 !important;
+    }
+
+    .catalogServices-btn-delete {
+        margin-right: 0.5em;
+    }
+
+    .catalogServices-dialog-container .popover-header-content {
+        background: linear-gradient(30deg, #c5168d, #3D1A6E);
+        color: #FFF;
+    }
+
+    .catalogServices-dialog-container .sectionTitle i.icon-caret-right:before {
+        left: 0;
+    }
+
+    .catalogServices-dialog-container .service-footer {
+        padding: 0 10px;
+    }
+
+    .catalogServices-dialog-container .service-tile-header {
+        display: none;
+    }
+
+    .catalogServices-dialog-service-add {
+        border-radius: 10px;
+        background-color: #a31175 !important;
+        color: #fff;
+        width: 100%;
+    }
+
+    .catalogServices-dialog-service-remove {
+        border-radius: 5px;
+    }
+
+    p.box_service {
+        padding: 0 0.3em;
+        margin: 0;
+    }
+
+    .catalogDisplay-dialog-SIT .btn.btn-ctrl-horizontal-prev,
+  .catalogDisplay-dialog-SIT .btn.btn-ctrl-horizontal-next {
+        background-color: #3D1A6E;
+    }
+
+    #catalog-services {
+        margin-top: 1em;
+    }
+
+    #catalog-services .catalogServices-page-title {
+        background: linear-gradient(30deg, #c5168d, #3D1A6E);
+        color: #FFF;
+        margin: 0;
+        padding: 0.7em;
+    }
+
+    #catalog-services .catalogServices-page-title i {
+        color: #fff;
+    }
+
+    #catalog-services .catalogServices-teasers-container {
+        margin: 0.3em;
+    }
+
+    #catalog-services .servicesbreakdown .servicesbreakdown-panel-heading {
+        background: linear-gradient(30deg, #c5168d, #3D1A6E);
+        color: #FFF;
+    }
+
+    #catalog-services .servicesbreakdown h2.servicesbreakdown-title i {
+        color: #fff;
     }
 
     .plnext-message .content {
@@ -4375,14 +4621,15 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
 
     .plnext-message .content ul {
         padding-left: 1em;
-        padding-right: .5em;
+        padding-right: 0.5em;
     }
 
     .pnrd-view .confirm-banner {
         font-size: 5vw;
     }
 
-    .pnrd-view .confirm-banner > i.icon-ok-sign, .pnrd-view .confirm-banner .recloc {
+    .pnrd-view .confirm-banner > i.icon-ok-sign,
+    .pnrd-view .confirm-banner .recloc {
         color: #fff;
     }
 
@@ -4392,7 +4639,20 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
     }
 
     .pnrd-view .panel-heading i {
+        color: #fff;
+    }
+
+    .pnrd-view .insurance-select > div.row.title-panel {
+        background: linear-gradient(30deg, #c5168d, #3D1A6E);
         color: #FFF;
+    }
+
+    .pnrd-view .insurance-select > div.row.title-panel i {
+        color: #fff;
+    }
+
+    .pnrd-view .insurance-select i#tpl7_iIconRight0::before {
+        left: 0;
     }
 
     .pnrd-view .reservation-info h2 {
@@ -4400,15 +4660,58 @@ div#bread-crumb .bread-crumb-component .steps-container ol > li {
         background-color: unset !important;
     }
 
-    .pnrd-view .pricedetails h2 span, .pnrd-view .pricedetails h2 i {
-        color: #FFF;
+    .pnrd-view .pricedetails h2 span,
+  .pnrd-view .pricedetails h2 i {
+        color: #fff;
     }
 
-    .pnrd-view #fare-review-price, .pnrd-view #fare-review-bounds {
+    .pnrd-view .pricedetails .price-taxes-text {
+        text-transform: none;
+    }
+
+    .pnrd-view #fare-review-price,
+  .pnrd-view #fare-review-bounds {
         margin: 0 10px;
     }
 
     .pnrd-view .price-taxes .icon-caret-right:before {
         left: 0;
+    }
+
+    .pnrd-view #fare-review-bounds, .pnrd-view #fare-review-price, .pnrd-view #fare-review-travellers {
+        margin: 0 !important;
+    }
+
+    .pnrd-view .travellers-panel-footer .btn {
+        background-color: #c5168d;
+        color: #FFF;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+        width: auto;
+        border-radius: 100px;
+    }
+
+    .pnrd-view .travellers-panel-footer .btn span[class^='icon'], .pnrd-view .travellers-panel-footer .btn span {
+        color: #fff;
+    }
+
+    button.btn.plnext-widget-btn.btn-primary.small-primary > span, .tripsummary-btn button.btn.plnext-widget-btn.small-primary.btn-primary > span, .dialog-content .timeout-alert button.btn.plnext-widget-btn.small-primary.btn-primary > span, .dialog-content .timeout-warning-btn-reset-session > button.btn.plnext-widget-btn.small-primary.mall-primary > span, .dialog-content .timeout-warning-content button.btn.plnext-widget-btn.small-primary > span {
+        text-transform: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #b0b0b0 !important;
+    }
+
+    :-ms-input-placeholder {
+        color: #b0b0b0 !important;
+    }
+
+    ::placeholder {
+        color: #b0b0b0 !important;
+    }
+
+    :not(#foo) input[type="checkbox"] + label:before,
+  :not(#foo) input[type="radio"] + label:before {
+        color: #330066;
     }
 }

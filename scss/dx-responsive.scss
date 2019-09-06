@@ -1,3 +1,4 @@
+@import 'colors';
 // @media only screen and (max-width: 767px) {
 
 //     //-- Select Flight
@@ -20,27 +21,27 @@
 // }
 
 @media only screen and (max-width: 599px) {
-  // // Header Logo
-  // #main-layout-header {
-  //     margin: auto 0 !important;
+  // Header Logo
+  #main-layout-header {
+    margin: auto 0 !important;
 
-  //     img {
-  //         max-height: 40px !important;
-  //     }
+    img {
+      max-height: 40px !important;
+    }
 
-  //     #TGLogo {
-  //         max-width: 30%;
-  //         margin: 1em 0em 1em 8px;
-  //     }
+    #TGLogo {
+      max-width: 30%;
+      margin: 1em 0em 1em 8px;
+    }
 
-  //     #StarLogo {
-  //         max-width: 40%;
-  //         float: right;
-  //         margin-right: 8px;
-  //         margin-top: 5px;
-  //         margin: 1.2em 8px 1em 0em;
-  //     }
-  // }
+    #StarLogo {
+      max-width: 40%;
+      float: right;
+      margin-right: 8px;
+      margin-top: 5px;
+      margin: 1.2em 8px 1em 0em;
+    }
+  }
 
   // .recap-bound .flight-price-container .fare-family .icon-ok-sign {
   //     font-size: 30px;

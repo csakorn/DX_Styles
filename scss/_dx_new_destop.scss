@@ -1,0 +1,464 @@
+@import "dx-extend";
+body {
+  background-color: #fff;
+}
+/*! HEADER AND LOGO */
+$BREAD-CRUMB_LINE_HEIGHT: 40px;
+@include HEADERLOGO(1em 0, 1.6em 0em 0em 0em, 10%, 15%, 1200px);
+/*! BREAD CRUMB  */
+div#bread-crumb,header#bread-crumb {
+  box-shadow: 0 6px 6px -6px #330066 inset;
+  -moz-box-shadow: 0 6px 6px -6px #330066 inset;
+  -webkit-box-shadow: 0 6px 6px -6px #330066 inset;
+  background: $BG-BREAD_CRUMB !important;
+  .bread-crumb-component {
+    // background: unset;
+    .steps-container ol > li {
+      line-height: $BREAD-CRUMB_LINE_HEIGHT;
+    }
+  }
+}
+.bread-crumb {
+  &-component {
+    div.pull-left {
+      display: inline;
+      color: $TG_PURPLE1;
+    }
+    background: unset;
+    // background-color: #f8f8f8;
+    color: #555;
+    .steps-container {
+      margin-top: 10px;
+      ol > li {
+        @include step-bread_crumb;
+        // &.done {
+        //   .icon-ok {
+        //     display: none;
+        //   }
+        //   &:before {
+        //     content: "\f00c";
+        //     font-family: "NewUI-icons" !important;
+        //     background: linear-gradient(35deg, #c5168d, #3d1a6e);
+        //     color: white;
+        //     font-weight: 400;
+        //   }
+        // }
+        // &:before {
+        //   margin: initial;
+        //   margin-right: 15px;
+        //   display: inline-block;
+        //   border-radius: 3px;
+        //   border: 0px solid #fff;
+        //   background: #ddd;
+        // }
+        // &.current {
+        //   border-bottom: 0px solid #ffffff;
+        //   position: relative;
+        //   strong {
+        //     border-bottom: 0px solid #ffffff;
+        //     color: #3d1a6e;
+        //   }
+        //   &:before {
+        //     background: linear-gradient(35deg, #c5168d, #3d1a6e);
+        //     color: #fff;
+        //   }
+        //   &:after{
+        //     content: " ";
+        //     position: absolute;
+        //     left: 12px;
+        //     bottom: 0px;
+        //     width: 100%;
+        //     height: 4px;
+        //     background: linear-gradient(35deg, #c5168d, #3d1a6e);
+        //   }
+        // }
+        // text-shadow: none;
+        // text-transform: none;
+        // padding-bottom: 15px;
+        // padding-left: 0px;
+      }
+    }
+    // div.pull-left {
+    //   display: none;
+    // }
+  }
+}
+
+/*! CALENDAR  */
+.owd-calendar {
+  &-container {
+    .calendar-cell {
+      &[selected] .calendar-cell-bottom {
+        top: 0px;
+      }
+      &[selected] {
+        // @include GRADIENT;
+        @extend %GRADIENT;
+        @extend %BORDER_RADIUS;
+        border: none;
+        > a,
+        .inner-calendar-cell-bottom,
+        .day-info {
+          color: #fff;
+        }
+        .cell-divider {
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+/*! TAG-LOWESTFARES  */
+.legend-attribute {
+  &-lowestfares-img {
+    @extend %TXT_GRADIENT;
+  }
+}
+
+/*! Wait image  */
+.loading-content {
+  // background: url("../img/languages/en/progress.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 450px;
+  background-position-x: center;
+}
+
+/*! BOX FARE SELECT  */
+
+.availability {
+  &-bound-title {
+    &.bound-title-0,
+    &.bound-title-1 {
+      // font-size: $BOUND-TITLE_SIZE;
+      // color: $BOUND-TITLE;
+      // list-style: $BOUND-TITLE_STYLE;
+      // display: list-item;
+      display: none;
+    }
+    &-icon-ok-sign.selected {
+      color: $TG_PURPLE1;
+    }
+  }
+  &-bound {
+    .row-button-with-price-not-available {
+      @include FARE-NOT_AVAILABLE;
+    }
+    .recap-bound {
+      .availability-flight-details-location {
+        @extend %FLIGHT-DETAILS-LOCATION;
+      }
+      .availability-flight-details-location.bound-type {
+        display: none !important;
+      }
+      // .stops * {
+      //   // color: $BORDER_COLOR_DIRECT;
+      // }
+    }
+  }
+}
+.popover-content {
+  background: #fff;
+}
+.manage-service-conditions{
+  display: none;
+}
+.bound-table-flightline {
+  &.selected .direct{
+    color: #FFF !important;
+  }
+  &:hover{
+    .stops .direct{
+      color: #fff !important;
+    }
+  }
+  .icon-lowest {
+    color: $LOWEST-TAG;
+    @extend %TXT_GRADIENT;
+    text-shadow: unset;
+  }
+  @include FLIGHTLINE-DISABLED(8px);
+  &-details {
+    padding: 0.7em 0;
+  }
+  .availability {
+    &-flight-details {
+      margin-left: 7px;
+    }
+    &-flight-services {
+      border-left-width: 8px;
+      .services-table {
+        &-corner {
+          border: unset;
+        }
+        &-cell-content.not-available {
+          background: unset;
+        }
+      }
+    }
+    &-show-timeline-link sapn {
+      margin-left: 0;
+    }
+    &-table-fare-cell {
+      .not-combinable-icon {
+        color: $NOT-COMBINABLE-ICON;
+      }
+    }
+  }
+
+  .icon-caret-right {
+    display: none;
+  }
+  // /*! Flight Card */-location.availability-flight-details-location
+  .flight-details {
+    &-location{
+      width: calc(100% / 3);
+    }
+    &-container-row {
+      display: flex;
+      .stops {
+        margin-left: 0px;
+        display: inline-block;
+        flex-grow: 3;
+        // margin-top: 30px;
+        text-align: center;
+        margin: 30px 0 0 0;
+        // margin: 30px .5em 0 .5em; //<---- LR Req margin: 30px 0 0 0;
+        .direct {
+          color:$DIRECT-FONT_COLOR_DISABLED;  
+          &:after {
+            // background-color: unset;
+            content: "\f074";
+            color: #b0b0b0;
+            top: 10px;
+            font-size: 150%;
+          }
+        }
+        .stop {
+          color: #3e3e3e;
+          margin-left: 0px;
+          width: 100%;
+          text-align: center;
+          display: block;
+          &:after{
+            top:2%;
+          }
+        }
+        .stopDuration {
+          color: #aaa;
+          display: block;
+          font-size: 70%;
+          font-weight: 400;
+        }
+        .stop,
+        .direct {
+          &:before {
+            width: 100%;
+            border-left: 0px solid #b0b0b0;
+            border-top: 1px solid #b0b0b0;
+            border-top-color: #b0b0b0;
+            border-top-style: solid;
+            left: 0px;
+          }
+          &:after {
+            position: absolute;
+            // top: 0%;
+            left: calc(50% - 0.3em);
+            margin-left: 0;
+            // background-color: #b0b0b0;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  //++++++++++++++++++
+
+  // .flight-details {
+  //   &-container-row .stops {
+  //     width: $BORDER_WIDTH_DIRECT;
+  //     // .direct {
+  //     //   color: $BORDER_COLOR_DIRECT;
+  //     // }
+  //     .stop {
+  //       margin-top: $FLIGHT_LOCATION_STOP;
+  //       color: $BORDER_COLOR_DIRECT;
+  //       &::after {
+  //         width: $FLIGHT_STOP_W;
+  //         height: $FLIGHT_STOP_H;
+  //       }
+  //     }
+  //     .direct:before {
+  //       border-top-color: $BORDER_COLOR_DIRECT;
+  //     }
+  //   }
+  //   &-location {
+  //     &.availability-flight-details-location {
+  //       @extend %FLIGHT-DETAILS-LOCATION;
+  //     }
+  //     &.bound-type {
+  //       display: none;
+  //     }
+  //   }
+  //   &-container-row {
+  //     .airportname,
+  //     .stops > span {
+  //       display: block;
+  //     }
+  //   }
+  // }
+}
+/*! TRIPSUMMARY  */
+.tripsummary {
+  &-section-title {
+    background-color: $TRIPSUMMARY-BG_YOURBOOK;
+  }
+  &-title-text {
+    color: $TRIPSUMMARY-BTN_FONT_YOURBOOK;
+  }
+}
+/*! TRIPSUMMARY BTN*/
+
+.tripsummary-btn {
+  .one-icon,
+  .icon-right {
+    color: $TRIPSUMMARY_BTN_FONT_COLOR;
+  }
+  .no-icons {
+    color: $TRIPSUMMARY_BTN_FONT_COLOR_B;
+  }
+  .btn-primary {
+    // @include BTN-PRIMARY;
+    // @include BTN;
+    @extend .btn-primary;
+  }
+  &-clear {
+    color: $TRIPSUMMARY_BTN_FONT_COLOR_B;
+    i,
+    span {
+      color: $TRIPSUMMARY_BTN_FONT_COLOR_B !important;
+    }
+  }
+  &-selected,
+  &-selected:focus {
+    border: thin solid $TRIPSUMMARY_BTN_BORDER_COLOR_P;
+  }
+  &-selected:hover {
+    background-color: $TRIPSUMMARY_BTN_BORDER_COLOR_P;
+  }
+}
+/*! BTN  */
+.btn-primary {
+  @include BTN-PRIMARY;
+  @include BTN;
+}
+/*! TIMEOUT-ALERT BTN*/
+.dialog-content {
+  color: $DIALOG-CONTENT;
+  .timeout-alert {
+    button.btn-primary {
+      //   @include BTN-PRIMARY;
+      //   @include BTN;
+      @extend .btn-primary;
+    }
+  }
+  .timeout-warning-btn-reset-session > .mall-primary {
+    // @include BTN-PRIMARY;
+    // @include BTN;
+    @extend .btn-primary;
+  }
+  .timeout-warning-content {
+    // color: $DIALOG-CONTENT;
+    // @extend .btn-primary;
+    button {
+      @extend .btn-primary;
+    }
+  }
+}
+
+/*! TOOLTIP */
+.popover {
+  &-content {
+    background: #f8f8f8;
+    border: unset;
+  }
+  &.top.cellTooltip {
+    border: unset;
+    background-color: #616161;
+    padding: 2px;
+  }
+}
+/*! TRIPSUMMARY-DIALOG */
+.bounddetails {
+  .bounds-panel-heading.panel-heading {
+    h2,
+    i {
+      color: $TG_WHITE;
+    }
+  }
+}
+.travellerdetails {
+  .travellers-panel-heading.panel-heading {
+    h2,
+    i,
+    span {
+      color: $TG_WHITE;
+    }
+    h2 > i {
+      color: $TG_WHITE;
+    }
+  }
+}
+#tripsummary {
+  &-extended-content {
+    .panel-heading {
+      h2 > * {
+        color: $TG_WHITE;
+      }
+    }
+    .panel-body {
+      .icon-caret-right {
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+/* APIM - SERVICE */
+/* Default display: Hide all teaser images and keep only the default one */
+.catalogServices-teasers-container .TG-teaser {
+  display: none;
+}
+.catalogServices-teasers-container .TG-teaser.class-default {
+  display: block; 
+}
+/* Business/First class: Hide default teaser and show business/firsy class image */
+.catalogServices-teasers-container .flightClass-B .TG-teaser.class-default,
+.catalogServices-teasers-container .flightClass-F .TG-teaser.class-default {
+  display: none !important; 
+}
+.catalogServices-teasers-container .flightClass-B .TG-teaser.class-B,
+.catalogServices-teasers-container .flightClass-F .TG-teaser.class-F {
+  display: block !important;
+}
+
+.description-text {
+  display: none;
+  margin-top: -10px;
+  padding-left: 3px;
+  font-size: 90%;
+}
+// .catalogServices-teasers-container>div:first-of-type .catalogServices-teaser-column{
+//   width:100%;
+// }
+// .catalogServices-teasers-container>div:first-of-type .catalogServices-teaser-column .box_service{
+//   width:65%;
+// }
+// #service-desc-SIT{
+//   width: 33%;
+// }

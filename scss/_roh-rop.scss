@@ -1,0 +1,156 @@
+$ROH_SHADOW_STYLE: 1px 1px 1px #aaa;
+$ROH_ITEM_BORDER_STYLE: 1px solid #e4e4e4;
+%ROH-BOXSHADOW {
+  -webkit-box-shadow: 1px 1px 4px -3px gray;
+  -moz-box-shadow: 1px 1px 4px -3px gray;
+  box-shadow: 1px 1px 4px -3px gray;
+}
+%ROH-BTN {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  color: #330066;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+%ROH-HEADER {
+  text-align: center;
+  padding: 0.5em;
+  color: #2f007b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9em;
+  height: 3.5em;
+}
+.box-roh {
+  box-shadow: $ROH_SHADOW_STYLE;
+  &_item {
+    padding: 0.5em;
+    border: $ROH_ITEM_BORDER_STYLE;
+    float: left;
+    width: 30%;
+    /* width:calc(95%/3); */
+    box-sizing: border-box;
+    margin: 0.5em;
+    @extend %ROH-BOXSHADOW;
+    > button {
+      float: right;
+      margin-top: 1.5em;
+    }
+    > ul {
+      display: inline-block;
+      width: 120px;
+      padding: 0 0em;
+      text-align: right;
+    }
+    > a {
+      display: block;
+      /*  border:1px solid #333; */
+      float: left;
+      width: 100%;
+      text-align: right;
+      box-sizing: border-box;
+      position: relative;
+      top: -2em;
+      button {
+        @extend %ROH-BTN;
+      }
+    }
+    > header {
+      @extend %ROH-HEADER ;
+    }
+    img {
+      width: 50%;
+      height: 120px;
+      border: 1px solid #555;
+      display: inline-block;
+    }
+  }
+  &_link_more {
+    margin-right: 1em;
+    display: block;
+    clear: both;
+    position: relative;
+    text-align: right;
+    padding: 1.5em 0;
+    > span {
+      margin-left: 0.5em;
+    }
+  }
+  &_price-disc {
+    text-decoration: line-through;
+    font-size: 0.5em !important;
+  }
+  &_exc {
+    background-color: #ff9aeb;
+    color: #330066;
+    text-align: center;
+  }
+  &_price-disc,
+  &_price,
+  &_txt {
+    text-align: right;
+  }
+  &_txt {
+    color: #c2bbbb;
+  }
+  &_logoROH {
+    width: 250px;
+    display: block;
+    padding: 0.5em;
+  }
+  &_linklogo {
+    display: block;
+    clear: both;
+    width: 250px;
+  }
+  > p {
+    text-align: left;
+  }
+  > a {
+    display: block;
+  }
+}
+section#roh {
+  display: block;
+  clear: both;
+  /* float: left; */
+  /* width: 100%; */
+  box-sizing: border-box;
+  text-align: center;
+  > h3 {
+    text-align: left;
+    background-color: #330066;
+    padding: 1em;
+    color: #fff;
+  }
+  > h4 {
+    text-align: left;
+    color: #8e1653;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+.roh-img-logo {
+  width: 90px;
+}
+
+.box-rop {
+  &_txt {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+  }
+  &_price {
+    font-weight: bold;
+    color: #330066;
+  }
+  &_exc {
+    background-color: #8e1653;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+
