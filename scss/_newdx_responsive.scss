@@ -843,9 +843,6 @@ label[for$="PSPT_DocumentNumber"] {
   }
 }
 /* Catalog Services */
-// btn catalogServices-dialog-service-add
-// catalogServices-dialog-container
-// .catalogServices-teaser-container .description-text
 .catalogServices {
   &-teaser {
     height: fit-content;
@@ -1068,6 +1065,10 @@ p.box_service {
         // };;;
     }
   }
+}
+/* RTPL */
+div.area.baggage-policy-section *{
+  color: #fff;
 }
 /* Error Box */
 button.btn {
