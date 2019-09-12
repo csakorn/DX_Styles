@@ -4,7 +4,7 @@ body {
 }
 /*! HEADER AND LOGO */
 $BREAD-CRUMB_LINE_HEIGHT: 40px;
-@include HEADERLOGO(1em 0, 1.6em 0em 0em 0em, 10%, 15%, 1200px);
+@include HEADERLOGO(1em .5em, 1.6em .5em 0em 0em, 10%, 15%, 100% !important,1200px);
 /*! BREAD CRUMB  */
 div#bread-crumb,header#bread-crumb {
   box-shadow: 0 6px 6px -6px #330066 inset;

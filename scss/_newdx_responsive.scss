@@ -1,6 +1,6 @@
 /*! --- RESPONSIVE ST1  */
 /*  HEADER  AND LOGO 2*/
-@include HEADERLOGO(0.6em 0em, 1.3em 0px 0em 0em, 30%, 40%, 100%);
+@include HEADERLOGO(0.6em 0.5em, 1.3em 0.5em 0em 0em, 30%, 40%, 100%, 100%);
 
 /* CALENDARMATRIX-FDCS */
 //calendarmatrix-inner-cell cell-shape  disabled
@@ -87,7 +87,22 @@
     }
   }
 }
+// flight-details-btn-container
+// show-fare-comparison-container
+html[lang="fr"] {
+  .flight-details-btn-container,
+  .show-fare-comparison-container {
+    button.btn-secondary > span {
+      font-size: 11px;
+    }
+  }
+}
 .flight-details {
+  // &-btn-container{
+  //   button.btn-secondary{ > span
+  //     font-size: 11px;
+  //   }
+  // }
   &.availability-flight-details {
     /* -- flight details */
     &.flight-details-with-button.availability-flight-details-with-button {
@@ -230,7 +245,7 @@
     &-bounds,
     &-price,
     &-travellers {
-      margin: 0 !important; // <-- line:3598 on newdx_responsive.scss
+      margin: 0 0 0.8em 0 !important; // <-- line:3598 on newdx_responsive.scss
     }
   }
   .page-actions-bar.text-right {
@@ -269,6 +284,12 @@
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
     }
   }
+}
+.insurance-purchase {
+  max-height: unset;
+}
+section#insurance-select > div {
+  display: none;
 }
 /* -- recap-bound*/
 // .flight-price-container
@@ -450,6 +471,7 @@ body[data-template-name="CONF"] {
     &-left {
       width: 32%;
       margin-left: 0.6em;
+      text-transform: none;
     }
   }
 }
@@ -459,7 +481,7 @@ span[id*="error-message"] {
   font-size: 12px;
   white-space: initial;
 }
-.apim-card-level-errors ul>li{
+.apim-card-level-errors ul > li {
   white-space: initial;
   font-size: 12px;
 }
@@ -579,7 +601,7 @@ section.traveller-panel-body {
     // margin: 1em 0;
     padding: 0.8em 0;
     ul > li {
-      text-transform: capitalize;
+      text-transform: none;
       // font-size: .8rem;
       padding: 5px 10px;
       min-width: 156px;
@@ -598,20 +620,32 @@ section.traveller-panel-body {
   @include TAB_BAR-FOCUS-ACTIVE;
 }
 
-
 /* DROPDOWN - Passenger info*/
 .autocompleteBox {
   &-item {
     &-mouseOver,
     &-selected {
-      background-color: $TG_PINK3;
-      color: $BG-COLOR_DROPDOWN;
+      background-color: $BG-COLOR_DROPDOWN;
+      //color: $BG-COLOR_DROPDOWN;// <--- Edit
+      color: $FONT-COLOR_ROPDOWN;
     }
   }
 }
 label[for$="PSPT_DocumentNumber"] {
   white-space: initial;
 }
+// traveller-panel-heading-subtitle
+// apim-card-title-before-validation
+//----------------------  Remove This for PROD
+.traveller-contact-information {
+  margin-top: 1em;
+  h2,
+  i,
+  h2 > span {
+    color: #fff;
+  }
+}
+//--------------------
 #apim-traveller {
   .fare-selectors {
     .fare-selector {
@@ -624,7 +658,7 @@ label[for$="PSPT_DocumentNumber"] {
     }
   }
   h2 {
-    text-transform: capitalize;
+    text-transform: none;
     padding-top: 5px;
     padding-bottom: 0;
     // -webkit-border-radius: 5px;
@@ -632,8 +666,19 @@ label[for$="PSPT_DocumentNumber"] {
     // border-radius: 5px;
   }
 }
-.traveller{
+.apim {
+  &-card {
+    &-title-before-validation {
+      > h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.traveller {
   &-panel {
+    &--heading-subtitle {
+    }
     &-body {
       select,
       input {
@@ -641,8 +686,8 @@ label[for$="PSPT_DocumentNumber"] {
       }
     }
   }
-  &-additional-options{
-    #message-allow-data-collection{
+  &-additional-options {
+    #message-allow-data-collection {
       display: none;
     }
   }
@@ -654,6 +699,16 @@ label[for$="PSPT_DocumentNumber"] {
   }
 }
 /* -- passenger info */
+//widget-group-apimTravellers-traveller_0_ADT_INF-IDEN_DateOfBirth-DateDay
+html[lang="fr"] {
+  span[id*="_INF-IDEN_DateOfBirth"],
+  div[id$="INF-IDEN_DateOfBirth-DateDay"] > label,
+  div[id$="INF-IDEN_DateOfBirth-DateMonth"] > label,
+  div[id$="INF-IDEN_DateOfBirth-DateYear"] > label {
+    display: none !important;
+  }
+}
+
 .apimTraveller-panel {
   display: inline-block;
   vertical-align: top;
@@ -666,8 +721,9 @@ label[for$="PSPT_DocumentNumber"] {
   max-height: 210px;
   overflow: auto;
   @include RADIUS(5px);
-  label{
-    &#HomePhone,&#BusinessPhone{
+  label {
+    &#HomePhone,
+    &#BusinessPhone {
       display: none;
     }
   }
@@ -863,7 +919,7 @@ label[for$="PSPT_DocumentNumber"] {
       padding: 0px;
       .description-text {
         display: block;
-        margin-top:5px;
+        margin-top: 5px;
       }
     }
     &-BAG,
@@ -898,6 +954,7 @@ label[for$="PSPT_DocumentNumber"] {
   }
   &-dialog-container {
     .popover-header {
+      text-transform: none;
       &-content {
         @include GRADIENT;
       }
@@ -961,6 +1018,7 @@ p.box_service {
       @include GRADIENT;
       margin: 0;
       padding: 0.7em;
+      text-transform: capitalize;
       i {
         color: #fff;
       }
@@ -1019,10 +1077,14 @@ p.box_service {
       left: 0;
     }
   }
+  //.reservation-info .heading-text
   .reservation-info {
     h2 {
       background: unset;
       background-color: unset !important;
+    }
+    .heading-text{
+      text-transform: none;
     }
   }
   .pricedetails {
@@ -1041,6 +1103,7 @@ p.box_service {
   #fare-review-bounds {
     margin: 0 10px;
   }
+
   .price-taxes {
     .icon-caret-right:before {
       left: 0;
@@ -1062,12 +1125,12 @@ p.box_service {
         // @include RADIUS(100px);
         // span.icon-edit {
         //   color: #fff;
-        // };;;
+        // };;;;;
     }
   }
 }
 /* RTPL */
-div.area.baggage-policy-section *{
+div.area.baggage-policy-section * {
   color: #fff;
 }
 /* Error Box */

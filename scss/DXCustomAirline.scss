@@ -1574,7 +1574,9 @@ html[lang="it"] {
     }
   }
 }
-
+#message-allow-data-collection{
+  display: none;
+}
 // -----> 26/09/2019
 // .text-right {
 //     width: 100% !important;
@@ -1601,11 +1603,14 @@ html[lang="it"] {
 /**********************-- Responsive --***************************/
 // @import 'dx-responsive';
 @import "dx_new_destop";
-@media only screen and (max-width: 1366px) {
+/*!---- Tablet ----- */
+@import "newdx_tablet";
+@media only screen and (max-width: 1024px) {
   /*! ------ new  */
   @import "new_responsive";
   /*! ------ Over  */
   @import "newdx_responsive";
+  
 }
 
 

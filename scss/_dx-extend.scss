@@ -1,8 +1,9 @@
 /* --------Logo THAI and Star------ */
-@mixin HEADERLOGO($tgmargin, $starmagin, $tgwidth, $starwidth, $boxw) {
+@mixin HEADERLOGO($tgmargin, $starmagin, $tgwidth, $starwidth, $boxw, $boxlogo) {
   #main-layout-header {
+    width: $boxw;
     .box-headerlogo {
-      width: $boxw;
+      width: $boxlogo;
       margin: 0 auto;
     }
     margin: auto 0 !important;
@@ -78,6 +79,7 @@
 // }
 @mixin POPOVER_HEADER($fz) {
   font-size: $fz;
+  text-transform: none !important;
 }
 @mixin FLIGHT_STOP($c) {
   color: $c;
@@ -171,4 +173,35 @@
       color: #fff;
     }
   }
+}
+
+@mixin BOTTOM-CONTINUE-BUTTON($btnContinue,$btnContent,$btnFontsize,$btnContinuePadding,$btnContinueSpanAlign,$btnContinueSpanFontsize){
+  #price-summary-panel-container {
+    .pricesummarybottom-cell-continue {
+      max-width: $btnContinue;
+    }
+    .pricesummarybottom-cell-content {
+      padding: $btnContent;
+    }
+    #bottom-continue-button {
+      font-size: $btnFontsize;
+      padding: $btnContinuePadding;
+  
+      > span {
+        text-align: $btnContinueSpanAlign;
+        font-size: $btnContinueSpanFontsize
+      }
+    }
+  }
+}
+@mixin LABEL_TRAVELLER($display) {
+  div[id$="IDEN_FirstName"] label,
+  div[id$="IDEN_LastName"] label,
+  div[id$="FREQ_Number_0"] label,
+  #widget-group-apimTravellers-contactInformation-Email label,
+  #widget-group-apimTravellers-contactInformation-EmailConfirm label,
+  #widget-group-apimTravellers-contactInformation-SosName label {
+      display: $display;
+  }
+  
 }

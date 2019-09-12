@@ -23,17 +23,38 @@ section#tpl4_travellerFormContent{
             }          
         }
     }
-    section.traveller-panel-body.panel-body{
-        h3.title-section{
-            margin-top: 0px;
-        }
-        label{
-        	font-weight: bold;
-        }
+    // section.traveller-panel-body.panel-body{
+    //     h3.title-section{
+    //         margin-top: 0px;
+    //     }
+    //     label{
+    //         font-weight: bold;
+    //         font-size: 9pt;
+    //     }
 
-    }
-    section.traveller-contact-information-panel-body{
-    	label{font-weight: bold;}
+    // }
+    // section.traveller-contact-information-panel-body{
+    // 	label{
+    //         font-weight: bold;
+    //         font-size: 9pt;
+    //     }
+    // }
+    section.traveller{
+        &-panel-body.panel-body{
+            h3.title-section{
+                margin-top: 0px;
+            }
+        }
+        &-panel-body.panel-body,&-contact-information-panel-body{
+            label{
+                font-weight: bold;
+                font-size: 9pt;
+            }
+            label[for$='_DocumentIssuingCountry']{
+                margin-bottom: 1.25em;
+            }
+
+        }
     }
 }
 
