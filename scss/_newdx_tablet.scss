@@ -1,0 +1,113 @@
+body[data-device-type="TABLET"] {
+  @include HEADERLOGO(1em 0.5em, 1.6em 0.5em 0em 0em, 15%, 25%, 100% !important, 100%);
+  .pricesummarybottom {
+    &-cell-content {
+      margin-right: 0;
+    }
+  }
+  #price-summary-panel-container {
+    .pricesummarybottom-cell-continue {
+      max-width: 30% !important;
+    }
+    .pricesummarybottom-cell-content {
+      padding: 8px;
+      justify-content: flex-start;
+    }
+    #bottom-continue-button {
+      font-size: 1em;
+      padding: 10px 0px !important;
+      width: 100%;
+
+      > span,
+      i {
+        text-align: unset;
+        font-size: 2rem;
+        display: initial;
+      }
+    }
+  }
+  button.tripsummary-btn {
+    @include RADIUS(10px);
+    background-color: $TG_PURPLE2;
+    padding: 0.5em 1em;
+    span,
+    i {
+      color: $TG_WHITE;
+    }
+  }
+  .mobile-app-container {
+    .tabs-container {
+      ul > li {
+        width: inherit !important;
+      }
+    }
+  }
+  .plnext-accordion {
+    &-sticky-header {
+      top: auto !important;
+    }
+  }
+  //   .bounds-panel-body panel-body
+  .bounds {
+    &-panel-body {
+      padding-top: 1em;
+    }
+  }
+  @include LABEL_TRAVELLER(block !important);
+  .description-text {
+    display: none;
+  }
+
+  .fop-options-wrapper {
+    width: 30%;
+  }
+  .payment {
+    .payment-wrapper {
+      float: left;
+      width: 100%;
+      margin-top: 1em;
+      .relative.fop-wrapper.panel {
+        float: left;
+        width: 45%;
+        border: none;
+      }
+      div[id$="_fopDisplayMainSection"] {
+        text-align: left;
+      }
+      .fop-options-wrapper .mop-btn.fop-option-selected {
+        background: #fff;
+        background-color: #FFF;
+        border-top: 1px solid #f5f5f5;
+      }
+    }
+  }
+  .pnrd-view{ 
+    .confirm-banner{
+      font-size: 2vw;
+    }
+  }
+  .insurance{ 
+    .insurance-banner{
+      width: 20vw;
+    }
+  }
+  // .catalogServices {
+  //   &-teaser-column {
+  //   }
+  //   &-teaser-SIT {
+  //     .teaserDescription {
+  //       width: 100%;
+  //       height: 100%;
+  //     }
+  //     .TG-AAAS-teaser {
+  //       width: 100px;
+  //       height: 100px;
+  //     }
+  //   }
+  // }
+  // .TG {
+  //   &-SEAT-teaser,&-MEAL-teaser {
+  //       overflow: hidden;
+  //   }
+  // }
+}
